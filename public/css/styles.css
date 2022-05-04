@@ -680,6 +680,7 @@ section {
 ================================================== */
 #howtobuy {
   overflow: hidden;
+  padding-bottom: 70px;
 }
 #howtobuy h2.section-title {
   color: #575757;
