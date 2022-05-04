@@ -32,6 +32,9 @@ Route::middleware(['restrictIp'])->group(function () {
     Route::get('galeria',
         'Front\GalleryController@index')->name('gallery.index');
 
+    Route::get('jak-kupic',
+        'Front\HowToBuyController@index')->name('howtobuy.index');
+
     Route::get('kontakt',
         'Front\ContactController@index')->name('contact.index');
     Route::post('kontakt',

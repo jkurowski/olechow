@@ -6,7 +6,6 @@
     @endisset
     <div class="@isset($class) {{ $class }} @else {{ 'col-4' }} @endisset">
         @if($selected)
-            {!! dd($selected) !!}
             {!! Form::select($name, $select, $selected, array('class' => 'form-select')) !!}
         @else
             {!! Form::select($name, $select, [], array('class' => 'form-select')) !!}

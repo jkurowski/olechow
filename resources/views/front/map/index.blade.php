@@ -43,7 +43,7 @@
         }).addTo(map);
 
         let markers = [
-                    @foreach ($list as $p)
+                @foreach ($markers as $p)
                 [{{$p->lat}}, {{$p->lng}}, '{{$p->name}}'],
                 @endforeach
             ],
@@ -53,7 +53,7 @@
         for (let i = 0; i < n-1; i++) {
             let marker = new L.Marker(markers[i]).bindPopup(markers[i][2]);
             route.addLayer(marker);
-        };
+        }
         route.addLayer(new L.Marker(markers[n-1]).bindPopup(markers[n-1][2]));
         map.fitBounds(route.getBounds());
     </script>

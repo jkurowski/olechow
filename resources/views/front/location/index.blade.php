@@ -69,9 +69,9 @@
         });
 
         const featureGroup = L.featureGroup([
-{{--            @foreach($investments as $i)--}}
-{{--            L.marker([{{ $i->lat }}, {{ $i->lng }}]).bindPopup('<h4>{{ $i->name }}</h4><p>{{ $i->city }} | {{ $i->address }}</p>'),--}}
-{{--            @endforeach--}}
+            @foreach($markers as $i)
+            L.marker([{{ $i->lat }}, {{ $i->lng }}]).bindPopup('<h4>{{ $i->name }}</h4><p>{{ $i->address }}</p>'),
+            @endforeach
         ]);
 
         let map = new L.Map('map', {

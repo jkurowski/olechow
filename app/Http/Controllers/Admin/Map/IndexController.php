@@ -3,19 +3,37 @@
 namespace App\Http\Controllers\Admin\Map;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\MapFormRequest;
 
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Session;
-
+// CMS
 use App\Models\Map;
+use App\Repositories\MapRepository;
+use App\Http\Requests\MapFormRequest;
 
 class IndexController extends Controller
 {
+    private $repository;
+
+    public function __construct(MapRepository $repository)
+    {
+//        $this->middleware('permission:map-list|map-create|map-edit|map-delete', [
+//            'only' => ['index','store']
+//        ]);
+//        $this->middleware('permission:map-create', [
+//            'only' => ['create','store']
+//        ]);
+//        $this->middleware('permission:map-edit', [
+//            'only' => ['edit','update']
+//        ]);
+//        $this->middleware('permission:map-delete', [
+//            'only' => ['destroy']
+//        ]);
+
+        $this->repository = $repository;
+    }
 
     public function index()
     {
-        return view('admin.map.index', ['list' => Map::orderBy('id', 'desc')->get()]);
+        return view('admin.map.index', ['list' => $this->repository->all()]);
     }
 
     public function create()
@@ -28,7 +46,7 @@ class IndexController extends Controller
 
     public function store(MapFormRequest $request)
     {
-        Map::create($request->except(['_token', 'submit']));
+        $this->repository->create($request->validated());
         return redirect(route('admin.map.index'))->with('success', 'Nowy punkt dodany');
     }
 
@@ -41,17 +59,17 @@ class IndexController extends Controller
         ]);
     }
 
-    public function update(MapFormRequest $request, Map $map)
+    public function update(MapFormRequest $request, int $id)
     {
-        $map->update($request->except(['_token', 'submit']));
+        $map = $this->repository->find($id);
+        $this->repository->update($request->validated(), $map);
+
         return redirect(route('admin.map.index'))->with('success', 'Punkt zaktualizowany');
     }
 
-    public function destroy($id)
+    public function destroy(int $id)
     {
-        $entry = Map::find($id);
-        $entry->delete();
-        Session::flash('success', 'Wpis usunięty');
-        return response()->json('Deleted', 200);
+        $this->repository->delete($id);
+        return response()->json('Deleted');
     }
 }

@@ -13,7 +13,7 @@
                     <div class="card-head container">
                         <div class="row">
                             <div class="col-12 pl-0">
-                                <h4 class="page-title row"><i class="fe-map-pin"></i><a href="{{route('admin.map.index')}}">Mapa</a><span class="d-inline-flex ml-2 mr-2">/</span>{{ $cardTitle }}</h4>
+                                <h4 class="page-title"><i class="fe-map-pin"></i><a href="{{route('admin.map.index')}}">Mapa</a><span class="d-inline-flex me-2 ms-2">/</span>{{ $cardTitle }}</h4>
                             </div>
                         </div>
                     </div>
@@ -21,6 +21,17 @@
                     <div class="card-body">
                         <div class="row">
                             <div class="col-12">
+                                @include('form-elements.html-select', ['label' => 'Kategoria', 'name' => 'group_id', 'selected' => $entry->group_id, 'select' => [
+                                    '1' => 'Przedszkola i szkoły podstawowe',
+                                    '2' => 'Transport publiczny',
+                                    '3' => 'Wylot na Autostradę A1',
+                                    '4' => 'Tereny rekreacyjne, place zabaw, parki rowerowe',
+                                    '5' => 'Gastronomia',
+                                    '6' => 'Przychodnie publicznych i prywatne',
+                                    '7' => 'Apteki',
+                                    '8' => 'Kościoły',
+                                    '9' => 'Markety, sklepy, drogerie'
+                                ]])
                                 @include('form-elements.html-input-text', ['label' => 'Nazwa', 'name' => 'name', 'value' => $entry->name, 'required' => 1])
                                 @include('form-elements.html-input-text', ['label' => 'Szerokość geograficzna', 'name' => 'lat', 'value' => $entry->lat, 'required' => 1])
                                 @include('form-elements.html-input-text', ['label' => 'Długość geograficzna', 'name' => 'lng', 'value' => $entry->lng, 'required' => 1])

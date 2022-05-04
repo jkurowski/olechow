@@ -25,6 +25,7 @@ class MapFormRequest extends FormRequest
     {
         return [
             'name' => 'required|string|min:5|max:100',
+            'group_id' => '',
             'lat' => 'required',
             'lng' => 'required',
             'zoom' => 'required|integer',
