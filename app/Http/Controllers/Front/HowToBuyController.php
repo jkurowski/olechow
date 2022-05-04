@@ -10,10 +10,8 @@ class HowToBuyController extends Controller
 
     public function index()
     {
-        $page = Page::where('id', 3)->first();
-
         return view('front.howtobuy.index', [
-            'page' => $page
+            'page' => Page::where('id', 5)->first()
         ]);
     }
 
