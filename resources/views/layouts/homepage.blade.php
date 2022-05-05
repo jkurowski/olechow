@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-12 text-center">
                     <h2>Kup apartament już od <span class="green">6.500 zł/m<sup>2</sup></span></h2>
-                    <a href="#" class="bttn">DOWIEDZ SIĘ JAK</a>
+                    <a href="{{ route('howtobuy.index') }}" class="bttn">DOWIEDZ SIĘ JAK</a>
                 </div>
             </div>
         </div>

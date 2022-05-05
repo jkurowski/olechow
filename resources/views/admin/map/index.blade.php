@@ -38,7 +38,7 @@
                             <td class="option-120">
                                 <div class="btn-group">
                                     <a href="{{route('admin.map.edit', $p->id)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj wpis"><i class="fe-edit"></i></a>
-                                    <form method="POST" action="">
+                                    <form method="POST" action="{{route('admin.map.destroy', $p->id)}}">
                                         {{ csrf_field() }}
                                         {{ method_field('DELETE') }}
                                         <button

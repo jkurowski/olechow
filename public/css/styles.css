@@ -718,7 +718,7 @@ section {
 }
 .timeline_line-progress {
   width: 100%;
-  height: 110px;
+  height: 0;
   background-color: #b79a5e;
 }
 .timeline-card_box {
