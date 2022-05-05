@@ -31,7 +31,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png" class="timeline-card_img" width="640" height="360" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Spotkajmy się! Zapraszamy do naszego biura, gdzie pokażemy Państwu wszystkie zalety inwestycji.</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Spotkajmy się! Zapraszamy do naszego biura, gdzie pokażemy Państwu wszystkie zalety inwestycji.</h2>
+                                                        <p>Nawet najbardziej wyczerpujący folder reklamowy nie zastąpi spotkania w biurze sprzedaży. Nasi sprzedawcy są kompetentni i znają nasze inwestycje doskonale, dlatego będą w stanie zapewnić Państwu komplet rzetelnych informacji i odpowiedzieć na każde pytanie. Ponadto, tylko w biurze sprzedaży możecie Państwo obejrzeć szczegółowe plany osiedla, rozbudowane wizualizacje a nawet odbyć wirtualny spacer po przyszłych wnętrzach!</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -50,7 +53,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Jak możemy pomóc? Nasi sprzedawcy postarają się jak najlepiej zrozumieć Państwa potrzeby i zaproponować mieszkania, które idealnie na nie odpowiadają.</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Jak możemy pomóc? Nasi sprzedawcy postarają się jak najlepiej zrozumieć Państwa potrzeby i zaproponować mieszkania, które idealnie na nie odpowiadają.</h2>
+                                                        <p>Lokalizacja, cena, układ mieszkania – o te i inne kluczowe dla wyboru przyszłego domu elementy zapyta Państwa nasz zespół. Jak najlepsze zrozumienie potrzeb naszych klientów umożliwia zaproponowanie rozwiązań idealnie na nie odpowiadających. Wszystko po to, aby nowe mieszkanie stało się wymarzonym nowym domem. </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -69,7 +75,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-11.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Czas na konkrety: terminy realizacji inwestycji, harmonogram płatności, treść umowy rezerwacyjnej i deweloperskiej – to wszystko wyjaśniamy w jasny i zrozumiały sposób.</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Czas na konkrety: terminy realizacji inwestycji, harmonogram płatności, treść umowy rezerwacyjnej i deweloperskiej – to wszystko wyjaśniamy w jasny i zrozumiały sposób.</h2>
+                                                        <p>Zakup mieszkania to jedna z najważniejszych (i największych!) transakcji w życiu człowieka, dlatego tak ważne jest rzetelne uzgodnienie konkretów. To właśnie dział sprzedaży dysponuje najbardziej aktualnymi i pełnymi informacjami dotyczącymi harmonogramu realizacji inwestycji, możliwości finansowania i warunków umowy, więc po wszelkie szczegóły zapraszamy do biura sprzedaży.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -88,7 +97,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-10.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Umowa rezerwacyjna</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Umowa rezerwacyjna</h2>
+                                                        <p>Pierwszym krokiem w zakupie mieszkania jest podpisanie umowy rezerwacyjnej, w której zawarte są wszelkie niezbędne informacje dotyczące realizacji inwestycji. Umowa rezerwacyjna jest zawierana w biurze sprzedaży i wiąże się z uiszczeniem opłaty rezerwacyjnej. </p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -107,7 +119,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-9.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Wsparcie w uzyskaniu finansowania</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Wsparcie w uzyskaniu finansowania</h2>
+                                                        <p>Po podpisaniu umowy rezerwacyjnej nasz zespół z przyjemnością pomoże Państwu w uzyskaniu finansowania. Udzielamy wsparcia w porównaniu ofert i przygotowaniu niezbędnej dokumentacji dla banku. Wieloletnie doświadczenie i rozległa współpraca z wieloma bankami pozwalają nam kompetentnie wspierać naszych klientów w procesie uzyskania kredytu.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -126,7 +141,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-8.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Podpisanie umowy deweloperskiej u notariusza</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Podpisanie umowy deweloperskiej u notariusza</h2>
+                                                        <p>Następnym krokiem do posiadania własnego mieszkania jest umowa deweloperska. Tego rodzaju kontrakt podpisywany jest u notariusza, po wpłacie 10% ceny mieszkania pomniejszonej o opłatę rezerwacyjną. Koszt podpisania umowy u notariusza, tzw. taksa notarialna jest rozłożony na kupującego i dewelopera. W umowie deweloperskiej są zawarte takie informacje jak np. harmonogram wpłat i realizacji etapów inwestycji.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -145,7 +163,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-7.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Zmiany lokatorskie i formalny odbiór mieszkania</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Zmiany lokatorskie i formalny odbiór mieszkania</h2>
+                                                        <p>Gdy mieszkanie zostanie wybudowane spotykamy się na miejscu, aby uzgodnić czy jakieś elementy nie wymagają zmiany. Gdy już wszystkie elementy są przygotowane zgodnie z życzeniem kupującego a deweloper uzyskał formalną zgodę na użytkowanie mieszkania następuje formalny odbiór techniczny nieruchomości. W tym momencie dostajecie Państwo klucze do swojego nowego mieszkania!</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -164,7 +185,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-6.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Finalna umowa notarialna przenosząca własność mieszkania</p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Finalna umowa notarialna przenosząca własność mieszkania</h2>
+                                                        <p>Umowa przenosząca własność mieszkania znów musi być zawarta w obecności notariusza. W tym wypadku taksę notarialną pokrywa kupujący, który w tym momencie uiszcza pozostałą kwotę ceny mieszkania. Na podstawie tej umowy przenoszona jest własność mieszkania na kupującego.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
@@ -183,7 +207,10 @@
                                                     <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-5.png" class="timeline-card_img" width="640" height="360" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
-                                                    <div class="timeline-card_desc"><p>Komfortowe życie na osiedlu Bliski Olechów </p></div>
+                                                    <div class="timeline-card_desc">
+                                                        <h2>Komfortowe życie na osiedlu Bliski Olechów</h2>
+                                                        <p>I to już naprawdę ostatni etap przed realizacją marzenia – wykończenie mieszkania i można się wprowadzać! Wierzymy że życie na Bliskim Olechowie będzie komfortowe, przyjemne i szczęśliwe.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="timeline-card_arrow"></div>
