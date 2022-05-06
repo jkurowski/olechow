@@ -62,6 +62,72 @@
         </div>
     </section>
 
+    <section id="mainwhy">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <h2 class="why-title">DLACZEGO WARTO?</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-5 position-relative">
+                    <div class="why-carousel-left">
+                        <div class="why-carousel-item">
+                            <img src="https://placehold.co/909x880" alt="">
+                            <div class="why-carousel-apla">
+                                <h2>LOKALIZACJA</h2>
+                                <p>Zlokalizowany w zielonym sercu Widzewa Bliski Olechów jest świetnie skomunikowany z centrum Łodzi zarówno komunikacją miejską jak i samochodem.</p>
+                            </div>
+                        </div>
+                        <div class="why-carousel-item">
+                            <img src="https://placehold.co/909x880" alt="">
+                            <div class="why-carousel-apla">
+                                <h2>ARCHITEKTURA</h2>
+                                <p>Wiemy, że lepiej żyje się w pięknym otoczeniu, dlatego Bliski Olechów został zaprojektowany w ponadczasowym stylu, a słoneczne i rozkładowe mieszkania wyposażone w przestronne balkony lub loggie staną się miejscem komfortowego życia.</p>
+                            </div>
+                        </div>
+                        <div class="why-carousel-item">
+                            <img src="https://placehold.co/909x880" alt="">
+                            <div class="why-carousel-apla">
+                                <h2>BEZPIECZEŃSTWO</h2>
+                                <p>Osiedle jest monitorowane, każde mieszkanie wyposażone w system SmartHome - instalacje alarmową, drzwi wejściowe do lokali o podwyższonej odporności na włamania.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="why-carousel-nav">
+                        <button id="why-carousel-btn-left"><i class="las la-angle-left"></i></button>
+                        <button id="why-carousel-btn-right"><i class="las la-angle-right"></i></button>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="why-carousel-right">
+                        <div class="why-carousel-item">
+                            <img src="https://placehold.co/1302x880" alt="">
+                            <div class="why-carousel-apla">
+                                <h2>ZIELEŃ I WYPOCZYNEK</h2>
+                                <p>Bliski Olechów znajduje się  przy Parku Źródła Olechówki oraz innych terenach zielonych wyposażonych w m.in. tężnię solankową, nowoczesne place zabaw dla dzieci oraz infrastrukturę sportowo-rekreacyjną.</p>
+                            </div>
+                        </div>
+                        <div class="why-carousel-item">
+                            <img src="https://placehold.co/1302x880" alt="">
+                            <div class="why-carousel-apla">
+                                <h2>NA WYCIĄGNIĘCIE RĘKI</h2>
+                                <p>Bliskość przedszkoli i dobrych szkół, przychodni publicznych i prywatnych, szeroki wybór sklepów i aptek oraz świetne miejsca do sportu,  rekreacji i odpoczynku w otoczeniu zieleni to powód, dla którego naszą najnowszą inwestycję zdecydowaliśmy się zrealizować właśnie tutaj.</p>
+                            </div>
+                        </div>
+                        <div class="why-carousel-item">
+                            <img src="https://placehold.co/1302x880" alt="">
+                            <div class="why-carousel-apla">
+                                <h2>JAKOŚĆ ZA ROZSĄDNĄ CENĘ</h2>
+                                <p>Dzięki prawie 20-letniemu doświadczeniu wiemy jak budować wysokiej jakości osiedla w rozsądnej cenie. Bliski Olechów to komfortowe życie w cenie, która pozwala spać spokojnie.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="maingallery">
         <div class="container">
             <div class="row">
@@ -106,6 +172,32 @@
                 <div class="col-12 text-center">
                     <h2>Kup apartament już od <span class="green">6.500 zł/m<sup>2</sup></span></h2>
                     <a href="{{ route('howtobuy.index') }}" class="bttn">DOWIEDZ SIĘ JAK</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="mainlocation">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="location-carousel">
+                        <img src="{{ asset('/gfx/park.jpg') }}" alt="">
+                        <img src="{{ asset('/gfx/kids.jpg') }}" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container container-offset">
+            <div class="row">
+                <div class="col-5 d-flex justify-content-center align-items-end">
+                    <a href="{{ route('front.location.index') }}" class="bttn">ATUTY LOKALIZACJI</a>
+                </div>
+                <div class="col-7">
+                    <div class="location-apla">
+                        <h2>LOKALIZACJA</h2>
+                        <p><b>Bliski Olechów jest naprawdę bliski</b>! Wszechobecna zieleń, wygodny dojazd do centrum oraz bliskość wszelkich przydatnych punktów handlowo-usługowych, edukacyjnych i ochrony zdrowia to zalety Widzewa. Nasza inwestycja Bliski Olechów jest świetnie zlokalizowana przy ulicy Odnowiciela, w bliskości drogi wylotowej na A1 oraz kilku przystanków komunikacji zarówno tramwajowej jak i autobusowej.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -277,6 +369,33 @@
             $(this).parent().addClass('active');
         });
         $("#gallery_1 ul").slick();
+
+        $(".location-carousel").slick();
+        $(".why-carousel-left, .why-carousel-right").slick({
+            infinite: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows:false,
+            dots: false,
+            vertical: true,
+        });
+        $('.why-carousel-left, .why-carousel-right').on('afterChange', function(event, slick, direction){
+            $('.why-carousel-apla').fadeIn();
+        });
+
+        $('.why-carousel-left, .why-carousel-right').on('beforeChange', function(event, slick, direction){
+            $('.why-carousel-apla').hide();
+        });
+
+        $('#why-carousel-btn-left').click(function () {
+            $('.why-carousel-left').slick('slickNext');
+            $('.why-carousel-right').slick('slickPrev');
+        });
+
+        $('#why-carousel-btn-right').click(function () {
+            $('.why-carousel-right').slick('slickNext');
+            $('.why-carousel-left').slick('slickPrev');
+        });
 
         $(".slick ul").on("afterChange", function(event, slick, currentSlide){
             $(".slick-count").text(parseInt(slick.currentSlide + 1) + '/' + slick.slideCount);

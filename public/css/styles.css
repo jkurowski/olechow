@@ -504,10 +504,85 @@ section {
   padding: 22px 40px;
   color: #222;
 }
+#mainwhy h2.why-title {
+  font-size: 60px;
+  color: var(--main-color-gold);
+  margin-bottom: 80px;
+}
+#mainwhy .why-carousel-item {
+  position: relative;
+}
+#mainwhy .why-carousel-left .why-carousel-apla {
+  right: 0;
+  bottom: 50px;
+}
+#mainwhy .why-carousel-left .why-carousel-item {
+  padding-right: 50px;
+}
+#mainwhy .why-carousel-right .why-carousel-apla {
+  left: 0;
+  top: 50px;
+}
+#mainwhy .why-carousel-right .why-carousel-item {
+  padding-left: 50px;
+}
+#mainwhy .why-carousel-right .why-carousel-apla {
+  width: 480px;
+}
+#mainwhy .why-carousel-apla {
+  background: #213c13 url('../gfx/green-bg.png');
+  padding: 20px;
+  width: 420px;
+  position: absolute;
+}
+#mainwhy .why-carousel-apla h2 {
+  font-size: 30px;
+  color: white;
+}
+#mainwhy .why-carousel-apla p {
+  color: white;
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+#mainwhy .why-carousel-nav {
+  position: absolute;
+  right: -35px;
+  top: 0;
+  bottom: 0;
+  width: 70px;
+  height: 150px;
+  margin: auto;
+}
+#mainwhy .why-carousel-nav button {
+  height: 70px;
+  width: 70px;
+  display: block;
+  border: 1px solid #dcdcdc;
+  border-radius: 50%;
+  z-index: 100;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+  margin-bottom: 8px;
+}
+#mainwhy .why-carousel-nav button i {
+  color: var(--main-color-gold);
+  font-size: 30px;
+}
+#mainwhy .why-carousel-nav button:hover {
+  background: #b79a5e;
+  border-color: #b79a5e;
+  color: #fff;
+}
+#mainwhy .why-carousel-nav button:hover i {
+  color: white;
+}
 #maingallery {
   max-width: 1920px;
   margin: 0 auto;
-  padding-bottom: 0;
+  padding: 0;
 }
 #maingallery h2 {
   font-size: 60px;
@@ -612,6 +687,77 @@ section {
 }
 #maincta .bttn:hover {
   background: var(--main-color-gold);
+  color: white;
+}
+#mainwhy {
+  padding: 100px;
+}
+#mainlocation {
+  overflow: hidden;
+  padding-bottom: 0;
+}
+#mainlocation .location-apla {
+  padding: 40px;
+  position: relative;
+  z-index: 30;
+}
+#mainlocation .location-apla h2 {
+  color: var(--main-color-gold);
+  margin-bottom: 24px;
+  font-size: 49px;
+}
+#mainlocation .location-apla p {
+  color: white;
+  font-size: 17px;
+  line-height: 30px;
+  margin: 0;
+}
+#mainlocation .location-apla:before {
+  content: "";
+  background: #213c13 url('../gfx/green-bg.png');
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -790px;
+  z-index: -1;
+}
+#mainlocation .container-offset {
+  margin-top: -170px;
+  position: relative;
+  z-index: 20;
+}
+#mainlocation .bttn {
+  padding: 22px 40px;
+  margin: 0 0 40px 0;
+}
+#mainlocation .slick-arrow {
+  height: 70px;
+  width: 70px;
+  display: block;
+  border: 1px solid white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  z-index: 100;
+  -webkit-transition: all 200ms linear;
+  -moz-transition: all 200ms linear;
+  -o-transition: all 200ms linear;
+  transition: all 200ms linear;
+}
+#mainlocation .slick-arrow i {
+  color: #fff;
+  font-size: 30px;
+}
+#mainlocation .slick-arrow.slick-next {
+  left: 110px;
+}
+#mainlocation .slick-arrow:hover {
+  background: #b79a5e;
+  color: #fff;
+}
+#mainlocation .slick-arrow:hover i {
   color: white;
 }
 #maininvestor {
