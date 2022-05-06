@@ -1,4 +1,4 @@
-<div id="page-header" style="background:#272b34 url('https://arkio-react.wpocean.com/static/media/page-title.8925afce.jpg')">
+<div id="page-header" style="background:#272b34 url('{{ asset('/uploads/headers/'.$header_file) }}') no-repeat top center">
     <div class="container">
         <div class="row">
             <div class="col-12 d-flex align-items-end justify-content-center">

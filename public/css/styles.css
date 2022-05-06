@@ -842,6 +842,7 @@ section {
 #page-header {
   height: 440px;
   background-attachment: fixed !important;
+  background-size: contain !important;
 }
 #page-header .container,
 #page-header .row {

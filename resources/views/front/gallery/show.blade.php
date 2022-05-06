@@ -3,7 +3,7 @@
 @section('meta_title', $gallery->name)
 
 @section('pageheader')
-    @include('layouts.partials.developro-header', ['title' => $gallery->name, 'items' => [['uri'=> 'galeria', 'title'=>'Galeria']]])
+    @include('layouts.partials.developro-header', ['title' => $gallery->name, 'header_file' => 'gallery.jpg', 'items' => [['uri'=> 'galeria', 'title'=>'Galeria']]])
 @stop
 
 @section('content')

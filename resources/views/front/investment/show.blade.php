@@ -3,7 +3,7 @@
 @section('meta_title', 'Inwestycje - '.$investment->name)
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['page' => $page])
+    @include('layouts.partials.page-header', ['page' => $page, 'header_file' => 'rooms.jpg'])
 @stop
 
 @section('content')

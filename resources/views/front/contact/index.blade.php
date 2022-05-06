@@ -3,7 +3,7 @@
 @section('meta_title', 'Kontakt')
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['page' => $page])
+    @include('layouts.partials.page-header', ['page' => $page, 'header_file' => 'contact.jpg'])
 @stop
 
 @section('content')

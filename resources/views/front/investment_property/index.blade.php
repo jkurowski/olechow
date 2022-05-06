@@ -3,7 +3,7 @@
 @section('meta_title', $property->name)
 
 @section('pageheader')
-    @include('layouts.partials.developro-header', ['title' => $property->name, 'items' => [['uri'=> 'mieszkania', 'title'=>'Mieszkania'],['uri'=> 'mieszkania/pietro/'.$floor->id, 'title'=>$floor->name]]])
+    @include('layouts.partials.developro-header', ['title' => $property->name, 'header_file' => 'rooms.jpg', 'items' => [['uri'=> 'mieszkania', 'title'=>'Mieszkania'],['uri'=> 'mieszkania/pietro/'.$floor->id, 'title'=>$floor->name]]])
 @stop
 
 @section('content')
