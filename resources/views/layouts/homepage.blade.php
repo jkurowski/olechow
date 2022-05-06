@@ -34,6 +34,23 @@
         </div>
     </div>
 
+    <section id="maininvestment">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-5 p-0">
+                    <img src="https://placehold.co/1024x1200" alt="">
+                </div>
+                <div class="col-7 d-flex align-items-center">
+                    <div class="maininvestment-text">
+                        <h2>Bliski Olechów – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
+                        <p>Bliski Olechów to nowoczesne budownictwo otoczone zielenią, świetnie skomunikowane zarówno samochodem jak i transportem miejskim. Istotnym elementem jest realizowanie  naszej inwestycji z zastosowaniem sprawdzonych materiałów i technologii.</p>
+                        <a href="" class="bttn">DLACZEGO WARTO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="maingallery">
         <div class="container">
             <div class="row">
