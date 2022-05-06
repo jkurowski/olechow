@@ -170,8 +170,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Kup apartament już od <span class="green">6.500 zł/m<sup>2</sup></span></h2>
-                    <a href="{{ route('howtobuy.index') }}" class="bttn">DOWIEDZ SIĘ JAK</a>
+                    <h2>Cena mieszkania dwupokojowego <br><span class="green">od 299 000,00 zł</span></h2>
+                    <a href="{{ route('front.investment.show') }}" class="bttn">ZOBACZ MIESZKANIA</a>
                 </div>
             </div>
         </div>

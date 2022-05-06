@@ -15,7 +15,7 @@
                         <i class="las la-map-marked-alt"></i>
                     </div>
                     <h3>Adres</h3>
-                    <p>ul. Wschodnia 2, 97-300 Łódź</p>
+                    <p>ul. Odnowiciela 13, 97-300 Łódź</p>
                 </div>
             </div>
             <div class="col-4">
