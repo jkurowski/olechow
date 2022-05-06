@@ -73,21 +73,21 @@
                 <div class="col-5 position-relative">
                     <div class="why-carousel-left">
                         <div class="why-carousel-item">
-                            <img src="https://placehold.co/909x880" alt="">
+                            <img src="{{ asset('/uploads/lokalizacja.jpg') }}" alt="">
                             <div class="why-carousel-apla">
                                 <h2>LOKALIZACJA</h2>
                                 <p>Zlokalizowany w zielonym sercu Widzewa Bliski Olechów jest świetnie skomunikowany z centrum Łodzi zarówno komunikacją miejską jak i samochodem.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="https://placehold.co/909x880" alt="">
+                            <img src="{{ asset('/uploads/architektura.jpg') }}" alt="">
                             <div class="why-carousel-apla">
                                 <h2>ARCHITEKTURA</h2>
                                 <p>Wiemy, że lepiej żyje się w pięknym otoczeniu, dlatego Bliski Olechów został zaprojektowany w ponadczasowym stylu, a słoneczne i rozkładowe mieszkania wyposażone w przestronne balkony lub loggie staną się miejscem komfortowego życia.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="https://placehold.co/909x880" alt="">
+                            <img src="{{ asset('/uploads/bezpieczenstwo.jpg') }}" alt="">
                             <div class="why-carousel-apla">
                                 <h2>BEZPIECZEŃSTWO</h2>
                                 <p>Osiedle jest monitorowane, każde mieszkanie wyposażone w system SmartHome - instalacje alarmową, drzwi wejściowe do lokali o podwyższonej odporności na włamania.</p>
@@ -102,21 +102,21 @@
                 <div class="col-7">
                     <div class="why-carousel-right">
                         <div class="why-carousel-item">
-                            <img src="https://placehold.co/1302x880" alt="">
+                            <img src="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}" alt="">
                             <div class="why-carousel-apla">
                                 <h2>ZIELEŃ I WYPOCZYNEK</h2>
                                 <p>Bliski Olechów znajduje się  przy Parku Źródła Olechówki oraz innych terenach zielonych wyposażonych w m.in. tężnię solankową, nowoczesne place zabaw dla dzieci oraz infrastrukturę sportowo-rekreacyjną.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="https://placehold.co/1302x880" alt="">
+                            <img src="{{ asset('/uploads/na-wyciagniecie-reki.jpg') }}" alt="">
                             <div class="why-carousel-apla">
                                 <h2>NA WYCIĄGNIĘCIE RĘKI</h2>
                                 <p>Bliskość przedszkoli i dobrych szkół, przychodni publicznych i prywatnych, szeroki wybór sklepów i aptek oraz świetne miejsca do sportu,  rekreacji i odpoczynku w otoczeniu zieleni to powód, dla którego naszą najnowszą inwestycję zdecydowaliśmy się zrealizować właśnie tutaj.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="https://placehold.co/1302x880" alt="">
+                            <img src="{{ asset('/uploads/jakosc-za-rozsadna-cene.jpg') }}" alt="">
                             <div class="why-carousel-apla">
                                 <h2>JAKOŚĆ ZA ROZSĄDNĄ CENĘ</h2>
                                 <p>Dzięki prawie 20-letniemu doświadczeniu wiemy jak budować wysokiej jakości osiedla w rozsądnej cenie. Bliski Olechów to komfortowe życie w cenie, która pozwala spać spokojnie.</p>
