@@ -23,6 +23,9 @@
                     </div>
                 </div>
                 <div class="property-desc">
+                    <div class="room-status room-status-{{$property->status}}">
+                        {{ roomStatus($property->status )}}
+                    </div>
                     <ul class="list-unstyled">
                         <li>Pokoje:<span>{{$property->rooms}}</span></li>
                         <li>Powierzchnia:<span>{{$property->area}} m<sup>2</sup></span></li>

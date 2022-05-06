@@ -254,7 +254,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center mt-4">
-                <div class="col-12">
+                <div class="col-7">
                     @if (session('success'))
                         <div class="alert alert-success border-0">
                             {{ session('success') }}

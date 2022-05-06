@@ -33,7 +33,7 @@
                         <i class="las la-phone"></i>
                     </div>
                     <h3>Zadzwoń do nas</h3>
-                    <p><a href="tel:+48 570 880 110">+48 570 880 110</a></p>
+                    <p><a href="tel:+48534664737">+48 534 664 737</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+48882482077">+48 882 482 077</a></p>
                 </div>
             </div>
         </div>
