@@ -35,16 +35,27 @@
     </div>
 
     <section id="maininvestment">
-        <div class="container-fluid">
+        <div class="container-fluid green-bg">
             <div class="row">
-                <div class="col-5 p-0">
-                    <img src="https://placehold.co/1024x1200" alt="">
+                <div class="col-6 p-0">
+                    <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="">
                 </div>
-                <div class="col-7 d-flex align-items-center">
+                <div class="col-6 d-flex align-items-center">
                     <div class="maininvestment-text">
                         <h2>Bliski Olechów – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
                         <p>Bliski Olechów to nowoczesne budownictwo otoczone zielenią, świetnie skomunikowane zarówno samochodem jak i transportem miejskim. Istotnym elementem jest realizowanie  naszej inwestycji z zastosowaniem sprawdzonych materiałów i technologii.</p>
                         <a href="" class="bttn">DLACZEGO WARTO</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-6 p-0"></div>
+                <div class="col-6 d-flex justify-content-center">
+                    <div class="maininvest-cta text-center">
+                        <h2>Kup apartament już <br><span>od 6.500 zł/m<sup>2</sup></span></h2>
+                        <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
                     </div>
                 </div>
             </div>

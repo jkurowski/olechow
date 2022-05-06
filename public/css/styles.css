@@ -455,12 +455,18 @@ section {
   padding: 130px 0;
 }
 #maininvestment {
-  padding: 100px 0 115px;
-  background: #213c13;
+  padding: 0 0 115px;
   margin-bottom: 150px;
 }
+#maininvestment .green-bg {
+  background: #213c13;
+}
 #maininvestment img {
-  margin-bottom: -300px;
+  margin-bottom: -380px;
+  margin-top: 100px;
+  border-top: 15px solid white;
+  border-right: 15px solid white;
+  border-bottom: 15px solid white;
 }
 #maininvestment .maininvestment-text {
   padding: 0 140px;
@@ -479,6 +485,25 @@ section {
 #maininvestment .maininvestment-text .bttn {
   padding: 22px 40px;
   color: white;
+}
+#maininvestment .maininvest-cta {
+  padding: 70px 140px;
+}
+#maininvestment .maininvest-cta h2 {
+  color: #353535;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#maininvestment .maininvest-cta h2 span {
+  font-size: 72px;
+  color: #213c13;
+  font-weight: 900;
+}
+#maininvestment .maininvest-cta .bttn {
+  padding: 22px 40px;
+  color: #222;
 }
 #maingallery {
   max-width: 1920px;
@@ -1911,6 +1936,11 @@ html.swipebox-html.swipebox-touch {
 ================================================== */
 /* Responsive
 ================================================== */
+@media (max-width: 1930px) {
+  #maininvestment .maininvestment-text {
+    padding: 0 80px;
+  }
+}
 /* end of 1640 */
 /* end of 1479.98 */
 /* end of 1359.98 */
