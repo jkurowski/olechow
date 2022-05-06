@@ -13,6 +13,6 @@ class InvestmentRepository extends BaseRepository
 
     public function getUniqueRooms(object $query)
     {
-        return $query->unique('rooms')->pluck('rooms');
+        return $query->sortBy('rooms')->unique('rooms')->pluck('rooms');
     }
 }

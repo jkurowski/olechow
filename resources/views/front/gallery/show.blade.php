@@ -11,11 +11,13 @@
         <div class="row d-flex justify-content-center">
             @foreach($gallery->photos as $image)
             <div class="col-4 mb-4">
-                <picture>
-                    <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$image->file_webp) }}">
-                    <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$image->file) }}">
-                    <img src="{{asset('uploads/gallery/images/thumbs/'.$image->file) }}" alt="{{ $gallery->name }}">
-                </picture>
+                <a href="{{asset('uploads/gallery/images/'.$image->file) }}" class="swipebox">
+                    <picture>
+                        <source type="image/webp" srcset="{{asset('uploads/gallery/images/thumbs/webp/'.$image->file_webp) }}">
+                        <source type="image/jpeg" srcset="{{asset('uploads/gallery/images/thumbs/'.$image->file) }}">
+                        <img src="{{asset('uploads/gallery/images/thumbs/'.$image->file) }}" alt="{{ $gallery->name }}">
+                    </picture>
+                </a>
             </div>
             @endforeach
         </div>

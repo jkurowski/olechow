@@ -14,7 +14,7 @@
             </div>
         </div>
 
-        <div class="col-9 d-flex justify-content-end align-items-center">
+        <div class="col-9 d-flex justify-content-end align-items-center d-none">
             <div class="view">
                 <span id="grid"><i class="las la-th-large"></i> Siatka</span>
                 <span id="list" class="active"><i class="las la-list"></i> Lista</span>

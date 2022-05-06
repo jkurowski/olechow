@@ -26,10 +26,10 @@
                     <ul class="list-unstyled">
                         <li>Pokoje:<span>{{$property->rooms}}</span></li>
                         <li>Powierzchnia:<span>{{$property->area}} m<sup>2</sup></span></li>
-                        @if($property->garden_area)<li>Ogródek:<span>{{$property->garden_area}}</span></li>@endif
-                        @if($property->balcony_area)<li>Balkon:<span>{{$property->balcony_area}}</span></li>@endif
-                        @if($property->terrace_area)<li>Taras:<span>{{$property->terrace_area}}</span></li>@endif
-                        @if($property->loggia_area)<li>Loggia:<span>{{$property->loggia_area}}</span></li>@endif
+                        @if($property->garden_area)<li>Ogródek:<span>{{$property->garden_area}} m<sup>2</sup></span></li>@endif
+                        @if($property->balcony_area)<li>Balkon:<span>{{$property->balcony_area}} m<sup>2</sup></span></li>@endif
+                        @if($property->terrace_area)<li>Taras:<span>{{$property->terrace_area}} m<sup>2</sup></span></li>@endif
+                        @if($property->loggia_area)<li>Loggia:<span>{{$property->loggia_area}} m<sup>2</sup></span></li>@endif
                         @if($property->parking_space)<li>Miejsce postojowe:<span>{{$property->parking_space}}</span></li>@endif
                         @if($property->garage)<li>Garaż:<span>{{$property->garage}}</span></li>@endif
                     </ul>
@@ -37,7 +37,7 @@
 
                 <div class="property-img">
                     @if($property->file)
-                        <a href="{{ asset('/investment/property/'.$property->file) }}">
+                        <a href="{{ asset('/investment/property/'.$property->file) }}" class="swipebox">
                             <picture>
                                 <source type="image/webp" srcset="{{ asset('/investment/property/thumbs/webp/'.$property->file_webp) }}">
                                 <source type="image/jpeg" srcset="{{ asset('/investment/property/thumbs/'.$property->file) }}">
@@ -49,7 +49,7 @@
 
                 <div class="property-desc d-flex justify-content-center">
                 @if($property->file_pdf)
-                    <a href="{{ asset('/investment/property/pdf/'.$property->file_pdf) }}" class="bttn">POBIERZ PLAN .PDF</a>
+                    <a href="{{ asset('/investment/property/pdf/'.$property->file_pdf) }}" target="_blank" class="bttn">POBIERZ PLAN .PDF</a>
                 @endif
                 </div>
             </div>

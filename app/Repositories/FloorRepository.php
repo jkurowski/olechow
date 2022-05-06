@@ -13,6 +13,6 @@ class FloorRepository extends BaseRepository
 
     public function getUniqueRooms(object $query)
     {
-        return $query->get()->unique('rooms')->pluck('rooms');
+        return $query->orderBy('rooms', 'ASC')->get()->unique('rooms')->pluck('rooms');
     }
 }

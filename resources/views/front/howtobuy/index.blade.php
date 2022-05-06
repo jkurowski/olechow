@@ -28,7 +28,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-13.png" class="timeline-card_img" width="640" height="360" />
+                                                    <img src="{{asset('uploads/krok_1.jpg') }}" class="timeline-card_img" width="630" height="355" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -50,7 +50,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-12.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_2.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -72,7 +72,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-11.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_3.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -94,7 +94,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-10.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_4.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -116,7 +116,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-9.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_5.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -138,7 +138,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-8.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_6.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -160,7 +160,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-7.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_7.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -182,7 +182,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-6.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_8.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
@@ -204,7 +204,7 @@
                                         <div class="timeline-card_item">
                                             <div class="timeline-card_inner">
                                                 <div class="timeline-card_img-box">
-                                                    <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/timeline/images/img-5.png" class="timeline-card_img" width="640" height="360" alt="" />
+                                                    <img src="{{asset('uploads/krok_9.jpg') }}" class="timeline-card_img" width="630" height="355" alt="" />
                                                 </div>
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">

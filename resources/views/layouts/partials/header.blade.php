@@ -19,7 +19,7 @@
                                 <li><a href="{{ route('front.gallery.index') }}">Galeria</a></li>
                                 <li><a href="{{ route('howtobuy.index') }}">Jak kupić</a></li>
                                 <li><a href="{{ route('contact.index') }}">Kontakt</a></li>
-                                <li class="header-cta"><a href=""><i class="las la-phone"></i> +48 123 456 789</a></li>
+                                <li class="header-cta"><a href="tel:+48570880110"><i class="las la-phone"></i> +48 570 880 110</a></li>
                             </ul>
                         </nav>
                     </div>

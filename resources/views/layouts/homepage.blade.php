@@ -34,6 +34,44 @@
         </div>
     </div>
 
+    <section id="maingallery">
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <h2>GALERIA</h2>
+                </div>
+                <div class="col-6">
+                    <ul id="gallery_nav" class="mb-0 list-unstyled d-flex galleryCarouselNav">
+                        <li class="active"><a class="change-carousel" href="#gallery_1">Budynek</a></li>
+                        <li><a class="change-carousel" href="#gallery_2">Mieszkania</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="galleryContainer">
+            <div id="gallery_1" class="slick">
+                <ul class="mb-0 list-unstyled mt-5">
+                    <li><img src="{{ asset('/uploads/budynek_1.jpg') }}" alt=""></li>
+                    <li><img src="{{ asset('/uploads/budynek_2.jpg') }}" alt=""></li>
+                    <li><img src="{{ asset('/uploads/budynek_3.jpg') }}" alt=""></li>
+                </ul>
+                <div class="slick-nav">
+                    <div class="slick-count">1/3</div>
+                </div>
+            </div>
+            <div id="gallery_2" class="slick d-none">
+                <ul class="mb-0 list-unstyled mt-5">
+                    <li><img src="{{ asset('/uploads/mieszkanie_1.jpg') }}" alt=""></li>
+                    <li><img src="{{ asset('/uploads/mieszkanie_2.jpg') }}" alt=""></li>
+                    <li><img src="{{ asset('/uploads/mieszkanie_3.jpg') }}" alt=""></li>
+                </ul>
+                <div class="slick-nav">
+                    <div class="slick-count">1/3</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="maincta">
         <div class="container">
             <div class="row">
@@ -173,6 +211,25 @@
             validateNonVisibleFields: true,
             updatePromptsPosition:true,
             promptPosition : "topRight:-137px"
+        });
+
+        $(".change-carousel").click(function (e) {
+            e.preventDefault();
+            const carousel = $(this).attr('href');
+            $('.galleryContainer .slick').addClass('d-none');
+            $('.galleryContainer .slick-initialized').slick('unslick');
+            //
+            console.log(carousel);
+            //
+            $(carousel).removeClass('d-none');
+            $(carousel + " ul").slick();
+            $('.galleryCarouselNav li').removeClass('active');
+            $(this).parent().addClass('active');
+        });
+        $("#gallery_1 ul").slick();
+
+        $(".slick ul").on("afterChange", function(event, slick, currentSlide){
+            $(".slick-count").text(parseInt(slick.currentSlide + 1) + '/' + slick.slideCount);
         });
     });
     $(window).load(function() {

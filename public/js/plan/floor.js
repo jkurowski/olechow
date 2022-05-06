@@ -8,6 +8,23 @@ function onWindowResize() {
 }
 
 $(document).ready(function() {
+
+// Tooltip
+    $('area[title]').each(function () {
+        const elem = $(this), clas = $(this).attr('class');
+        elem.qtip({
+            content: $(this).attr('title'),
+            position: {
+                my: 'bottom center',
+                at: 'bottom center',
+                target: 'mouse',
+                adjust: {x:0, y: -10} ,
+            },
+            style: {classes: clas,tip: {corner: true,mimic: false,width: 12, height: 8,border: true,offset: 0}},
+            hide: {fixed: false, effect: false, show: false},
+        });
+    });
+
     const sold = 'ec2327'; // mieszkanie sprzedane
     const reservation = '1788c9'; // mieszkanie zarezerwowane
     const forsale = '3a9019'; // mieszkanie na sprzedaz
@@ -18,11 +35,13 @@ $(document).ready(function() {
     $("#invesmentplan").mapster({
         onClick: function() {
             const a = $(this).attr("data-roomstatus");
-            if (a !== "2") {
-                window.open(this.href, "_self")
-            } else {
-                return false
-            }
+            // if (a !== "2") {
+            //     window.open(this.href, "_self")
+            // } else {
+            //     return false
+            // }
+
+            window.open(this.href, "_self")
         },
         fillOpacity: hoverOpacity,
         onMouseover: function() {
