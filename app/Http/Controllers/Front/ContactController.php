@@ -34,7 +34,7 @@ class ContactController extends Controller
     function property(ContactFormRequest $request, $id)
     {
         Property::find($id)->notify(new PropertyNotification($request));
-        Mail::to(config('mail.from.address'))->send(new MailSend($request));
+        Mail::to(settings()->get("page_email"))->send(new MailSend($request));
 
         return redirect()->back()->with(
             'success',
@@ -46,7 +46,7 @@ class ContactController extends Controller
     {
         $recipient->notify(new ContactNotification($request));
 
-        Mail::to(config('mail.from.address'))->send(new MailSend($request));
+        Mail::to(settings()->get("page_email"))->send(new MailSend($request));
 
         (new \App\Models\RodoClient)->saveOrCreate($request);
 
