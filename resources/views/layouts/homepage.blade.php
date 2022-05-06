@@ -267,7 +267,7 @@
                     @endif
                 </div>
                 <div class="col-6">
-                    <form method="post" id="homepage-form" action="" class="validateForm">
+                    <form method="post" id="homepage-form" action="{{ route('contact.index') }}" class="validateForm">
                         {{ csrf_field() }}
                         <div class="row">
                             <div class="col-6 form-input">
@@ -402,9 +402,14 @@
             $(".slick-count").text(parseInt(slick.currentSlide + 1) + '/' + slick.slideCount);
         });
     });
+    @if (session('success')||session('warning'))
     $(window).load(function() {
-
+        const aboveHeight = $('header').outerHeight();
+        $('html, body').stop().animate({
+            scrollTop: $('.alert').offset().top-aboveHeight
+        }, 1500, 'easeInOutExpo');
     });
+    @endif
 </script>
 
 </body>

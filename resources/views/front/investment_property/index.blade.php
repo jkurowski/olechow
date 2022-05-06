@@ -150,5 +150,13 @@
                 promptPosition : "topRight:-137px"
             });
         });
+        @if (session('success')||session('warning'))
+        $(window).load(function() {
+            const aboveHeight = $('header').outerHeight();
+            $('html, body').stop().animate({
+                scrollTop: $('.alert').offset().top-aboveHeight
+            }, 1500, 'easeInOutExpo');
+        });
+        @endif
     </script>
 @endpush
