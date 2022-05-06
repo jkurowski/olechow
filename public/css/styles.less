@@ -171,10 +171,9 @@ section {
 }
 
 #maininvestment {
-    padding: 0 0 115px;
-    margin-bottom: 150px;
+    padding: 0;
     .green-bg {
-        background: #213c13;
+        background: #213c13 url('../gfx/green-bg.png');
     }
     img {
         margin-bottom: -380px;
@@ -332,6 +331,31 @@ section {
         &:hover {
             background: var(--main-color-gold);
             color: white;
+        }
+    }
+}
+
+#maininvestor {
+    padding-bottom: 0;
+    .maininvestor-img {
+        img {
+            border:15px solid white
+        }
+    }
+    .maininvestor-text {
+        padding-left: 100px;
+        h2 {
+            font-size: 48px;
+            margin-bottom: 30px;
+        }
+        p {
+            font-size: 18px;
+            line-height: 30px;
+            color: #444444;
+        }
+        img {
+            width: 250px;
+            margin-bottom: 30px;
         }
     }
 }

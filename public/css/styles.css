@@ -455,11 +455,10 @@ section {
   padding: 130px 0;
 }
 #maininvestment {
-  padding: 0 0 115px;
-  margin-bottom: 150px;
+  padding: 0;
 }
 #maininvestment .green-bg {
-  background: #213c13;
+  background: #213c13 url('../gfx/green-bg.png');
 }
 #maininvestment img {
   margin-bottom: -380px;
@@ -614,6 +613,28 @@ section {
 #maincta .bttn:hover {
   background: var(--main-color-gold);
   color: white;
+}
+#maininvestor {
+  padding-bottom: 0;
+}
+#maininvestor .maininvestor-img img {
+  border: 15px solid white;
+}
+#maininvestor .maininvestor-text {
+  padding-left: 100px;
+}
+#maininvestor .maininvestor-text h2 {
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+#maininvestor .maininvestor-text p {
+  font-size: 18px;
+  line-height: 30px;
+  color: #444444;
+}
+#maininvestor .maininvestor-text img {
+  width: 250px;
+  margin-bottom: 30px;
 }
 #maincontact h6 {
   margin: 45px 0;
@@ -1934,6 +1955,29 @@ html.swipebox-html.swipebox-touch {
 }
 /* Footer
 ================================================== */
+footer {
+  padding: 45px 0 80px;
+  background: #213c13 url('../gfx/green-bg.png');
+}
+footer p {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #9ba398;
+  margin: 0;
+}
+footer .copyright p {
+  font-size: 14px;
+  line-height: 24px;
+  text-align: right;
+}
+footer .copyright p,
+footer .copyright p a {
+  color: white;
+}
+footer img.footer-logo {
+  margin: 0 auto 80px;
+}
 /* Responsive
 ================================================== */
 @media (max-width: 1930px) {
