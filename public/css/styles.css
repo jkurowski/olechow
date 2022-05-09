@@ -2404,6 +2404,9 @@ footer img.footer-logo {
 .openmenu #triggermenu {
   color: #b79a5e;
 }
+.openmenu #triggermenu:hover {
+  color: white;
+}
 #triggermenu:before {
   font-family: 'FontAwesome';
   content: "\f0c9";
