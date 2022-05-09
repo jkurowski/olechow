@@ -1,7 +1,7 @@
 <div id="filtr">
     <div class="container-fluid">
         <form method="get" class="row" action="">
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <label for="filtr-rooms" class="w-100">Pokoje</label>
                 <select name="rooms" id="filtr-rooms">
                     <option value="">Wszystkie</option>
@@ -10,7 +10,7 @@
                     @endforeach
                 </select>
             </div>
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <label for="filtr-status" class="w-100">Status</label>
                 <select name="status" id="filtr-status">
                     <option value="">Wszystkie</option>
@@ -21,7 +21,7 @@
             </div>
 
             @if($area_range)
-                <div class="col-3">
+                <div class="col-6 col-md-3">
                     <label for="filtr-area" class="w-100">Powierzchnia</label>
                     <select name="area" id="filtr-area">
                         <option value="">Wszystkie</option>
@@ -29,7 +29,7 @@
                     </select>
                 </div>
             @endif
-            <div class="col-3">
+            <div class="col-6 col-md-3">
                 <label for="filtr-button" class="w-100">&nbsp;</label>
                 <button type="submit" id="filtr-button" class="bttn bttn-center bttn-sm w-100">Szukaj</button>
             </div>

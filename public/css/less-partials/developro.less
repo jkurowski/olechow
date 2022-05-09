@@ -197,7 +197,8 @@
 
 .property {
     #page {
-        padding-top:0
+        padding-top:0;
+        padding-bottom: 1px;
     }
     #property {
         background: #213c13 url("../../gfx/green-bg.png");
@@ -301,3 +302,257 @@
     .room-status-3 {color: white;background:#ec2327}
     .room-status-4 {color: white;background:#de8300}
 }
+
+@media (max-width: 1389.98px) {
+    #roomsList {
+        h2 {
+            font-size: 22px;
+            span {
+                font-size: 28px;
+                font-weight: 600;
+            }
+        }
+        ul li {
+            font-size: 14px;
+            &:first-child {
+                margin-bottom: 5px;
+                padding-bottom: 5px;
+            }
+        }
+        .bttn {
+            padding: 14px 0;
+        }
+        .col {
+            padding: 20px;
+            img {
+                width: 130px;
+            }
+        }
+        .badge {
+            font-size: 13px;
+            min-width: 150px;
+            height: 30px
+        }
+    }
+}
+/* end of 1389.98 */
+
+@media (max-width: 1199.98px) {
+    #planNav .bttn {
+        padding: 13px 0;
+        width: 100%;
+    }
+    .property {
+        .property-img {
+            padding-right: 0;
+            width: 40%;
+            float: left;
+        }
+        .property-desc {
+            width: 60%;
+            float: left;
+        }
+    }
+    #property-form {
+        margin-top: 20px;
+        .container {
+            padding:0
+        }
+    }
+}
+/* end of 1199.98 */
+
+@media (max-width: 991.98px) {
+    #plan-holder .plan-holder-info {
+        padding: 15px;
+        font-size: 14px;
+        position: static;
+        text-align: center;
+    }
+    #filtr form {
+        padding: 15px 10px 25px
+    }
+    #filtr,
+    #plan-holder,
+    #sortList,
+    #roomsList
+    {
+        padding: 0 30px;
+    }
+    #roomsList {
+        h2 {
+            font-size: 18px;
+            span {
+                font-size: 22px;
+            }
+        }
+        ul li {
+            font-size: 12px;
+        }
+        .bttn {
+            padding: 9px 0;
+            font-size: 11px;
+        }
+        .col {
+            padding: 10px 20px;
+            img {
+                width: 90px;
+            }
+        }
+        .badge {
+            min-width: 115px;
+        }
+    }
+}
+/* end of 991.98 */
+
+@media (max-width: 767.98px) {
+    #roomsList {
+        .container-fluid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row {
+            flex: 0 0 auto;
+            width: 48%;
+            margin:0 1% 10px;
+        }
+        .badge {
+            min-width: 102px;
+            font-size: 12px;
+            height: 26px;
+        }
+        h2 {
+            font-size: 23px;
+            margin:0;
+            text-align: center;
+            span {
+                font-size: 28px;
+            }
+        }
+        .col {
+            padding: 10px 15px;
+            flex: 0 0 100%;
+            img {
+                width: 100%;
+            }
+            a {
+                width: 100%;
+            }
+        }
+    }
+    #planNav .bttn {
+        padding: 10px 0;
+        font-size: 11px;
+    }
+    .property {
+        #contact-form {
+            padding: 15px 20px 25px
+        }
+        #property-form h2 {
+            margin-bottom: 5px;
+            font-size: 26px;
+        }
+    }
+}
+/* end of 767.98 */
+
+@media (max-width: 575.98px) {
+    #filtr,
+    #plan-holder,
+    #roomsList,
+    #sortList
+    {
+        padding: 0 15px;
+    }
+    #roomsList {
+        .row {
+            margin-bottom: 10px;
+        }
+        .badge {
+            min-width: 100%;
+            font-size: 13px;
+            height: 26px;
+        }
+        .col {
+            padding: 10px 15px;
+        }
+    }
+    #planNav .bttn {
+        margin: 0 0 10px;
+    }
+    .property {
+        #page {
+            padding: 0 0 1px;
+        }
+        #property {
+            padding: 30px 15px;
+        }
+        .property-img {
+            width: 100%;
+            padding: 0;
+            margin-bottom: 20px;
+            img {
+                width: 200px;
+                margin: 0 auto;
+            }
+        }
+        .property-desc {
+            width: 100%;
+            .bttn {
+                padding: 10px 0;
+                font-size: 11px;
+                width: 100%;
+            }
+            ul li {
+                font-size: 15px;
+                padding: 3px 0;
+            }
+            .room-status {
+                margin-top: 0;
+            }
+        }
+    }
+    #propertyNav {
+        .bttn {
+            padding: 10px 0;
+            font-size: 11px;
+            width: 100%;
+        }
+    }
+}
+/* end of 575.98 */
+
+@media (max-width: 420px) {
+    #roomsList {
+        .row {
+            flex: 0 0 auto;
+            width: 100%;
+            margin:0 0 10px;
+        }
+        .container-fluid {
+            padding: 0;
+        }
+    }
+    #filtr {
+        form {
+            padding: 10px 5px 15px;
+        }
+        .bs-placeholder,
+        button,
+        #filtr-button
+        {
+            font-size: 13px
+        }
+    }
+}
+
+/* end of 359.98 */
+@media (max-width: 359.98px) {
+    .property {
+        .property-img img {
+            width: 150px
+        }
+    }
+}
+/* end of 359.98 */

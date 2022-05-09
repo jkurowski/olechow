@@ -10,15 +10,15 @@
 <div id="property">
     <div class="container">
         <div class="row">
-            <div class="col-5">
+            <div class="col-12 col-xl-5">
                 <div id="propertyNav" class="row">
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4">
                         @if($prev) <a href="{{route('front.investment.property.index', [$floor, $prev->id])}}" class="bttn">Poprzednie</a>@endif
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4">
                         <a href="{{route('front.investment.floor.index', $floor)}}" class="bttn">Plan piętra</a>
                     </div>
-                    <div class="col-4">
+                    <div class="col-12 col-sm-4">
                         @if($next) <a href="{{route('front.investment.property.index', [$floor, $next->id])}}" class="bttn">Następne</a>@endif
                     </div>
                 </div>
@@ -56,7 +56,7 @@
                 @endif
                 </div>
             </div>
-            <div class="col-7 ps-5">
+            <div class="col-12 col-xl-7 ps-3 ps-xl-5">
                 <div id="property-form">
                     <div class="container">
                         <div class="row d-flex">

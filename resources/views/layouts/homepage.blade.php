@@ -37,10 +37,10 @@
     <section id="maininvestment">
         <div class="container-fluid green-bg">
             <div class="row">
-                <div class="col-6 p-0">
+                <div class="col-5 col-xl-6 p-0 d-none d-md-block">
                     <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="">
                 </div>
-                <div class="col-6 d-flex align-items-center">
+                <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center">
                     <div class="maininvestment-text">
                         <h2>Bliski Olechów – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
                         <p>Bliski Olechów to nowoczesne budownictwo otoczone zielenią, świetnie skomunikowane zarówno samochodem jak i transportem miejskim. Istotnym elementem jest realizowanie  naszej inwestycji z zastosowaniem sprawdzonych materiałów i technologii.</p>
@@ -51,8 +51,8 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-6 p-0"></div>
-                <div class="col-6 d-flex justify-content-center">
+                <div class="col-5 col-xl-6 p-0 d-none d-md-block"></div>
+                <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center">
                     <div class="maininvest-cta text-center">
                         <h2>Kup apartament już <br><span>od 6.500 zł/m<sup>2</sup></span></h2>
                         <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-5 position-relative">
+                <div class="col-12 col-xl-5 position-relative">
                     <div class="why-carousel-left">
                         <div class="why-carousel-item">
                             <img src="{{ asset('/uploads/lokalizacja.jpg') }}" alt="">
@@ -99,7 +99,7 @@
                         <button id="why-carousel-btn-right"><i class="las la-angle-right"></i></button>
                     </div>
                 </div>
-                <div class="col-7">
+                <div class="col-12 col-xl-7">
                     <div class="why-carousel-right">
                         <div class="why-carousel-item">
                             <img src="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}" alt="">
@@ -131,10 +131,10 @@
     <section id="maingallery">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <h2>GALERIA</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-sm-6">
                     <ul id="gallery_nav" class="mb-0 list-unstyled d-flex galleryCarouselNav">
                         <li class="active"><a class="change-carousel" href="#gallery_1">Budynek</a></li>
                         <li><a class="change-carousel" href="#gallery_2">Mieszkania</a></li>
@@ -144,7 +144,7 @@
         </div>
         <div class="galleryContainer">
             <div id="gallery_1" class="slick">
-                <ul class="mb-0 list-unstyled mt-5">
+                <ul class="mb-0 list-unstyled mt-3 mt-sm-5">
                     <li><img src="{{ asset('/uploads/budynek_1.jpg') }}" alt=""></li>
                     <li><img src="{{ asset('/uploads/budynek_2.jpg') }}" alt=""></li>
                     <li><img src="{{ asset('/uploads/budynek_3.jpg') }}" alt=""></li>
@@ -154,7 +154,7 @@
                 </div>
             </div>
             <div id="gallery_2" class="slick d-none">
-                <ul class="mb-0 list-unstyled mt-5">
+                <ul class="mb-0 list-unstyled mt-3 mt-sm-5">
                     <li><img src="{{ asset('/uploads/mieszkanie_1.jpg') }}" alt=""></li>
                     <li><img src="{{ asset('/uploads/mieszkanie_2.jpg') }}" alt=""></li>
                     <li><img src="{{ asset('/uploads/mieszkanie_3.jpg') }}" alt=""></li>
@@ -190,10 +190,10 @@
         </div>
         <div class="container container-offset">
             <div class="row">
-                <div class="col-5 d-flex justify-content-center align-items-end">
+                <div class="order-2 order-md-1 col-12 col-md-5 d-flex justify-content-center align-items-end pt-4 pt-md-0">
                     <a href="{{ route('front.location.index') }}" class="bttn">ATUTY LOKALIZACJI</a>
                 </div>
-                <div class="col-7">
+                <div class="order-1 order-md-2 col-12 col-md-7">
                     <div class="location-apla">
                         <h2>LOKALIZACJA</h2>
                         <p><b>Bliski Olechów jest naprawdę bliski</b>! Wszechobecna zieleń, wygodny dojazd do centrum oraz bliskość wszelkich przydatnych punktów handlowo-usługowych, edukacyjnych i ochrony zdrowia to zalety Widzewa. Nasza inwestycja Bliski Olechów jest świetnie zlokalizowana przy ulicy Odnowiciela, w bliskości drogi wylotowej na A1 oraz kilku przystanków komunikacji zarówno tramwajowej jak i autobusowej.</p>
@@ -206,12 +206,12 @@
     <section id="maininvestor">
         <div class="container">
             <div class="row">
-                <div class="col-6">
+                <div class="col-6 d-none d-xl-block">
                     <div class="maininvestor-img">
                         <img src="{{ asset('/uploads/inwestor.jpg') }}" alt="">
                     </div>
                 </div>
-                <div class="col-6 d-flex align-items-center">
+                <div class="col-12 col-xl-6 d-flex align-items-center">
                     <div class="maininvestor-text">
                         <img src="{{ asset('/gfx/logo-kolor.png') }}" alt="Logo Madey Development">
                         <h2>Jesteśmy partnerem, któremu możesz zaufać.</h2>
@@ -237,13 +237,13 @@
                 <div class="col-12">
                     <div class="maincontact-row">
                         <div class="row">
-                            <div class="col-6 col-border">
-                                <div class="maincontact-item d-flex justify-content-end">
+                            <div class="col-12 col-sm-6 col-border">
+                                <div class="maincontact-item d-flex justify-content-center justify-content-sm-end">
                                     <i class="las la-envelope-open-text"></i>
                                     <a href="mailto:sprzedaz@bliski-olechów.pl">sprzedaz@bliski-olechów.pl</a>
                                 </div>
                             </div>
-                            <div class="col-6">
+                            <div class="col-12 col-sm-6">
                                 <div class="maincontact-item">
                                     <i class="las la-phone"></i>
                                     <a href="tel:+48 570 880 110">+48 570 880 110</a>
@@ -254,7 +254,7 @@
                 </div>
             </div>
             <div class="row d-flex justify-content-center mt-4">
-                <div class="col-7">
+                <div class="col-12 col-xl-7">
                     @if (session('success'))
                         <div class="alert alert-success border-0">
                             {{ session('success') }}
@@ -266,11 +266,11 @@
                         </div>
                     @endif
                 </div>
-                <div class="col-6">
+                <div class="col-12 col-xl-6">
                     <form method="post" id="homepage-form" action="{{ route('contact.index') }}" class="validateForm">
                         {{ csrf_field() }}
                         <div class="row">
-                            <div class="col-6 form-input">
+                            <div class="col-12 col-sm-6 form-input">
                                 <label for="form_name">Imię <span class="text-danger">*</span></label>
                                 <input name="form_name" id="form_name" class="validate[required] form-control @error('form_name') is-invalid @enderror" type="text" value="{{ old('form_name') }}">
 
@@ -278,7 +278,7 @@
                                 <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                 @enderror
                             </div>
-                            <div class="col-6 form-input">
+                            <div class="col-12 col-sm-6 form-input">
                                 <label for="form_email">E-mail <span class="text-danger">*</span></label>
                                 <input name="form_email" id="form_email" class="validate[required] form-control @error('form_email') is-invalid @enderror" type="text" value="{{ old('form_email') }}">
 

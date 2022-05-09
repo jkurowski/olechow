@@ -26,9 +26,8 @@
                     <div class="col justify-content-center">
                         <span class="badge room-list-status-{{ $room->status }}">{{ roomStatus($room->status) }}</span>
                     </div>
-                    <div class="col justify-content-end">
+                    <div class="col justify-content-end col-list-btn">
                         <a href="{{route('front.investment.property.index', ['floor' => $room->floor_id, 'property' => $room->id])}}" class="bttn">ZOBACZ</a>
-
                     </div>
                 </div>
             @endforeach

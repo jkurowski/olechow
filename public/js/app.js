@@ -3530,6 +3530,18 @@ $(document).ready(function () {
         $('header').animate({'top': '0px'}, {duration: 300});
     }
 
+// Menu
+    $("#triggermenu, .closemenu").click(function(b){
+        b.preventDefault();
+        $('body').toggleClass('openmenu');
+    });
+    $("#megamenu-opacity").click(function (event) {
+        if ($('body').hasClass("openmenu")) {
+            $('body').removeClass("openmenu");
+        }
+        event.preventDefault();
+    });
+
 // Lightbox
     $( '.swipebox' ).swipebox({useSVG : false});
 

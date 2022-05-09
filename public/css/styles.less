@@ -201,7 +201,7 @@ section {
         }
     }
     .maininvest-cta {
-        padding:70px 140px;
+        padding:70px 0;
         h2 {
             color: #353535;
             font-size: 30px;
@@ -611,6 +611,7 @@ section {
     }
 }
 
+
 /* Map
 ================================================== */
 .googlemap {
@@ -955,25 +956,6 @@ section {
     }
 }
 
-@media only screen and (max-width: 479px) {
-
-}
-
-@media (min-width: 768px) and (max-width: 979px) {
-    .format-container {
-        width: 750px;
-    }
-
-}
-
-@media (min-width: 980px) and (max-width: 1161px) {
-    .format-container {
-        width: 960px;
-    }
-
-}
-
-
 /* Location
 ================================================== */
 #location {
@@ -1084,7 +1066,7 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 .contact-box {
     text-align: center;
     box-shadow: 0 5px 15px 0 rgba(62,65,159,.1);
-    padding: 40px;
+    padding: 40px 20px;
     background: white;
     .contact-icon {
         height: 85px;
@@ -1211,50 +1193,860 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 
 /* Responsive
 ================================================== */
+.closemenu {
+    width: 40px;
+    height: 40px;
+    background: #b79a5e;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    border-radius: 50%;
+    display: none;
+    z-index: 999
+}
+.closemenu:before {
+    content:"\f00d";
+    font-family: "FontAwesome";
+    color:white;
+    font-size: 20px
+}
+
+#triggermenu {display:none;float:right;font-size:16px;color:white;font-weight:600;text-transform:uppercase;margin:2px 0 0;padding:5px 12px;transition:all 200ms linear;background:#222;cursor: pointer}
+#triggermenu:hover {background:#b79a5e}
+.openmenu #triggermenu {color: #b79a5e}
+#triggermenu:before {font-family:'FontAwesome';content:"\f0c9";margin-right:10px;font-weight:normal;width: 14px;display: inline-block;}
+.openmenu #triggermenu:before {content:"\f00d"}
+
+
 @media (max-width: 1930px) {
-    #maininvestment .maininvestment-text {
-        padding: 0 80px;
+    #maininvestment {
+        .maininvestment-text {
+            padding: 0 40px;
+            h2 {
+                font-size: 33px;
+                margin-bottom: 20px;
+            }
+
+            p {
+                font-size: 17px;
+                line-height: 27px;
+            }
+            .bttn {
+                margin-top: 10px;
+            }
+        }
+        .maininvest-cta {
+            h2 {
+                font-size: 28px;
+                span {
+                    font-size: 53px;
+                }
+            }
+        }
+    }
+
+    footer img.footer-logo {
+        margin: 0 auto 80px;
+        width: 190px;
+    }
+    #mainwhy {
+        padding: 30px 30px 45px;
+        h2.why-title {
+            margin-bottom: 50px;
+            margin-top: 50px;
+        }
+        .why-carousel-apla {
+            width: 540px;
+            h2 {
+                font-size: 24px;
+            }
+        }
+        .why-carousel-right .why-carousel-apla {
+            top: auto;
+            bottom: 0;
+            left: 50px;
+            right: 0;
+            width: auto;
+        }
+        .why-carousel-left .why-carousel-apla {
+            bottom: 0;
+            left: 0;
+            right: 50px;
+            width: auto;
+        }
+        .why-carousel-nav {
+            right: -27px;
+            width: 50px;
+            height: 110px
+        }
+        .why-carousel-nav button {
+            height: 50px;
+            width: 50px;
+            margin-bottom: 8px;
+        }
+    }
+
+    #maingallery h2,
+    #mainwhy h2.why-title
+    {
+        font-size: 55px;
+    }
+    #maincta {
+        padding: 110px 0 70px;
+        h2 {
+            font-size: 55px;
+            margin-bottom: 20px;
+        }
+    }
+    #maininvestor {
+        .maininvestor-text {
+            padding-left: 50px;
+            h2 {
+                font-size: 42px;
+                margin-bottom: 24px;
+            }
+            p {
+                font-size: 17px;
+                line-height: 28px;
+            }
+        }
+    }
+    #mainlocation,
+    #maininvestor
+    {
+        padding-top: 70px;
+    }
+    #maincontact {
+        padding: 70px 0;
+        img {
+            width: 160px;
+        }
     }
 }
 /* end of 1640 */
 
-@media (max-width: 1479.98px) {
-
+@media (max-width: 1449.98px) {
+    #howtobuy .container {
+        padding: 0 30px;
+    }
+    #mainwhy .why-carousel-apla h2 {
+        font-size: 20px;
+    }
+    #mainwhy .why-carousel-apla p {
+        font-size: 12px;
+        line-height: 16px;
+    }
 }
 /* end of 1479.98 */
 
 @media (max-width: 1389.98px) {
-
+    header {
+        padding: 20px 20px 0;
+        li.header-cta {
+            margin-right: 0;
+        }
+    }
+    #pagecontent header #logo img {
+        width: 100px;
+    }
+    #page-header {
+        height: 320px;
+        h1 {
+            font-size: 80px;
+            margin-bottom: 0;
+        }
+        .breadcrumb {
+            margin-bottom: 30px;
+        }
+    }
+    #maincontact .maincontact-row {
+        .maincontact-item {
+            padding: 40px 30px;
+        }
+        a {
+            font-size: 30px
+        }
+    }
+    #maininvestor {
+        .maininvestor-text {
+            padding-left: 20px;
+            img {
+                width: 149px;
+                margin-bottom: 15px;
+            }
+            h2 {
+                font-size: 37px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 16px;
+                line-height: 25px;
+            }
+        }
+    }
 }
-/* end of 1359.98 */
+/* end of 1389.98 */
 
 @media (max-width: 1299.98px) {
+    header {
+        &.fixed {
+            padding: 10px 20px;
+        }
+        .header-menu li {
+            margin-right: 30px;
+            &.header-cta {
+                margin-right: 0;
+            }
+        }
+    }
 
 }
 /* end of 1199.98 */
 
 @media (max-width: 1199.98px) {
+    body {
+        line-height: 26px;
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    header {
+        padding: 15px 10px 0;
+        &.fixed {
+            padding: 10px 10px;
+            #logo img.logo-h {
+                width: 109px !important
+            }
+            .header-menu li {
+                height: 45px;
+            }
+        }
+        .header-menu li {
+            margin-right: 25px;
+        }
+        .header-menu li a {
+            font-size: 14px
+        }
+        .header-menu .header-cta a {
+            padding: 0 20px 0 45px
+        }
+    }
+    .contact-box {
+        padding: 40px 0
+    }
+    #page-header {
+        height: 290px;
+        h1 {
+            font-size: 60px
+        }
+        a, li {
+            font-size: 13px
+        }
+    }
 
+    #page {
+        padding: 60px 0;
+    }
+    footer {
+        padding: 30px 0;
+        img.footer-logo {
+            margin: 0 auto 40px;
+            width: 160px;
+        }
+        p {
+            font-size: 11px
+        }
+    }
+    .rodo-obligation p,
+    .rodo-rules p {
+        font-size: 11px
+    }
+    #location {
+        padding: 0 60px;
+    }
+    #location .map-nav ul {
+        padding: 20px;
+    }
+    #location .map-nav ul li {
+        font-size: 14px;
+    }
+    #mainlocation {
+        .location-apla {
+            padding: 30px;
+            p {
+                font-size: 15px;
+                line-height: 26px;
+            }
+            h2 {
+                margin-bottom: 15px;
+                font-size: 39px;
+            }
+        }
+    }
+    #maincta h2,
+    #maingallery h2,
+    #mainwhy h2.why-title {
+        font-size: 43px;
+    }
+    #maincontact .maincontact-row a {
+        font-size: 23px;
+    }
+    #maininvestor .maininvestor-text {
+        padding-left: 0;
+    }
+    #maininvestment {
+        img {
+            margin-bottom: -360px;
+            margin-top: 50px;
+            border-top: 10px solid #fff;
+            border-right: 10px solid #fff;
+            border-bottom: 10px solid #fff;
+        }
+        .maininvestment-text {
+            h2 {
+                font-size: 26px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 15px;
+                line-height: 24px;
+            }
+        }
+        .maininvest-cta {
+            h2 {
+                font-size: 26px;
+                span {
+                    font-size: 43px;
+                }
+            }
+        }
+    }
+    #mainwhy .why-carousel-left .why-carousel-item {
+        padding-right: 0;
+        padding-bottom: 30px;
+    }
+    #mainwhy .why-carousel-right .why-carousel-item {
+        padding-left: 0;
+        padding-top: 30px;
+        padding-bottom: 85px;
+    }
+    #mainwhy {
+        padding: 30px 15px 45px;
+        .why-carousel-right .why-carousel-apla {
+            left: 0;
+            bottom: 0;
+            top: auto;
+        }
+        .why-carousel-left .why-carousel-apla {
+            right: 0;
+            bottom: 30px;
+        }
+    }
+    #mainwhy .why-carousel-nav {
+        width: 108px;
+        height: 50px;
+        position: static;
+    }
+    #mainwhy .why-carousel-nav button {
+        display: inline-block;
+    }
 }
 /* end of 1199.98 */
 
 @media (max-width: 991.98px) {
+    #page-header {
+        height: auto;
+        padding: 40px 0;
+        .breadcrumb {
+            margin-bottom: 0;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    }
+    .contact-box {
+        padding: 20px 0;
+        margin-bottom: 15px;
+    }
+    #contact-form {
+        margin-bottom: 30px
+    }
+    .googlemap iframe {
+        border: 0;
+        height: 220px;
+    }
+    header {
+        position: static;
+        padding: 10px;
+        .header-menu,
+        img.logo-v
+        {
+            display: none;
+        }
+        #logo img.logo-h {
+            display: block;
+            filter: brightness(1) invert(0) !important;
+        }
+        .header-holder {
+            height: 61px;
+        }
+        &.fixed {
+            position: fixed;
+        }
+    }
+    #triggermenu {
+        display: block;
+    }
 
+    .openmenu .header-menu{
+        position: fixed;
+        display: block;
+        left: 0;
+        right: 0;
+        top: 61px;
+        bottom: 0;
+        background: white;
+        padding-top: 30px;
+        z-index: 9999;
+    }
+    header .header-menu li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin: 40px 0;
+        a {
+            color: #213c13;
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+    header .header-menu li.header-cta {
+        margin-top: 30px;
+        a {
+            color: white;
+        }
+    }
+    header .header-menu li,
+    header.fixed .header-menu li {
+        height: auto;
+    }
+    #howtobuy h2.section-title {
+        font-size: 41px;
+        margin-bottom: 30px
+    }
+    .timeline-card_arrow {
+        margin-top: 14px
+    }
+    #page .timeline-card_desc {
+        h2 {
+            font-size: 22px;
+            line-height: 30px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    .timeline-card_img-box img {
+        width: 100%;
+    }
+    .timeline-card_point {
+        font-size: 27px
+    }
+    .timeline_item:last-child {
+        margin-bottom: 0;
+    }
+    #howtobuy {
+        padding-bottom: 0;
+    }
+    #location .map-nav ul li {
+        font-size: 13px;
+        i {
+            font-size: 19px;
+            height: 35px;
+            width: 35px;
+        }
+    }
+    .location-img .location-img-apla {
+        width: 460px;
+        padding: 20px;
+        h2 {
+            font-size: 24px;
+        }
+        p {
+            color: #fff;
+            margin: 0;
+            font-size: 14px;
+            line-height: 22px;
+        }
+    }
+    #location .map-nav ul li {
+        height: 46px;
+        &:last-child {
+            border-bottom: 0;
+        }
+        i {
+            font-size: 17px;
+            height: 25px;
+            width: 25px;
+        }
+    }
+    #mainlocation {
+        .location-apla {
+            padding: 30px;
+            h2 {
+                margin-bottom: 15px;
+                font-size: 32px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 22px;
+            }
+        }
+    }
+    #maincta h2,
+    #maingallery h2,
+    #mainwhy h2.why-title {
+        font-size: 36px;
+    }
+    #maincontact .maincontact-row {
+        .maincontact-item {
+            padding: 27px 10px;
+            i {
+                font-size: 60px;
+                height: 60px
+            }
+        }
+        a {
+            font-size: 18px;
+        }
+    }
+    #maininvestment {
+        .maininvestment-text {
+            padding: 30px;
+        }
+        .maininvest-cta {
+            padding: 30px 0;
+        }
+    }
+    #maininvestment .maininvestment-text .bttn,
+    #maininvestment .maininvest-cta .bttn
+    {
+        padding: 16px 30px;
+    }
 }
 /* end of 991.98 */
 
 @media (max-width: 767.98px) {
+    .bttn {
+        font-size: 14px;
+        padding: 18px 46px;
+        margin-top: 10px;
+    }
+    #howtobuy h2.section-title {
+        font-size: 31px;
+    }
+    #location {
+        padding: 0 15px;
+    }
+    .location-img .location-img-apla {
+        width: 100%;
+        padding: 20px;
+        position: static;
+    }
+    .location-img {
+        margin-top: 30px;
+    }
+    #howtobuy .col-12,
+    .p-rwd-767-0 {
+        padding:0
+    }
+    #mainlocation {
+        .container-offset {
+            margin-top: 0;
+        }
+        .location-apla:before {
+            right: 0
+        }
+        .slick-arrow {
+            height: 50px;
+            width: 50px;
+            &.slick-next {
+                left: 83px;
+            }
+        }
+    }
 
+    #mainlocation,
+    #maininvestor
+    {
+        padding-top: 30px;
+    }
+    #maincta,
+    #maincontact
+    {
+        padding: 30px 0;
+    }
+
+    #gallery_nav {
+        justify-content: center;
+        a {
+            font-size: 22px;
+        }
+        li {
+            margin-left: 20px;
+        }
+    }
+    #maingallery {
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .slick-nav {
+            width: 100%;
+            height: 70px;
+            position: static;
+        }
+        .slick-count {
+            font-size: 42px
+        }
+        .slick-arrow {
+            height: 50px;
+            width: 50px;
+            bottom: -60px;
+            right: 95px;
+            left: auto;
+            &.slick-next {
+                right: 30px;
+                bottom: -60px;
+                left: auto;
+            }
+        }
+    }
+    #maincontact {
+        padding-top: 40px;
+        img {
+            width: 110px;
+        }
+        h6 {
+            margin: 25px 0;
+            font-size: 17px;
+        }
+        .maincontact-row a {
+            font-size: 15px;
+        }
+        #homepage-form {
+            margin-top: 0;
+        }
+    }
+    #maininvestment {
+        .maininvestment-text {
+            padding: 30px 15px;
+        }
+        .maininvest-cta {
+            padding: 30px 0;
+        }
+    }
+    #mainwhy .why-carousel-right .why-carousel-item {
+        padding-bottom: 110px;
+    }
+    #mainwhy h2.why-title {
+        margin-bottom: 30px;
+        margin-top: 0;
+    }
+    #mainwhy {
+        padding: 0 15px 45px;
+    }
 }
 /* end of 767.98 */
 
 @media (max-width: 575.98px) {
-
+    body {
+        line-height: 22px;
+        font-size: 14px;
+    }
+    .bttn {
+        padding: 17px 46px
+    }
+    h3 {
+        font-size: 24px;
+    }
+    #page {
+        padding: 30px 15px
+    }
+    #contact-form {
+        padding: 10px 20px 25px
+    }
+    .googlemap {
+        padding:0 15px
+    }
+    #page-header {
+        padding: 20px 0;
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+        a, li {
+            font-size: 11px;
+        }
+    }
+    .contact-box {
+        .contact-icon {
+            height: 65px;
+            width: 65px;
+            i {
+                font-size: 30px;
+            }
+        }
+        h3 {
+            margin: 10px 0 5px;
+        }
+    }
+    .form-input label {
+        top: 38px
+    }
+    .form-input.filled label {
+        font-size: 11px;
+        font-weight: 400;
+    }
+    footer {
+        .copyright p {
+            text-align: center;
+        }
+        img.footer-logo {
+            margin: 20px auto 30px;
+            width: 80px;
+        }
+        p {
+            line-height: 15px
+        }
+    }
+    #mainlocation,
+    #maincta,
+    #maincontact,
+    #maininvestor
+    {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    #maincta h2, #maingallery h2, #mainwhy h2.why-title {
+        font-size: 30px;
+    }
+    #maincontact {
+        .maincontact-row {
+            .col-border {
+                border-right: 0;
+                border-bottom: 1px solid #b79a5e;
+            }
+        }
+        .maincontact-item {
+            text-align: center;
+        }
+    }
+    #maininvestor {
+        .maininvestor-text {
+            h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 23px;
+            }
+        }
+    }
+    #maininvestment {
+        .maininvestment-text {
+            h2 {
+                font-size: 20px;
+                line-height: 29px;
+            }
+            p {
+                font-size: 14px;
+                line-height: 23px;
+            }
+        }
+        .maininvest-cta h2 {
+            font-size: 20px;
+            span {
+                font-size: 35px;
+            }
+        }
+    }
+    #mainwhy .why-carousel-right .why-carousel-item,
+    #mainwhy .why-carousel-left .why-carousel-item
+    {
+        padding-bottom: 130px;
+    }
 }
 /* end of 575.98 */
 
 @media (max-width: 420px) {
-
+    .bttn {
+        padding: 17px 40px;
+    }
+    header #logo img,
+    header.fixed #logo img.logo-h{
+        width: 84px !important;
+    }
+    #page-header {
+        padding: 10px 0;
+        a, li {
+            font-size: 10px;
+        }
+    }
+    .openmenu .header-menu {
+        top: 55px;
+        padding-top: 10px;
+    }
+    #howtobuy h2.section-title {
+        font-size: 26px;
+    }
+    #howtobuy .container {
+        padding: 0 15px;
+    }
+    .timeline-card_arrow {
+        margin-top: 20px;
+    }
+    .timeline-card_item {
+        margin: -64px 0 0 55px;
+    }
+    .timeline-card_arrow {
+        height: 10px;
+        width: 10px;
+    }
+    .timeline_item:nth-child(2n+1) .timeline-card_arrow {
+        margin-left: calc(-10px/2);
+        margin-right: calc(-10px/2);
+    }
+    .timeline_item:nth-child(2n) .timeline-card_arrow {
+        margin-left: -5px;
+    }
+    #page .timeline-card_desc h2,
+    .location-img .location-img-apla h2
+    {
+        font-size: 19px;
+        line-height: 28px;
+        margin-bottom: 9px;
+    }
+    #page .timeline-card_desc p,
+    .location-img .location-img-apla p
+    {
+        font-size: 13px;
+        line-height: 20px;
+    }
+    #mainlocation {
+        .location-apla {
+            padding: 25px;
+        }
+    }
+    #mainlocation .bttn,
+    .bttn
+    {
+        padding: 16px 28px;
+    }
 }
 
 /* end of 359.98 */

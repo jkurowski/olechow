@@ -10,35 +10,35 @@
     <div id="location">
         <div class="container container-bg">
             <div class="row m-0">
-                <div class="col-4 p-0">
+                <div class="order-2 order-lg-1 col-12 col-lg-4 p-0">
                     <div class="map-nav">
                         <ul class="mb-0 list-unstyled">
-                            <li><i class="las la-chalkboard-teacher"></i> Przedszkola i szkoły podstawowe</li>
-                            <li><i class="las la-bus"></i> Transport publiczny</li>
-                            <li><i class="las la-road"></i> Wylot na Autostradę A1</li>
-                            <li><i class="las la-tree"></i> Tereny rekreacyjne, place zabaw, parki rowerowe</li>
-                            <li><i class="las la-utensils"></i> Gastronomia</li>
-                            <li><i class="las la-stethoscope"></i> Przychodnie publicznych i prywatne</li>
-                            <li><i class="las la-star-of-life"></i> Apteki</li>
-                            <li><i class="las la-church"></i> Kościoły</li>
-                            <li><i class="las la-shopping-cart"></i>Markety, sklepy, drogerie</li>
+                            <li><span><i class="las la-chalkboard-teacher"></i></span> Przedszkola i szkoły podstawowe</li>
+                            <li><span><i class="las la-bus"></i></span> Transport publiczny</li>
+                            <li><span><i class="las la-road"></i></span> Wylot na Autostradę A1</li>
+                            <li><span><i class="las la-tree"></i></span> Tereny rekreacyjne, place zabaw, parki rowerowe</li>
+                            <li><span><i class="las la-utensils"></i></span> Gastronomia</li>
+                            <li><span><i class="las la-stethoscope"></i></span> Przychodnie publicznych i prywatne</li>
+                            <li><span><i class="las la-star-of-life"></i></span> Apteki</li>
+                            <li><span><i class="las la-church"></i></span> Kościoły</li>
+                            <li><span><i class="las la-shopping-cart"></i></span> Markety, sklepy, drogerie</li>
                         </ul>
                     </div>
                 </div>
 
-                <div class="col-8 p-0">
+                <div class="order-1 order-lg-2 col-12 col-lg-8 p-0">
                     <div id="map"></div>
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container p-rwd-767-0">
             <div class="row d-flex justify-content-center">
-                <div class="col-10 pt-5 mt-4">
+                <div class="col-12 col-lg-10 pt-3 pt-lg-5 mt-4">
                     <p class="m-0">Bliski Olechów jest naprawdę bliski! Wszechobecna zieleń, wygodny dojazd do centrum oraz bliskość wszelkich przydatnych punktów handlowo-usługowych, edukacyjnych i ochrony zdrowia to zalety Widzewa. Nasza inwestycja Bliski Olechów jest świetnie zlokalizowana przy ulicy Odnowiciela, w bliskości drogi wylotowej na A1 oraz kilku przystanków komunikacji zarówno tramwajowej jak i autobusowej.</p>
                 </div>
 
                 <div class="col-12 mt-3">
-                    <div class="location-img mt-5">
+                    <div class="location-img mt-3 mt-lg-5">
                         <div class="location-img-apla location-img-apla-right">
                             <h2>ZIELEŃ I WYPOCZYNEK</h2>
                             <p>Bliski Olechów znajduje się  przy Parku Źródła Olechówki oraz innych terenach zielonych wyposażonych w m.in. tężnię solankową, nowoczesne place zabaw dla dzieci oraz infrastrukturę sportowo-rekreacyjną.</p>
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="col-12 pb-5 mb-5">
+                <div class="col-12 pb-0 pb-lg-5 mb-0 mb-lg-5">
                     <div class="location-img">
                         <div class="location-img-apla location-img-apla-left">
                             <h2>NA WYCIĄGNIĘCIE RĘKI</h2>

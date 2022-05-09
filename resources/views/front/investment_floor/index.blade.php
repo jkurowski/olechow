@@ -9,11 +9,11 @@
 @section('content')
     <div class="container">
         <div id="planNav" class="row">
-            <div class="col-4 d-flex justify-content-start">@if($prev_floor) <a href="{{route('front.investment.floor.index', $prev_floor->id)}}" class="bttn">{{$prev_floor->name}}</a> @endif</div>
-            <div class="col-4 d-flex justify-content-center">
+            <div class="col-12 col-sm-4 d-flex justify-content-start">@if($prev_floor) <a href="{{route('front.investment.floor.index', $prev_floor->id)}}" class="bttn">{{$prev_floor->name}}</a> @endif</div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center">
                 <a href="{{route('front.investment.show', $investment->id)}}" class="bttn">Plan budunku</a>
             </div>
-            <div class="col-4 d-flex justify-content-end">@if($next_floor) <a href="{{route('front.investment.floor.index', $next_floor->id)}}" class="bttn">{{$next_floor->name}}</a> @endif</div>
+            <div class="col-12 col-sm-4 d-flex justify-content-end">@if($next_floor) <a href="{{route('front.investment.floor.index', $next_floor->id)}}" class="bttn">{{$next_floor->name}}</a> @endif</div>
         </div>
     </div>
         @if($investment->floor->file)
