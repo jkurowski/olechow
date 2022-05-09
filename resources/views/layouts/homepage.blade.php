@@ -77,7 +77,11 @@
         <div class="container-fluid green-bg">
             <div class="row">
                 <div class="col-5 col-xl-6 p-0 d-none d-md-block">
-                    <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="">
+                    <picture>
+                        <source type="image/webp" srcset="{{ asset('/uploads/mainabout.webp') }}">
+                        <source type="image/jpeg" srcset="{{ asset('/uploads/mainabout.jpg') }}">
+                        <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="Osiele Bliski Olechów" width="1040" height="1336">
+                    </picture>
                 </div>
                 <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center">
                     <div class="maininvestment-text">
@@ -112,21 +116,21 @@
                 <div class="col-12 col-xl-5 position-relative">
                     <div class="why-carousel-left">
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/lokalizacja.jpg') }}" alt="Budynek inwestycji Bliski Olechów">
+                            <img src="{{ asset('/uploads/lokalizacja.jpg') }}" alt="Budynek inwestycji Bliski Olechów" width="907" height="878">
                             <div class="why-carousel-apla">
                                 <h2>LOKALIZACJA</h2>
                                 <p>Zlokalizowany w zielonym sercu Widzewa Bliski Olechów jest świetnie skomunikowany z centrum Łodzi zarówno komunikacją miejską jak i samochodem.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/architektura.jpg') }}" alt="Przykładowa aranżacja mieszkania">
+                            <img src="{{ asset('/uploads/architektura.jpg') }}" alt="Przykładowa aranżacja mieszkania" width="907" height="878">
                             <div class="why-carousel-apla">
                                 <h2>ARCHITEKTURA</h2>
                                 <p>Wiemy, że lepiej żyje się w pięknym otoczeniu, dlatego Bliski Olechów został zaprojektowany w ponadczasowym stylu, a słoneczne i rozkładowe mieszkania wyposażone w przestronne balkony lub loggie staną się miejscem komfortowego życia.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/bezpieczenstwo.jpg') }}" alt="Kamera monitoringu na osiedlu Bliski Olechów">
+                            <img src="{{ asset('/uploads/bezpieczenstwo.jpg') }}" alt="Kamera monitoringu na osiedlu Bliski Olechów" width="907" height="878">
                             <div class="why-carousel-apla">
                                 <h2>BEZPIECZEŃSTWO</h2>
                                 <p>Osiedle jest monitorowane, każde mieszkanie wyposażone w system SmartHome - instalacje alarmową, drzwi wejściowe do lokali o podwyższonej odporności na włamania.</p>
@@ -141,21 +145,21 @@
                 <div class="col-12 col-xl-7">
                     <div class="why-carousel-right">
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}" alt="Rodzina na spacerze w okolicy osiedla Bliski Olechów">
+                            <img src="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}" alt="Rodzina na spacerze w okolicy osiedla Bliski Olechów" width="1306" height="880">
                             <div class="why-carousel-apla">
                                 <h2>ZIELEŃ I WYPOCZYNEK</h2>
                                 <p>Bliski Olechów znajduje się  przy Parku Źródła Olechówki oraz innych terenach zielonych wyposażonych w m.in. tężnię solankową, nowoczesne place zabaw dla dzieci oraz infrastrukturę sportowo-rekreacyjną.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/na-wyciagniecie-reki.jpg') }}" alt="Dzieci idące do przedszkola w pobliżu osiedla Bliski Olechów">
+                            <img src="{{ asset('/uploads/na-wyciagniecie-reki.jpg') }}" alt="Dzieci idące do przedszkola w pobliżu osiedla Bliski Olechów" width="1306" height="880">
                             <div class="why-carousel-apla">
                                 <h2>NA WYCIĄGNIĘCIE RĘKI</h2>
                                 <p>Bliskość przedszkoli i dobrych szkół, przychodni publicznych i prywatnych, szeroki wybór sklepów i aptek oraz świetne miejsca do sportu,  rekreacji i odpoczynku w otoczeniu zieleni to powód, dla którego naszą najnowszą inwestycję zdecydowaliśmy się zrealizować właśnie tutaj.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/jakosc-za-rozsadna-cene.jpg') }}" alt="Przykładowa aranżacja salonu w inwestycji Bliski Olechów">
+                            <img src="{{ asset('/uploads/jakosc-za-rozsadna-cene.jpg') }}" alt="Przykładowa aranżacja salonu w inwestycji Bliski Olechów" width="1306" height="880">
                             <div class="why-carousel-apla">
                                 <h2>JAKOŚĆ ZA ROZSĄDNĄ CENĘ</h2>
                                 <p>Dzięki prawie 20-letniemu doświadczeniu wiemy jak budować wysokiej jakości osiedla w rozsądnej cenie. Bliski Olechów to komfortowe życie w cenie, która pozwala spać spokojnie.</p>
@@ -184,9 +188,27 @@
         <div class="galleryContainer">
             <div id="gallery_1" class="slick">
                 <ul class="mb-0 list-unstyled mt-3 mt-sm-5">
-                    <li><img src="{{ asset('/uploads/budynek_1.jpg') }}" alt="Front budynku osiedla Bliski Olechów"></li>
-                    <li><img src="{{ asset('/uploads/budynek_2.jpg') }}" alt="Dorośli i dzieci przed budynkiem Bliski Olechów"></li>
-                    <li><img src="{{ asset('/uploads/budynek_3.jpg') }}" alt="Wieczór, oświetlony budynek Bliski Olechów"></li>
+                    <li>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_1.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_1.jpg') }}">
+                            <img src="{{ asset('/uploads/budynek_1.jpg') }}" alt="Front budynku osiedla Bliski Olechów" width="1920" height="960">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_2.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_2.jpg') }}">
+                            <img src="{{ asset('/uploads/budynek_2.jpg') }}" alt="Dorośli i dzieci przed budynkiem Bliski Olechów" width="1920" height="960">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_2.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_2.jpg') }}">
+                            <img src="{{ asset('/uploads/budynek_2.jpg') }}" alt="Wieczór, oświetlony budynek Bliski Olechów" width="1920" height="960">
+                        </picture>
+                    </li>
                 </ul>
                 <div class="slick-nav">
                     <div class="slick-count">1/3</div>
@@ -194,9 +216,27 @@
             </div>
             <div id="gallery_2" class="slick d-none">
                 <ul class="mb-0 list-unstyled mt-3 mt-sm-5">
-                    <li><img src="{{ asset('/uploads/mieszkanie_1.jpg') }}" alt="Przykładowa aranżacja salonu"></li>
-                    <li><img src="{{ asset('/uploads/mieszkanie_2.jpg') }}" alt="Przykładowa aranżacja pokoju dla dzieci"></li>
-                    <li><img src="{{ asset('/uploads/mieszkanie_3.jpg') }}" alt="Przykładowa aranżacja miejsca do odpoczynku"></li>
+                    <li>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/mieszkanie_1.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/mieszkanie_1.jpg') }}">
+                            <img src="{{ asset('/uploads/mieszkanie_1.jpg') }}" alt="Przykładowa aranżacja salonu" width="1920" height="960">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/mieszkanie_2.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/mieszkanie_2.jpg') }}">
+                            <img src="{{ asset('/uploads/mieszkanie_2.jpg') }}" alt="Przykładowa aranżacja pokoju dla dzieci" width="1920" height="960">
+                        </picture>
+                    </li>
+                    <li>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/mieszkanie_3.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/mieszkanie_3.jpg') }}">
+                            <img src="{{ asset('/uploads/mieszkanie_3.jpg') }}" alt="Przykładowa aranżacja miejsca do odpoczynku" width="1920" height="960">
+                        </picture>
+                    </li>
                 </ul>
                 <div class="slick-nav">
                     <div class="slick-count">1/3</div>
@@ -221,8 +261,16 @@
             <div class="row">
                 <div class="col-12">
                     <div class="location-carousel">
-                        <img src="{{ asset('/gfx/park.jpg') }}" alt="Uśmiechnięte rodzina spaceruje w parku, w pobliżu osiedla Bliski Olechów">
-                        <img src="{{ asset('/gfx/kids.jpg') }}" alt="Dzieci idą do przedszkola w pobliżu osiedla Bliski Olechów">
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/gfx/park.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/gfx/park.jpg') }}">
+                            <img src="{{ asset('/gfx/park.jpg') }}" alt="Uśmiechnięte rodzina spaceruje w parku, w pobliżu osiedla Bliski Olechów" width="1610" height="906">
+                        </picture>
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/gfx/kids.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/gfx/kids.jpg') }}">
+                            <img src="{{ asset('/gfx/kids.jpg') }}" alt="Dzieci idą do przedszkola w pobliżu osiedla Bliski Olechów" width="1610" height="906">
+                        </picture>
                     </div>
                 </div>
             </div>
@@ -247,12 +295,16 @@
             <div class="row">
                 <div class="col-6 d-none d-xl-block">
                     <div class="maininvestor-img">
-                        <img src="{{ asset('/uploads/inwestor.jpg') }}" alt="Zakończona inwestycja dewelopera Madey Development">
+                        <picture>
+                            <source type="image/webp" srcset="{{ asset('/uploads/inwestor.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/inwestor.jpg') }}">
+                            <img src="{{ asset('/uploads/inwestor.jpg') }}" alt="Zakończona inwestycja dewelopera Madey Development" width="800" height="1100">
+                        </picture>
                     </div>
                 </div>
                 <div class="col-12 col-xl-6 d-flex align-items-center">
                     <div class="maininvestor-text">
-                        <img src="{{ asset('/gfx/logo-kolor.png') }}" alt="Logo firmy Madey Development">
+                        <img src="{{ asset('/gfx/logo-kolor.png') }}" alt="Logo firmy Madey Development" width="250" height="72">
                         <h2>Jesteśmy partnerem, któremu możesz zaufać.</h2>
                         <p>Madey Development jest częścią Grupy Madej która od blisko 20 lat realizuje obiekty kubaturowe i inżynieryjne. Wiemy jak budować dobrze, sprawnie i na lata – jesteśmy dumni z naszych realizacji, które przetrwały próbę czasu, a nasi klienci z radością je użytkują.</p>
                         <p>Do każdego projektu podchodzimy z rozwagą i dobrym rozumieniem potrzeb naszych klientów; wiemy jak budować, by na kreowanych przez nas osiedlach żyło się komfortowo. Wieloletnie doświadczenie pomaga w tworzeniu inwestycji najwyższej jakości: o ponadczasowej architekturze, ze sprawdzonych jakości materiałów i z największą starannością wykonania.</p>
