@@ -611,6 +611,9 @@ header.fixed .header-menu li {
   #slider .slider-apla {
     height: 220px;
   }
+  #slider .slider-apla h1 {
+    font-size: 38px;
+  }
 }
 /* Homepage
 ================================================== */
