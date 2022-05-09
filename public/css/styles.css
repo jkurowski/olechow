@@ -547,6 +547,7 @@ header.fixed .header-menu li {
 @media (max-width: 1199.98px) {
   #slider {
     background: #222 url("../../uploads/header_1199.jpg") center bottom no-repeat;
+    background-size: cover;
   }
 }
 /* end of 1199.98 */
@@ -589,7 +590,8 @@ header.fixed .header-menu li {
 /* end of 767.98 */
 @media (max-width: 575.98px) {
   #slider {
-    background: #222 url("../uploads/header_600.jpg") center bottom no-repeat;
+    background: #222 url("../../uploads/header_600.jpg") center bottom no-repeat;
+    background-size: cover;
   }
   #slider .slider-apla .btn-light,
   #slider .slider-apla .bttn {
