@@ -594,6 +594,11 @@ header.fixed .header-menu li {
     height: 30px;
     right: 15px;
   }
+  #slider .slider-apla {
+    height: 120px;
+    top: 0;
+    bottom: 0;
+  }
 }
 @media (max-width: 480px) {
   #slider .col-4 {
