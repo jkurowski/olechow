@@ -33,7 +33,7 @@
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
                                                         <h2>Spotkajmy się! Zapraszamy do naszego biura, gdzie pokażemy Państwu wszystkie zalety inwestycji.</h2>
-                                                        <p>Nawet najbardziej wyczerpujący folder reklamowy nie zastąpi spotkania w biurze sprzedaży. Nasi sprzedawcy są kompetentni i znają nasze inwestycje doskonale, dlatego będą w stanie zapewnić Państwu komplet rzetelnych informacji i odpowiedzieć na każde pytanie. Ponadto, tylko w biurze sprzedaży możecie Państwo obejrzeć szczegółowe plany osiedla, rozbudowane wizualizacje a nawet odbyć wirtualny spacer po przyszłych wnętrzach!</p>
+                                                        <p>Nawet najbardziej wyczerpujący folder reklamowy nie zastąpi spotkania w biurze sprzedaży. Nasi sprzedawcy są kompetentni i znają nasze inwestycje doskonale, dlatego będą w stanie zapewnić Państwu komplet rzetelnych informacji i odpowiedzieć na każde pytanie. Ponadto, tylko w biurze sprzedaży możecie Państwo obejrzeć szczegółowe plany osiedla i rozbudowane wizualizacje!</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -143,7 +143,7 @@
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
                                                         <h2>Podpisanie umowy deweloperskiej u notariusza</h2>
-                                                        <p>Następnym krokiem do posiadania własnego mieszkania jest umowa deweloperska. Tego rodzaju kontrakt podpisywany jest u notariusza, po wpłacie 10% ceny mieszkania pomniejszonej o opłatę rezerwacyjną. Koszt podpisania umowy u notariusza, tzw. taksa notarialna jest rozłożony na kupującego i dewelopera. W umowie deweloperskiej są zawarte takie informacje jak np. harmonogram wpłat i realizacji etapów inwestycji.</p>
+                                                        <p>Następnym krokiem do posiadania własnego mieszkania jest umowa deweloperska. Tego rodzaju kontrakt podpisywany jest u notariusza, po wpłacie pierwszej raty. Koszt podpisania umowy u notariusza, tzw. taksa notarialna jest rozłożony na kupującego i dewelopera. W umowie deweloperskiej są zawarte takie informacje jak np. harmonogram wpłat i realizacji etapów inwestycji.</p>
                                                     </div>
                                                 </div>
                                             </div>
@@ -187,7 +187,7 @@
                                                 <div class="timeline-card_info">
                                                     <div class="timeline-card_desc">
                                                         <h2>Finalna umowa notarialna przenosząca własność mieszkania</h2>
-                                                        <p>Umowa przenosząca własność mieszkania znów musi być zawarta w obecności notariusza. W tym wypadku taksę notarialną pokrywa kupujący, który w tym momencie uiszcza pozostałą kwotę ceny mieszkania. Na podstawie tej umowy przenoszona jest własność mieszkania na kupującego.</p>
+                                                        <p>Umowa przenosząca własność mieszkania znów musi być zawarta w obecności notariusza. W tym wypadku taksę notarialną pokrywa kupujący. Na podstawie tej umowy przenoszona jest własność mieszkania na kupującego.</p>
                                                     </div>
                                                 </div>
                                             </div>
