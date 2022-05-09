@@ -409,10 +409,7 @@
                             <div class="col-12 pt-3">
                                 <div class="input text-center">
                                     <input name="form_page" type="hidden" value="homepage">
-                                    <script type="text/javascript">
-                                        document.write("<button class=\"bttn\" type=\"submit\">WYŚLIJ WIADOMOŚĆ</button>");
-                                    </script>
-                                    <noscript><p><b>Do poprawnego działania, Java musi być włączona.</b><p></noscript>
+                                    <button class="bttn" type="submit">WYŚLIJ WIADOMOŚĆ</button>
                                 </div>
                             </div>
                         </div>
@@ -426,9 +423,6 @@
 @include('layouts.partials.footer')
 
 @include('layouts.partials.cookies')
-
-@include('inline.modal')
-
 <!-- jQuery -->
 <script src="{{ asset('/js/jquery.min.js') }}" charset="utf-8"></script>
 <script src="{{ asset('/js/bootstrap.bundle.min.js') }}" charset="utf-8"></script>
@@ -440,6 +434,26 @@
 @stack('scripts')
 
 <script type="text/javascript">
+    jQuery.event.special.touchstart = {
+        setup: function( _, ns, handle ) {
+            this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+    jQuery.event.special.touchmove = {
+        setup: function( _, ns, handle ) {
+            this.addEventListener("touchmove", handle, { passive: !ns.includes("noPreventDefault") });
+        }
+    };
+    jQuery.event.special.wheel = {
+        setup: function( _, ns, handle ){
+            this.addEventListener("wheel", handle, { passive: true });
+        }
+    };
+    jQuery.event.special.mousewheel = {
+        setup: function( _, ns, handle ){
+            this.addEventListener("mousewheel", handle, { passive: true });
+        }
+    };
     $(document).ready(function(){
         $(".validateForm").validationEngine({
             validateNonVisibleFields: true,
