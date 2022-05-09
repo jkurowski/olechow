@@ -2529,7 +2529,8 @@ footer img.footer-logo {
   header li.header-cta {
     margin-right: 0;
   }
-  #pagecontent header #logo img {
+  #pagecontent header #logo img,
+  header #logo img {
     width: 100px;
   }
   #page-header {
