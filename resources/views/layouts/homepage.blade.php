@@ -331,7 +331,7 @@
                             <div class="col-12 col-sm-6 col-border">
                                 <div class="maincontact-item d-flex justify-content-center justify-content-sm-end">
                                     <i class="las la-envelope-open-text"></i>
-                                    <a href="mailto:sprzedaz@bliski-olechów.pl">sprzedaz@bliski-olechów.pl</a>
+                                    <a href="mailto:sprzedaz@bliskiolechów.pl">sprzedaz@bliskiolechów.pl</a>
                                 </div>
                             </div>
                             <div class="col-12 col-sm-6">
