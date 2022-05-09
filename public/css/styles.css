@@ -2597,6 +2597,9 @@ footer img.footer-logo {
     font-size: 16px;
     line-height: 25px;
   }
+  #swipebox-close {
+    top: 70px;
+  }
 }
 /* end of 1389.98 */
 @media (max-width: 1299.98px) {
