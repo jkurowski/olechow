@@ -9,31 +9,41 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-sm-6">
                 <div class="contact-box">
                     <div class="contact-icon">
                         <i class="las la-map-marked-alt"></i>
                     </div>
                     <h3>Adres</h3>
-                    <p>ul. Odnowiciela 13, 97-300 Łódź</p>
+                    <p><a href="https://www.google.com/maps/dir//Bliski+Olech%C3%B3w+-+Madey+Development+Kazimierza+Odnowiciela+13+92-414+%C5%81%C3%B3d%C5%BA/@51.7394061,19.5625714,14z/data=!4m8!4m7!1m0!1m5!1m1!1s0x471a346788b7396b:0xa69303da97516c13!2m2!1d19.5625714!2d51.7394061" target="_blank">ul. Odnowiciela 13, 97-300 Łódź</a></p>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 col-sm-6">
                 <div class="contact-box">
                     <div class="contact-icon">
                         <i class="las la-envelope-open-text"></i>
                     </div>
                     <h3>Napisz do nas</h3>
-                    <p><a href="mailto:sprzedaz@bliski-olechów.pl">sprzedaz@bliski-olechów.pl</a></p>
+                    <p><a href="mailto:sprzedaz@bliskiolechów.pl">sprzedaz@bliskiolechów.pl</a></p>
                 </div>
             </div>
-            <div class="col-12 col-lg-4">
+            <div class="col-12 mt-1 mt-sm-4">
                 <div class="contact-box">
                     <div class="contact-icon">
                         <i class="las la-phone"></i>
                     </div>
                     <h3>Zadzwoń do nas</h3>
-                    <p><a href="tel:+48534664737">+48 534 664 737</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="tel:+48882482077">+48 882 482 077</a></p>
+                    <div class="row phones">
+                        <div class="order-2 order-md-1 col-12 col-md-4">
+                            <p><i class="las la-id-card-alt"></i><b>Sylwia</b><a href="tel:+48534664737">+48 534 664 737</a></p>
+                        </div>
+                        <div class="order-1 order-md-2 col-12 col-md-4 d-flex align-items-center justify-content-center">
+                            <h4><a href="tel:+48576117119">+48 576 117 119</a></h4>
+                        </div>
+                        <div class="order-3 order-md-3 col-12 col-md-4">
+                            <p><i class="las la-id-card-alt"></i><b>Ewelina</b><a href="tel:+48882482077">+48 882 482 077</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

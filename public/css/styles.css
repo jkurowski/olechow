@@ -2255,6 +2255,26 @@ html.swipebox-html.swipebox-touch {
 .contact-box a {
   color: #444;
 }
+.contact-box h4 {
+  font-weight: 600;
+  font-size: 31px;
+  margin: 0;
+}
+.contact-box i.la-id-card-alt {
+  color: #b79a5e;
+  font-size: 37px;
+}
+.contact-box p {
+  line-height: normal;
+}
+.phones p {
+  font-size: 20px;
+}
+.phones p b {
+  display: block;
+  width: 100%;
+  margin: 6px 0;
+}
 #contact-form {
   background: white;
   padding: 10px 40px 40px;
@@ -2739,6 +2759,9 @@ footer img.footer-logo {
     padding: 20px 0;
     margin-bottom: 15px;
   }
+  .contact-box h4 {
+    font-size: 26px;
+  }
   #contact-form {
     margin-bottom: 30px;
   }
@@ -3044,6 +3067,13 @@ footer img.footer-logo {
   #gallery .slick-current div .bttn {
     opacity: 1;
     margin-top: 50px;
+  }
+  .contact-box h4 {
+    margin: 15px 0 25px;
+  }
+  .contact-box p {
+    line-height: normal;
+    font-size: 14px;
   }
 }
 /* end of 767.98 */

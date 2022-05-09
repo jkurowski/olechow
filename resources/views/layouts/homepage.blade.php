@@ -246,7 +246,7 @@
                             <div class="col-12 col-sm-6">
                                 <div class="maincontact-item">
                                     <i class="las la-phone"></i>
-                                    <a href="tel:+48 570 880 110">+48 570 880 110</a>
+                                    <a href="tel:+48576117119">+48 576 117 119</a>
                                 </div>
                             </div>
                         </div>
