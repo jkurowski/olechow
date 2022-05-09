@@ -322,7 +322,7 @@
                 <div class="col-12">
                     <div class="text-center">
                         <img src="{{ asset('/gfx/logo.svg') }}" alt="Logo Bliski Olechów" width="209" height="263" class="m-auto">
-                        <h6>ul. Wschodnia 2, 97-300 Łódź</h6>
+                        <h6>ul. Odnowiciela 13, 97-300 Łódź</h6>
                     </div>
                 </div>
                 <div class="col-12">
