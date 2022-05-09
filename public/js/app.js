@@ -3498,7 +3498,7 @@ $(document).ready(function () {
         }
     }
 
-    $("#homepage .mainmenu a, .scroll-link").click(function (e) {
+    $(".scroll-link").click(function (e) {
         e.preventDefault();
         const section = $(this).attr('href');
         const offset = $(this).attr("data-offset");
