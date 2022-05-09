@@ -3057,6 +3057,9 @@ footer img.footer-logo {
   #page {
     padding: 30px 15px;
   }
+  .gallery #page {
+    padding: 30px 0;
+  }
   #contact-form {
     padding: 10px 20px 25px;
   }
@@ -3148,6 +3151,13 @@ footer img.footer-logo {
   }
   #gallery .gallery-item h2 {
     font-size: 22px;
+  }
+  #gallery .slick-slide.gallery-item {
+    padding: 0;
+  }
+  #gallery .gallery-catalog div {
+    left: 0;
+    right: 0;
   }
 }
 /* end of 575.98 */

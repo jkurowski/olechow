@@ -1,4 +1,4 @@
-@extends('layouts.page')
+@extends('layouts.page', ['body_class' => 'gallery'])
 
 @section('meta_title', $page->title)
 
