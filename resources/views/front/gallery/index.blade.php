@@ -34,11 +34,31 @@
     <script type="text/javascript">
         $(document).ready(function(){
             $('.gallery-carousel').slick({
-                centerPadding: '800px',
+                centerPadding: '300px',
                 centerMode: true,
                 slidesToShow: 1,
                 slidesToScroll: 1,
-                variableWidth: true
+                responsive: [
+                    {
+                        breakpoint: 1380,
+                        settings: {
+                            centerPadding: '200px',
+                        }
+                    },
+                    {
+                        breakpoint: 991,
+                        settings: {
+                            centerPadding: '100px',
+                        }
+                    },
+                    {
+                        breakpoint: 576,
+                        settings: {
+                            centerPadding: '0px',
+                            centerMode: false,
+                        }
+                    },
+                ]
             })
         });
     </script>
