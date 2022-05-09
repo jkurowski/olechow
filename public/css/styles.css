@@ -2399,6 +2399,7 @@ footer img.footer-logo {
 }
 #triggermenu:hover {
   background: #b79a5e;
+  color: white;
 }
 .openmenu #triggermenu {
   color: #b79a5e;
