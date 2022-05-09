@@ -544,6 +544,12 @@ header.fixed .header-menu li {
 #slider .btn-light:focus {
   box-shadow: 0 0 0 0 rgba(211, 212, 213, 0);
 }
+@media (max-width: 1199.98px) {
+  #slider {
+    background: #222 url("../../uploads/header_1199.jpg") center bottom no-repeat;
+  }
+}
+/* end of 1199.98 */
 @media (max-width: 991.98px) {
   #slider .slider-apla h1 {
     font-size: 68px;
@@ -582,6 +588,9 @@ header.fixed .header-menu li {
 }
 /* end of 767.98 */
 @media (max-width: 575.98px) {
+  #slider {
+    background: #222 url("../uploads/header_600.jpg") center bottom no-repeat;
+  }
   #slider .slider-apla .btn-light,
   #slider .slider-apla .bttn {
     height: 50px;
