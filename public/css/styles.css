@@ -3029,6 +3029,18 @@ footer img.footer-logo {
   #gallery .gallery-item .bttn {
     padding: 10px 36px;
   }
+  #gallery .slick-current div {
+    opacity: 1;
+    visibility: visible;
+  }
+  #gallery .slick-current div h2 {
+    opacity: 1;
+    top: 0;
+  }
+  #gallery .slick-current div .bttn {
+    opacity: 1;
+    margin-top: 50px;
+  }
 }
 /* end of 767.98 */
 @media (max-width: 575.98px) {
@@ -3133,6 +3145,9 @@ footer img.footer-logo {
   #mainwhy .why-carousel-right .why-carousel-item,
   #mainwhy .why-carousel-left .why-carousel-item {
     padding-bottom: 130px;
+  }
+  #gallery .gallery-item h2 {
+    font-size: 22px;
   }
 }
 /* end of 575.98 */
