@@ -30,7 +30,44 @@
 
     <div id="slider">
         <div class="slider-carousel">
-
+            <div class="slider-apla">
+                <h1>Bliski Olechów</h1>
+                <div id="homesearch">
+                    <div class="form-container">
+                        <form method="get" action="{{ route('front.investment.show') }}#filtr" class="row no-gutters">
+                            <div class="col-4 form-input">
+                                <div class="fake-select">
+                                    <select name="rooms">
+                                        <option value="">Pokoje</option>
+                                        <option value="1">1 pokój</option>
+                                        <option value="2">2 pokoje</option>
+                                        <option value="3">3 pokoje</option>
+                                        <option value="4">4 pokoje</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4 form-input">
+                                <div class="fake-select">
+                                    <select name="area">
+                                        <option value="">Metraż</option>
+                                        <option value="">Wszystkie</option>
+                                        <option value="25-35">25-35 m²</option>
+                                        <option value="35-45">35-45 m²</option>
+                                        <option value="45-55">45-55 m²</option>
+                                        <option value="55-65">55-65 m²</option>
+                                        <option value="65-75">65-75 m²</option>
+                                        <option value="75-85">75-85 m²</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-4 form-input">
+                                <input type="hidden" name="a" value="szukaj">
+                                <button type="submit" class="bttn">Szukaj <i class="la la-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
