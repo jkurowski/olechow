@@ -576,6 +576,9 @@ header.fixed .header-menu li {
     font-size: 48px;
     margin-bottom: 10px;
   }
+  #slider .slider-carousel {
+    min-height: 80vh;
+  }
 }
 /* end of 767.98 */
 @media (max-width: 575.98px) {
