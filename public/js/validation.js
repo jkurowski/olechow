@@ -1,15 +1,3 @@
-/*
- * Inline Form Validation Engine 2.6.2, jQuery plugin
- *
- * Copyright(c) 2010, Cedric Dugas
- * http://www.position-absolute.com
- *
- * 2.0 Rewrite by Olivier Refalo
- * http://www.crionics.com
- *
- * Form validation engine allowing custom regex rules to be added.
- * Licensed under the MIT License
- */
  (function($) {
 
 	"use strict";
@@ -2097,7 +2085,7 @@
 			 $.error('Method ' + method + ' does not exist in jQuery.validationEngine');
 		 }
 	};
-	
+
 	// LEAK GLOBAL OPTIONS
 	$.validationEngine= {fieldIdCounter: 0,defaults:{
 
