@@ -46,6 +46,7 @@ class ContactNotification extends Notification
             'form_email' => $this->request->input('form_email'),
             'form_message' => $this->request->input('form_message'),
             'form_subject' => $this->request->input('form_subject'),
+            'form_phone' => $this->request->input('form_phone'),
             'ip' => $this->request->ip(),
             'url' => $this->request->headers->get('referer')
         ];

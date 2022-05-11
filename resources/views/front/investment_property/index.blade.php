@@ -79,7 +79,7 @@
                                         </div>
                                     @endif
                                     <div class="row">
-                                        <div class="col-6 form-input">
+                                        <div class="col-12 form-input">
                                             <label for="form_name">Imię <span class="text-danger">*</span></label>
                                             <input name="form_name" id="form_name" class="validate[required] form-control @error('form_name') is-invalid @enderror" type="text" value="{{ old('form_name') }}">
 
@@ -87,11 +87,19 @@
                                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                             @enderror
                                         </div>
-                                        <div class="col-6 form-input">
+                                        <div class="col-12 col-sm-6 form-input">
                                             <label for="form_email">E-mail <span class="text-danger">*</span></label>
                                             <input name="form_email" id="form_email" class="validate[required] form-control @error('form_email') is-invalid @enderror" type="text" value="{{ old('form_email') }}">
 
                                             @error('email')
+                                            <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
+                                            @enderror
+                                        </div>
+                                        <div class="col-12 col-sm-6 form-input">
+                                            <label for="form_phone">Telefon <span class="text-danger">*</span></label>
+                                            <input name="form_phone" id="form_phone" class="validate[required] form-control @error('form_phone') is-invalid @enderror" type="text" value="{{ old('form_phone') }}">
+
+                                            @error('phone')
                                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                             @enderror
                                         </div>

@@ -45,6 +45,7 @@ class PropertyNotification extends Notification
             'form_name' => $this->request->input('form_name'),
             'form_email' => $this->request->input('form_email'),
             'form_message' => $this->request->input('form_message'),
+            'form_phone' => $this->request->input('form_phone'),
             'ip' => $this->request->ip(),
             'url' => $this->request->headers->get('referer')
         ];
