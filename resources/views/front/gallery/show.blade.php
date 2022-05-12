@@ -22,11 +22,13 @@
             @endforeach
         </div>
         @if($gallery->id == 2)
-        <div class="row mt-4">
+        <div class="row mt-5">
             <div class="col-12 text-center">
                 <h2>WIRTUALNY SPACER</h2>
-                <div class="fluidMedia">
-                    <iframe src="https://4dl.pl/Panosfery/Madey/Bliski-Olechow/" frameborder="0" class="mt-3" width="100%" height="100%"></iframe>
+                <div id="fluidFrame" class="mt-4">
+                    <div class="fluidMedia">
+                        <iframe src="https://4dl.pl/Panosfery/Madey/Bliski-Olechow/" frameborder="0" width="100%" height="100%"></iframe>
+                    </div>
                 </div>
             </div>
         </div>

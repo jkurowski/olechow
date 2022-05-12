@@ -262,6 +262,10 @@ iframe {
   display: block;
   border: 0;
 }
+#fluidFrame {
+  padding: 30px;
+  background: #213c13 url('../gfx/green-bg.png');
+}
 .fluidMedia {
   position: relative;
   padding-bottom: 56.25%;
