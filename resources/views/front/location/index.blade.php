@@ -1,6 +1,8 @@
 @extends('layouts.page')
 
 @section('meta_title', $page->title)
+@section('seo_title', $page->meta_title)
+@section('seo_description', $page->meta_description)
 
 @section('pageheader')
     @include('layouts.partials.page-header', ['page' => $page, 'header_file' => 'location.jpg'])

@@ -1,6 +1,8 @@
 @extends('layouts.page', ['body_class' => 'property'])
 
 @section('meta_title', $property->name)
+@section('seo_title', $page->meta_title.' - '.$floor->name.' - '.$property->name)
+@section('seo_description', $page->meta_description)
 
 @section('pageheader')
     @include('layouts.partials.developro-header', ['title' => $property->name, 'header_file' => 'rooms.jpg', 'items' => [['uri'=> 'mieszkania', 'title'=>'Mieszkania'],['uri'=> 'mieszkania/pietro/'.$floor->id, 'title'=>$floor->name]]])

@@ -1,6 +1,8 @@
 @extends('layouts.page', ['body_class' => 'investments'])
 
 @section('meta_title', 'Inwestycje - '.$investment->name)
+@section('seo_title', $page->meta_title)
+@section('seo_description', $page->meta_description)
 
 @section('pageheader')
     @include('layouts.partials.page-header', ['page' => $page, 'header_file' => 'rooms.jpg'])
