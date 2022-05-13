@@ -14,8 +14,8 @@
                 <div class="card-body p-3">
                     <div class="row">
                         <div class="col-12">
-                            @include('form-elements.html-input-text-count', ['label' => 'Nazwa strony', 'sublabel' => 'Meta tag - title / ilość znaków: 50 - 60', 'name' => 'page_title', 'value' => settings()->get("page_title"), 'maxlength' => 60, 'required' => 1])
-                            @include('form-elements.html-input-text-count', ['label' => 'Opis strony', 'sublabel' => 'Meta tag - description / ilość znaków: 120 - 158', 'name' => 'page_description', 'value' => settings()->get("page_description"), 'maxlength' => 158, 'required' => 1])
+                            @include('form-elements.html-input-text-count', ['label' => 'Nazwa strony', 'sublabel' => 'Meta tag - title / ilość znaków: 50 - 60', 'name' => 'page_title', 'value' => settings()->get("page_title"), 'maxlength' => 255, 'required' => 1])
+                            @include('form-elements.html-input-text-count', ['label' => 'Opis strony', 'sublabel' => 'Meta tag - description / ilość znaków: 120 - 158', 'name' => 'page_description', 'value' => settings()->get("page_description"), 'maxlength' => 255, 'required' => 1])
                             @include('form-elements.input-text', ['label' => 'Adres strony', 'sublabel' => 'URL strony', 'name' => 'page_url', 'value' => settings()->get("page_url"), 'required' => 1])
 
                             <div class="form-group row">
