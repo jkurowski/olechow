@@ -125,7 +125,6 @@
                     map.removeLayer(layer);
                 }
                 if(layer.id === groupId){
-                    console.log(layer.id);
                     map.fitBounds([layer.getBounds(), investment.getBounds()]);
                 }
             });
