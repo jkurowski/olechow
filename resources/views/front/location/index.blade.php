@@ -15,15 +15,15 @@
                 <div class="order-2 order-lg-1 col-12 col-lg-4 p-0">
                     <div class="map-nav">
                         <ul class="mb-0 list-unstyled">
-                            <li><span><i class="las la-chalkboard-teacher"></i></span> Przedszkola i szkoły podstawowe</li>
-                            <li><span><i class="las la-bus"></i></span> Transport publiczny</li>
-                            <li><span><i class="las la-road"></i></span> Wylot na Autostradę A1</li>
-                            <li><span><i class="las la-tree"></i></span> Tereny rekreacyjne, place zabaw, parki rowerowe</li>
-                            <li><span><i class="las la-utensils"></i></span> Gastronomia</li>
-                            <li><span><i class="las la-stethoscope"></i></span> Przychodnie publicznych i prywatne</li>
-                            <li><span><i class="las la-star-of-life"></i></span> Apteki</li>
-                            <li><span><i class="las la-church"></i></span> Kościoły</li>
-                            <li><span><i class="las la-shopping-cart"></i></span> Markety, sklepy, drogerie</li>
+                            <li data-id="1"><span><i class="las la-chalkboard-teacher"></i></span> Przedszkola i szkoły podstawowe</li>
+                            <li data-id="2"><span><i class="las la-bus"></i></span> Transport publiczny</li>
+                            <li data-id="3"><span><i class="las la-road"></i></span> Wylot na Autostradę A1</li>
+                            <li data-id="4"><span><i class="las la-tree"></i></span> Tereny rekreacyjne, place zabaw, parki rowerowe</li>
+                            <li data-id="5"><span><i class="las la-utensils"></i></span> Gastronomia</li>
+                            <li data-id="6"><span><i class="las la-stethoscope"></i></span> Przychodnie publicznych i prywatne</li>
+                            <li data-id="7"><span><i class="las la-star-of-life"></i></span> Apteki</li>
+                            <li data-id="8"><span><i class="las la-church"></i></span> Kościoły</li>
+                            <li data-id="9"><span><i class="las la-shopping-cart"></i></span> Markety, sklepy, drogerie</li>
                         </ul>
                     </div>
                 </div>
@@ -64,27 +64,71 @@
 @endsection
 @push('scripts')
     <link href="{{ asset('/css/leaflet.css') }}" rel="stylesheet">
-    <script src="{{ asset('/js/leaflet.js') }}" charset="utf-8"></script>
+    <script src="{{ asset('/js/leaflet.min.js') }}" charset="utf-8"></script>
     <script>
         const tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
         });
 
-        const featureGroup = L.featureGroup([
-            @foreach($markers as $i)
-            L.marker([{{ $i->lat }}, {{ $i->lng }}]).bindPopup('<h4>{{ $i->name }}</h4><p>{{ $i->address }}</p>'),
-            @endforeach
-        ]);
+        const education = L.featureGroup(),
+            transport = L.featureGroup(),
+            highway = L.featureGroup(),
+            park = L.featureGroup(),
+            restaurant = L.featureGroup(),
+            clinic = L.featureGroup(),
+            pharmacy = L.featureGroup(),
+            church = L.featureGroup(),
+            store = L.featureGroup(),
+            investment = L.featureGroup();
+
+        @foreach($markers as $i)
+        const marker_{{ $i->id }} = L.marker([{{ $i->lat }}, {{ $i->lng }}]).bindPopup('<h4>{{ $i->name }}</h4><p>{{ $i->address }}</p>').addTo({{ leafletLayerGroup($i->group_id) }});
+        @endforeach
+
+        const investmentIcon = L.icon({
+            iconUrl: '{{ asset('/gfx/investmentIcon.png') }}',
+            iconSize: [65, 101],
+            iconAnchor: [32, 100],
+        });
+        const marker_investment = L.marker([51.739406,19.562571], {icon: investmentIcon}).bindPopup('<h4>Bliski Olechów</h4><p>Kazimierza Odnowiciela 13</p>').addTo(investment);
 
         let map = new L.Map('map', {
             'center': [0, 0],
             'zoom': 0,
-            'layers': [tileLayer, featureGroup]
+            'layers': [tileLayer]
         });
+        const arrayGroups = [education, transport, highway, park, restaurant, clinic, pharmacy, church, store, investment];
+        const fGroup = new L.featureGroup(arrayGroups).addTo(map);
 
-        map.fitBounds(featureGroup.getBounds());
-        map.on('popupclose', function(e) {
-            map.fitBounds(featureGroup.getBounds());
-        });
+        education.id = 1;
+        transport.id = 2;
+        highway.id = 3;
+        park.id = 4;
+        restaurant.id = 5;
+        clinic.id = 6;
+        pharmacy.id = 7;
+        church.id = 8;
+        store.id = 9;
+        investment.id = 10;
+
+        map.fitBounds(fGroup.getBounds());
+
+        $(".map-nav li").click(function(){
+            $(".map-nav li").removeClass('active');
+            $(this).addClass('active');
+
+            const groupId = $(this).data("id");
+            new L.featureGroup(arrayGroups).addTo(map);
+
+            fGroup.eachLayer(function(layer){
+                if(layer.id !== groupId && layer.id !== 10) {
+                    map.removeLayer(layer);
+                }
+                if(layer.id === groupId){
+                    console.log(layer.id);
+                    map.fitBounds([layer.getBounds(), investment.getBounds()]);
+                }
+            });
+        })
     </script>
 @endpush

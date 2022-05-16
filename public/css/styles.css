@@ -1430,8 +1430,10 @@ section {
 #location .map-nav ul li.active {
   color: white;
 }
-#location .map-nav ul li:hover i {
+#location .map-nav ul li:hover i,
+#location .map-nav ul li.active i {
   background: white;
+  border: 1px solid #ffffff;
 }
 #map {
   width: 100%;
