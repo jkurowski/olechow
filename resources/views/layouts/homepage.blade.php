@@ -204,9 +204,9 @@
                     </li>
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_2.webp') }}">
-                            <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_2.jpg') }}">
-                            <img src="{{ asset('/uploads/budynek_2.jpg') }}" alt="Wieczór, oświetlony budynek Bliski Olechów" width="1920" height="960">
+                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_3.webp') }}">
+                            <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_3.jpg') }}">
+                            <img src="{{ asset('/uploads/budynek_3.jpg') }}" alt="Wieczór, oświetlony budynek Bliski Olechów" width="1920" height="960">
                         </picture>
                     </li>
                 </ul>
