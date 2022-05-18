@@ -117,21 +117,40 @@
                 <div class="col-12 col-xl-5 position-relative">
                     <div class="why-carousel-left">
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/lokalizacja.jpg') }}" alt="Budynek inwestycji Bliski Olechów" width="907" height="878">
+                            <picture>
+                                <source type="image/webp" media="(min-width: 560px)" srcset="{{ asset('/uploads/lokalizacja.webp') }}">
+                                <source type="image/webp" media="(max-width: 561px)" srcset="{{ asset('/uploads/lokalizacja_560.webp') }}">
+                                <source type="image/jpeg" srcset="{{ asset('/uploads/lokalizacja.jpg') }}">
+                                <img src="{{ asset('/uploads/lokalizacja.jpg') }}" alt="Budynek inwestycji Bliski Olechów" width="907" height="878">
+                            </picture>
+
                             <div class="why-carousel-apla">
                                 <h2>LOKALIZACJA</h2>
                                 <p>Zlokalizowany w zielonym sercu Widzewa Bliski Olechów jest świetnie skomunikowany z centrum Łodzi zarówno komunikacją miejską jak i samochodem.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/architektura.jpg') }}" alt="Przykładowa aranżacja mieszkania" width="907" height="878">
+                             <picture>
+                                <source type="image/webp" media="(min-width: 560px)" srcset="{{ asset('/uploads/architektura.webp') }}">
+                                <source type="image/webp" media="(max-width: 561px)" srcset="{{ asset('/uploads/architektura_560.webp') }}">
+                                <source type="image/jpeg" srcset="{{ asset('/uploads/architektura.jpg') }}">
+                                 <img src="{{ asset('/uploads/architektura.jpg') }}" alt="Przykładowa aranżacja mieszkania" width="907" height="878">
+                            </picture>
+
                             <div class="why-carousel-apla">
                                 <h2>ARCHITEKTURA</h2>
                                 <p>Wiemy, że lepiej żyje się w pięknym otoczeniu, dlatego Bliski Olechów został zaprojektowany w ponadczasowym stylu, a słoneczne i rozkładowe mieszkania wyposażone w przestronne balkony lub loggie staną się miejscem komfortowego życia.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/bezpieczenstwo.jpg') }}" alt="Kamera monitoringu na osiedlu Bliski Olechów" width="907" height="878">
+
+                            <picture>
+                                <source type="image/webp" media="(min-width: 560px)" srcset="{{ asset('/uploads/bezpieczenstwo.webp') }}">
+                                <source type="image/webp" media="(max-width: 561px)" srcset="{{ asset('/uploads/bezpieczenstwo_560.webp') }}">
+                                <source type="image/jpeg" srcset="{{ asset('/uploads/bezpieczenstwo.jpg') }}">
+                                <img src="{{ asset('/uploads/bezpieczenstwo.jpg') }}" alt="Kamera monitoringu na osiedlu Bliski Olechów" width="907" height="878">
+                            </picture>
+
                             <div class="why-carousel-apla">
                                 <h2>BEZPIECZEŃSTWO</h2>
                                 <p>Osiedle jest monitorowane, każde mieszkanie wyposażone w system SmartHome - instalacje alarmową, drzwi wejściowe do lokali o podwyższonej odporności na włamania.</p>
