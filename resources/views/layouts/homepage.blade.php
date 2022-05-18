@@ -19,6 +19,8 @@
     <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
 
     <!-- Styles -->
+    <link rel="preload" as="image" href="{{ asset('/uploads/header_600.jpg') }}" type="image/jpeg">
+
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
 
     @stack('style')
