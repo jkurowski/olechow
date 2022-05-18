@@ -190,21 +190,30 @@
                 <ul class="mb-0 list-unstyled mt-3 mt-sm-5">
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_1.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/uploads/budynek_1.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/uploads/budynek_1_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/uploads/budynek_1_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/uploads/budynek_1_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_1.jpg') }}">
                             <img src="{{ asset('/uploads/budynek_1.jpg') }}" alt="Front budynku osiedla Bliski Olechów" width="1920" height="960">
                         </picture>
                     </li>
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_2.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/uploads/budynek_2.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/uploads/budynek_2_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/uploads/budynek_2_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/uploads/budynek_2_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_2.jpg') }}">
                             <img src="{{ asset('/uploads/budynek_2.jpg') }}" alt="Dorośli i dzieci przed budynkiem Bliski Olechów" width="1920" height="960">
                         </picture>
                     </li>
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/budynek_3.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/uploads/budynek_3.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/uploads/budynek_3_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/uploads/budynek_3_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/uploads/budynek_3_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/budynek_3.jpg') }}">
                             <img src="{{ asset('/uploads/budynek_3.jpg') }}" alt="Wieczór, oświetlony budynek Bliski Olechów" width="1920" height="960">
                         </picture>
@@ -218,21 +227,30 @@
                 <ul class="mb-0 list-unstyled mt-3 mt-sm-5">
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/mieszkanie_1.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/uploads/mieszkanie_1.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/uploads/mieszkanie_1_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/uploads/mieszkanie_1_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/uploads/mieszkanie_1_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/mieszkanie_1.jpg') }}">
                             <img src="{{ asset('/uploads/mieszkanie_1.jpg') }}" alt="Przykładowa aranżacja salonu" width="1920" height="960">
                         </picture>
                     </li>
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/mieszkanie_2.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/uploads/mieszkanie_2.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/uploads/mieszkanie_2_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/uploads/mieszkanie_2_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/uploads/mieszkanie_2_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/mieszkanie_2.jpg') }}">
                             <img src="{{ asset('/uploads/mieszkanie_2.jpg') }}" alt="Przykładowa aranżacja pokoju dla dzieci" width="1920" height="960">
                         </picture>
                     </li>
                     <li>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/mieszkanie_3.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/uploads/mieszkanie_3.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/uploads/mieszkanie_3_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/uploads/mieszkanie_3_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/uploads/mieszkanie_3_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/mieszkanie_3.jpg') }}">
                             <img src="{{ asset('/uploads/mieszkanie_3.jpg') }}" alt="Przykładowa aranżacja miejsca do odpoczynku" width="1920" height="960">
                         </picture>
