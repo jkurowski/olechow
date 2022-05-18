@@ -280,12 +280,18 @@
                 <div class="col-12">
                     <div class="location-carousel">
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/gfx/park.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/gfx/park.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/gfx/park_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/gfx/park_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/gfx/park_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/gfx/park.jpg') }}">
                             <img src="{{ asset('/gfx/park.jpg') }}" alt="Uśmiechnięte rodzina spaceruje w parku, w pobliżu osiedla Bliski Olechów" width="1610" height="906">
                         </picture>
                         <picture>
-                            <source type="image/webp" srcset="{{ asset('/gfx/kids.webp') }}">
+                            <source type="image/webp" media="(min-width: 1920px)" srcset="{{ asset('/gfx/kids.webp') }}">
+                            <source type="image/webp" media="(min-width: 991px)" srcset="{{ asset('/gfx/kids_991.webp') }}">
+                            <source type="image/webp" media="(min-width: 576px)" srcset="{{ asset('/gfx/kids_576.webp') }}">
+                            <source type="image/webp" media="(max-width: 577px)" srcset="{{ asset('/gfx/kids_576.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/gfx/kids.jpg') }}">
                             <img src="{{ asset('/gfx/kids.jpg') }}" alt="Dzieci idą do przedszkola w pobliżu osiedla Bliski Olechów" width="1610" height="906">
                         </picture>
