@@ -20,7 +20,6 @@
 
     <!-- Styles -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('/css/styles.min.css') }}" rel="stylesheet">
 
     @stack('style')
 </head>
@@ -496,6 +495,9 @@
 @include('layouts.partials.footer')
 
 @include('layouts.partials.cookies')
+
+<link href="{{ asset('/css/styles.min.css') }}" rel="stylesheet">
+
 <!-- jQuery -->
 <script src="{{ asset('/js/jquery.min.js') }}" charset="utf-8"></script>
 <script src="{{ asset('/js/bootstrap.bundle.min.js') }}" charset="utf-8"></script>
