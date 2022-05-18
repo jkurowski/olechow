@@ -78,9 +78,10 @@
             <div class="row">
                 <div class="col-5 col-xl-6 p-0 d-none d-md-block">
                     <picture>
-                        <source type="image/webp" srcset="{{ asset('/uploads/mainabout.webp') }}">
+                        <source type="image/webp" media="(min-width: 767px)" srcset="{{ asset('/uploads/mainabout.webp') }}">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="{{ asset('/uploads/mainabout_300.webp') }}">
                         <source type="image/jpeg" srcset="{{ asset('/uploads/mainabout.jpg') }}">
-                        <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="Osiele Bliski Olechów" width="1040" height="1336">
+                        <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="Osiele Bliski Olechów" width="1040" height="1336" loading="lazy">
                     </picture>
                 </div>
                 <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center">
@@ -145,21 +146,42 @@
                 <div class="col-12 col-xl-7">
                     <div class="why-carousel-right">
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}" alt="Rodzina na spacerze w okolicy osiedla Bliski Olechów" width="1306" height="880">
+
+                            <picture>
+                                <source type="image/webp" media="(min-width: 600px)" srcset="{{ asset('/uploads/zielen-i-wypoczynek.webp') }}">
+                                <source type="image/webp" media="(max-width: 601px)" srcset="{{ asset('/uploads/zielen-i-wypoczynek_600.webp') }}">
+                                <source type="image/jpeg" srcset="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}">
+                                <img src="{{ asset('/uploads/zielen-i-wypoczynek.jpg') }}" alt="Rodzina na spacerze w okolicy osiedla Bliski Olechów" width="1306" height="880">
+                            </picture>
+
                             <div class="why-carousel-apla">
                                 <h2>ZIELEŃ I WYPOCZYNEK</h2>
                                 <p>Bliski Olechów znajduje się  przy Parku Źródła Olechówki oraz innych terenach zielonych wyposażonych w m.in. tężnię solankową, nowoczesne place zabaw dla dzieci oraz infrastrukturę sportowo-rekreacyjną.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/na-wyciagniecie-reki.jpg') }}" alt="Dzieci idące do przedszkola w pobliżu osiedla Bliski Olechów" width="1306" height="880">
+
+                            <picture>
+                                <source type="image/webp" media="(min-width: 600px)" srcset="{{ asset('/uploads/na-wyciagniecie-reki.webp') }}">
+                                <source type="image/webp" media="(max-width: 601px)" srcset="{{ asset('/uploads/na-wyciagniecie-reki_600.webp') }}">
+                                <source type="image/jpeg" srcset="{{ asset('/uploads/na-wyciagniecie-reki.jpg') }}">
+                                <img src="{{ asset('/uploads/na-wyciagniecie-reki.jpg') }}" alt="Dzieci idące do przedszkola w pobliżu osiedla Bliski Olechów" width="1306" height="880">
+                            </picture>
+
                             <div class="why-carousel-apla">
                                 <h2>NA WYCIĄGNIĘCIE RĘKI</h2>
                                 <p>Bliskość przedszkoli i dobrych szkół, przychodni publicznych i prywatnych, szeroki wybór sklepów i aptek oraz świetne miejsca do sportu,  rekreacji i odpoczynku w otoczeniu zieleni to powód, dla którego naszą najnowszą inwestycję zdecydowaliśmy się zrealizować właśnie tutaj.</p>
                             </div>
                         </div>
                         <div class="why-carousel-item">
-                            <img src="{{ asset('/uploads/jakosc-za-rozsadna-cene.jpg') }}" alt="Przykładowa aranżacja salonu w inwestycji Bliski Olechów" width="1306" height="880">
+
+                            <picture>
+                                <source type="image/webp" media="(min-width: 600px)" srcset="{{ asset('/uploads/jakosc-za-rozsadna-cene.webp') }}">
+                                <source type="image/webp" media="(max-width: 601px)" srcset="{{ asset('/uploads/jakosc-za-rozsadna-cene_600.webp') }}">
+                                <source type="image/jpeg" srcset="{{ asset('/uploads/jakosc-za-rozsadna-cene.jpg') }}">
+                                <img src="{{ asset('/uploads/jakosc-za-rozsadna-cene.jpg') }}" alt="Przykładowa aranżacja salonu w inwestycji Bliski Olechów" width="1306" height="880">
+                            </picture>
+
                             <div class="why-carousel-apla">
                                 <h2>JAKOŚĆ ZA ROZSĄDNĄ CENĘ</h2>
                                 <p>Dzięki prawie 20-letniemu doświadczeniu wiemy jak budować wysokiej jakości osiedla w rozsądnej cenie. Bliski Olechów to komfortowe życie w cenie, która pozwala spać spokojnie.</p>
@@ -323,7 +345,7 @@
                             <source type="image/webp" media="(min-width: 1200px)" srcset="{{ asset('/uploads/inwestor.webp') }}">
                             <source type="image/webp" media="(max-width: 1201px)" srcset="{{ asset('/uploads/inwestor_300.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/inwestor.jpg') }}">
-                            <img src="{{ asset('/uploads/inwestor.jpg') }}" alt="Zakończona inwestycja dewelopera Madey Development" width="800" height="1100">
+                            <img src="{{ asset('/uploads/inwestor.jpg') }}" alt="Zakończona inwestycja dewelopera Madey Development" width="800" height="1100" loading="lazy">
                         </picture>
                     </div>
                 </div>
@@ -346,7 +368,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="text-center">
-                        <img src="{{ asset('/gfx/logo.svg') }}" alt="Logo Bliski Olechów" width="209" height="263" class="m-auto">
+                        <img src="{{ asset('/gfx/logo.svg') }}" alt="Logo Bliski Olechów" width="209" height="263" class="m-auto" loading="lazy">
                         <h6>ul. Odnowiciela 13, 97-300 Łódź</h6>
                     </div>
                 </div>
