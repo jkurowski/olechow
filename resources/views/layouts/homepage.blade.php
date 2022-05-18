@@ -16,7 +16,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Fonts -->
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="DNS-prefetch" href="//fonts.googleapis.com"/>
 
     <!-- Styles -->
     <link href="{{ asset('/css/bootstrap.min.css') }}" rel="stylesheet">
@@ -488,6 +488,17 @@
 @stack('scripts')
 
 <script type="text/javascript">
+    WebFontConfig = {
+        google: { families: [ 'Merriweather:300,400,700,900|Montserrat:400,500,600' ] }
+    };
+
+    (function(d) {
+        var wf = d.createElement('script'), s = d.scripts[0];
+        wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
+        wf.async = true;
+        s.parentNode.insertBefore(wf, s);
+    })(document);
+
     jQuery.event.special.touchstart = {
         setup: function( _, ns, handle ) {
             this.addEventListener("touchstart", handle, { passive: !ns.includes("noPreventDefault") });
