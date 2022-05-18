@@ -319,8 +319,9 @@
             <div class="row">
                 <div class="col-6 d-none d-xl-block">
                     <div class="maininvestor-img">
-                        <picture>
-                            <source type="image/webp" srcset="{{ asset('/uploads/inwestor.webp') }}">
+                        <picture class="d-none d-xl-block">
+                            <source type="image/webp" media="(min-width: 1200px)" srcset="{{ asset('/uploads/inwestor.webp') }}">
+                            <source type="image/webp" media="(max-width: 1201px)" srcset="{{ asset('/uploads/inwestor_300.webp') }}">
                             <source type="image/jpeg" srcset="{{ asset('/uploads/inwestor.jpg') }}">
                             <img src="{{ asset('/uploads/inwestor.jpg') }}" alt="Zakończona inwestycja dewelopera Madey Development" width="800" height="1100">
                         </picture>
