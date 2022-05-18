@@ -194,6 +194,7 @@ button {
 ================================================== */
 @font-face {
   font-family: 'FontAwesome';
+  font-display: swap;
   src: url('../fonts/fontawesome-webfont.eot');
   src: url('../fonts/fontawesome-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/fontawesome-webfont.woff') format('woff'), url('../fonts/fontawesome-webfont.ttf') format('truetype'), url('../fonts/fontawesome-webfont.svg#fontawesomeregular') format('svg');
   font-weight: normal;
@@ -8324,7 +8325,7 @@ select.selectpicker {
   font-family: 'Line Awesome Free';
   font-style: normal;
   font-weight: 900;
-  font-display: auto;
+  font-display: swap;
   src: url(../fonts/la-solid-900.eot);
   src: url(../fonts/la-solid-900.eot?#iefix) format("embedded-opentype"), url(../fonts/la-solid-900.woff2) format("woff2"), url(../fonts/la-solid-900.woff) format("woff"), url(../fonts/la-solid-900.ttf) format("truetype"), url(../fonts/la-solid-900.svg#lineawesome) format("svg");
 }

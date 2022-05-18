@@ -7,7 +7,7 @@
                         <div id="logo">
                             <a href="/">
                                 <img src="{{ asset('/gfx/logo.svg') }}" alt="Logo Bliski Olechów" width="166" class="logo-v">
-                                <img src="{{ asset('/gfx/logo-h.svg') }}" alt="Logo Bliski Olechów" width="166" class="logo-h">
+                                <img src="{{ asset('/gfx/logo-h.svg') }}" alt="Logo Bliski Olechów" width="100" height="41" class="logo-h">
                             </a>
                         </div>
                     </div>
