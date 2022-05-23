@@ -58,6 +58,12 @@ Route::middleware(['restrictIp'])->group(function () {
 
     });
 
+    // Articles
+    Route::group(['namespace' => 'Front', 'prefix'=>'/aktualnosci/', 'as' => 'front.news.'], function() {
+        Route::get('/',         'ArticleController@index')->name('index');
+        Route::get('/{slug}',   'ArticleController@show')->name('show');
+    });
+
     // Location
     Route::group(['namespace' => 'Front', 'prefix'=>'/lokalizacja/', 'as' => 'front.location.'], function() {
         Route::get('/',         'LocationController@index')->name('index');

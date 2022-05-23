@@ -1,41 +1,49 @@
-@extends('layouts.page')
+@extends('layouts.page', ['body_class' => 'news'])
 
-@section('meta_title', 'Aktualności')
+@section('meta_title', $page->title)
+@section('seo_title', $page->meta_title)
+@section('seo_description', $page->meta_description)
 
 @section('pageheader')
-    @include('layouts.partials.page-header', ['page' => $page])
+    @include('layouts.partials.page-header', ['page' => $page, 'header_file' => 'news.jpg'])
 @stop
 
 @section('content')
     <div id="main-news">
         <div class="container">
-            <div class="row">
-                @foreach ($articles as $n)
-                    <article class="col-4" id="list-post-{{ $n->id }}" itemscope="" itemtype="http://schema.org/NewsArticle">
-                        <div class="list-post">
-                            <div class="list-post-thumb">
-                                <a href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" itemprop="url"><img src="{{asset('uploads/articles/thumbs/'.$n->file) }}" alt="{{ $n->title }}"></a>
+            @foreach ($articles as $n)
+                <article class="row list-post" id="list-post-{{ $n->id }}" itemscope="" itemtype="http://schema.org/NewsArticle">
+                    <div class="col-6">
+                        <div class="list-post-thumb">
+                            <a href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" itemprop="url">
+                                <picture>
+                                    <source type="image/webp" srcset="{{asset('uploads/articles/thumbs/webp/'.$n->file_webp) }}">
+                                    <source type="image/jpeg" srcset="{{asset('uploads/articles/thumbs/'.$n->file) }}">
+                                    <img src="{{asset('uploads/articles/thumbs/'.$n->file) }}" alt="{{ $n->title }}">
+                                </picture>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6 d-flex align-items-center">
+                        <div class="list-post-content ps-5 pe-5">
+                            <div class="article-header">
+                                @if($n->date)<div class="list-post-date text-muted">Data publikacji: <span itemprop="datePublished" content="{{ $n->date }}">{{ $n->date }}</span></div>@endif
+                                <h2 class="title"><a href="{{route('front.news.show', $n->slug)}}" itemprop="url"><span itemprop="name headline">{{ $n->title }}</span></a></h2>
                             </div>
-                            <div class="list-post-content">
-                                <header>
-                                    @if($n->date)<div class="list-post-date text-muted">Data publikacji: <span itemprop="datePublished" content="{{ $n->date }}">{{ $n->date }}</span></div>@endif
-                                    <h5 class="title"><a href="{{route('front.news.show', $n->slug)}}" itemprop="url"><span itemprop="name headline">{{ $n->title }}</span></a></h5>
-                                </header>
 
-                                <div class="list-post-entry" itemprop="articleBody">
-                                    <p class="small-text">{{ $n->content_entry }}</p>
-                                </div>
+                            <div class="list-post-entry" itemprop="articleBody">
+                                <p class="small-text">{{ $n->content_entry }}</p>
+                            </div>
 
-                                <footer>
-                                    <a itemprop="url" href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" class="bttn bttn-sm">Czytaj więcej</a>
-                                    <meta itemprop="author" content="DeveloPro">
-                                    <meta itemprop="mainEntityOfPage" content="">
-                                </footer>
+                            <div class="article-footer">
+                                <a itemprop="url" href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" class="bttn">CZYTAJ WIĘCEJ</a>
+                                <meta itemprop="author" content="Bliski Olechów">
+                                <meta itemprop="mainEntityOfPage" content="">
                             </div>
                         </div>
-                    </article>
-                @endforeach
-            </div>
+                    </div>
+                </article>
+            @endforeach
         </div>
     </div>
 @endsection

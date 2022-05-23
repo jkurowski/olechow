@@ -48,6 +48,12 @@
                         <span> Slider </span>
                     </a>
                 </li>
+                <li class="{{ Request::routeIs('admin.article.*') ? 'active' : '' }}">
+                    <a href="{{route('admin.article.index')}}">
+                        <i class="fe-book-open"></i>
+                        <span> Aktualności </span>
+                    </a>
+                </li>
                 <li class="{{ Request::routeIs('admin.developro.*') ? 'active' : '' }}">
                     <a href="{{route('admin.developro.index')}}">
                         <i class="fe-home"></i>

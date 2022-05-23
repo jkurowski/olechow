@@ -22,18 +22,38 @@ class ArticleService
             if (File::isFile(public_path('uploads/articles/thumbs/' . $model->file))) {
                 File::delete(public_path('uploads/articles/thumbs/' . $model->file));
             }
+
+            // WebP
+            if (File::isFile(public_path('uploads/articles/webp/' . $model->file_webp))) {
+                File::delete(public_path('uploads/articles/webp/' . $model->file_webp));
+            }
+            if (File::isFile(public_path('uploads/articles/thumbs/webp/' . $model->file_webp))) {
+                File::delete(public_path('uploads/articles/thumbs/webp/' . $model->file_webp));
+            }
         }
 
         $name = date('His').'_'.Str::slug($title).'.' . $file->getClientOriginalExtension();
+        $name_webp = date('His').'_'.Str::slug($title).'.webp';
+
         $file->storeAs('articles', $name, 'public_uploads');
 
-        $filepath = public_path('uploads/articles/' . $name);
-        $thumb_filepath = public_path('uploads/articles/thumbs/' . $name);
+        $file_path = public_path('uploads/articles/' . $name);
+        $file_thumb_path = public_path('uploads/articles/thumbs/' . $name);
 
-        Image::make($filepath)->fit(Article::IMG_WIDTH, Article::IMG_HEIGHT)->save($filepath);
-        Image::make($filepath)->fit(Article::THUMB_WIDTH, Article::THUMB_HEIGHT)->save($thumb_filepath);
+        Image::make($file_path)->fit(config('images.article.big_width'), config('images.article.big_height'))->save($file_path);
+        Image::make($file_path)->fit(config('images.article.thumb_width'), config('images.article.thumb_height'))->save($file_thumb_path);
 
-        $model->update(['file' => $name]);
+        // WebP
+        $file_path_webp = public_path('uploads/articles/webp/' . $name_webp);
+        $file_thumb_path_webp = public_path('uploads/articles/thumbs/webp/' . $name_webp);
+
+        Image::make($file_path)->encode('webp', 75)->save($file_path_webp);
+        Image::make($file_thumb_path)->encode('webp', 75)->save($file_thumb_path_webp);
+
+        $model->update([
+            'file' => $name,
+            'file_webp' => $name_webp
+        ]);
     }
 
     public function uploadFileFacebook(string $title, UploadedFile $file, object $model, bool $delete = false)

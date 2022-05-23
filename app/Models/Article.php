@@ -28,6 +28,7 @@ class Article extends Model
         'content_entry',
         'content',
         'file',
+        'file_webp',
         'file_facebook',
         'file_alt',
         'meta_title',
