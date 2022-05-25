@@ -66,10 +66,10 @@ return [
     */
 
     'article' => [
-        'big_width' => 1186,
-        'big_height' => 667,
-        'thumb_width' => 636,
-        'thumb_height' => 358,
+        'big_width' => 1472,
+        'big_height' => 1104,
+        'thumb_width' => 792,
+        'thumb_height' => 594,
         'file_path' => 'uploads/articles/',
         'thumb_file_path' => 'uploads/articles/thumbs/',
         'preview_file_path' => 'uploads/articles/thumbs/',
