@@ -99,7 +99,7 @@
                 <div class="col-5 col-xl-6 p-0 d-none d-md-block"></div>
                 <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center">
                     <div class="maininvest-cta text-center">
-                        <h2>Kup apartament już <br><span>od 6.500 zł/m<sup>2</sup></span></h2>
+                        <h2>Kup komfortowe mieszkanie <br><span>już od 6.500 zł/m<sup>2</sup></span></h2>
                         <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
                     </div>
                 </div>
@@ -309,7 +309,18 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Cena mieszkania dwupokojowego <br><span class="green">od 299 000,00 zł</span></h2>
+                    <h2>Cena mieszkania</h2>
+                    <div class="row">
+                        <div class="col-12 col-md-4">
+                            <h3>2 pok. <span class="green">od 7.100</span> zł /m<sup>2</sup></h3>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h3>3 pok. <span class="green">od 6.500</span> zł /m<sup>2</sup></h3>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <h3>4 pok. <span class="green">od 7.2000</span> zł /m<sup>2</sup></h3>
+                        </div>
+                    </div>
                     <a href="{{ route('front.investment.show') }}" class="bttn">ZOBACZ MIESZKANIA</a>
                 </div>
             </div>

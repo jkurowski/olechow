@@ -688,7 +688,6 @@ section {
   font-size: 30px;
   text-align: center;
   font-weight: 300;
-  text-transform: uppercase;
 }
 #maininvestment .maininvest-cta h2 span {
   font-size: 72px;
@@ -874,6 +873,16 @@ section {
   margin-bottom: 30px;
 }
 #maincta h2 span {
+  color: #213c13;
+  font-weight: 900;
+}
+#maincta h3 {
+  color: #575757;
+  font-size: 37px;
+  margin: 20px 0;
+  font-weight: 300;
+}
+#maincta h3 span {
   color: #213c13;
   font-weight: 900;
 }
@@ -2749,6 +2758,10 @@ footer img.footer-logo {
     font-size: 55px;
     margin-bottom: 20px;
   }
+  #maincta h3 {
+    font-size: 33px;
+    margin: 20px 0;
+  }
   #maininvestor .maininvestor-text {
     padding-left: 50px;
   }
@@ -2831,7 +2844,13 @@ footer img.footer-logo {
     top: 70px;
   }
 }
-/* end of 1389.98 */
+@media (max-width: 1399.98px) {
+  #maincta h3 {
+    font-size: 29px;
+    margin: 20px 0;
+  }
+}
+/* end of 1399.98 */
 @media (max-width: 1299.98px) {
   header.fixed {
     padding: 10px 20px;
@@ -2983,6 +3002,10 @@ footer img.footer-logo {
   }
   #mainwhy .why-carousel-nav button {
     display: inline-block;
+  }
+  #maincta h3 {
+    font-size: 23px;
+    margin: 20px 0;
   }
 }
 /* end of 1199.98 */
@@ -3179,6 +3202,9 @@ footer img.footer-logo {
   }
   #gallery .gallery-item h2 {
     font-size: 45px;
+  }
+  #maincta h3 {
+    font-size: 18px;
   }
 }
 /* end of 991.98 */
@@ -3437,6 +3463,9 @@ footer img.footer-logo {
   }
   #gallery .gallery-item img {
     opacity: 1;
+  }
+  #maincta h3 {
+    margin: 10px 0 20px;
   }
 }
 /* end of 575.98 */
