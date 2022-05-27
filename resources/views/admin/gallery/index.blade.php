@@ -26,6 +26,7 @@
                     <tr>
                         <th>Nazwa</th>
                         <th>Opis</th>
+                        <th class="text-center">Status</th>
                         <th class="text-center">Ilość zdjęć</th>
                         <th>Data modyfikacji</th>
                         <th></th>
@@ -36,6 +37,7 @@
                         <tr id="recordsArray_{{ $p->id }}">
                             <td><a href="{{ route('admin.gallery.show', $p) }}">{{ $p->name }}</a></td>
                             <td>@if($p->text){{ $p->text }}@endif</td>
+                            <td class="text-center">{!! status($p->status) !!}</td>
                             <td class="text-center">{{ $p->photos->count() }}</td>
                             <td>{{ $p->updated_at }}</td>
                             <td class="option-120">

@@ -22,7 +22,8 @@ class Gallery extends Model
         'text',
         'file',
         'file_webp',
-        'sort'
+        'sort',
+        'status'
     ];
 
     /**

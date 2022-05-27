@@ -5,7 +5,7 @@
         {!! Form::label($name, '<div class="text-end">'.$label.'</div>', ['class' => 'col-3 col-form-label control-label required'], false) !!}
     @endisset
     <div class="@isset($class) {{ $class }} @else {{ 'col-4' }} @endisset">
-        @if($selected)
+        @if(isset($selected))
             {!! Form::select($name, $select, $selected, array('class' => 'form-select')) !!}
         @else
             {!! Form::select($name, $select, [], array('class' => 'form-select')) !!}

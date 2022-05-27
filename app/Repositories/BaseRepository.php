@@ -24,6 +24,11 @@ class BaseRepository implements EloquentRepositoryInterface
         return $this->model->orderBy('sort', $order)->get();
     }
 
+    public function idDesc(): Collection
+    {
+        return $this->model->orderBy('id', 'desc')->get();
+    }
+
     public function find($id): ?Model
     {
         if (null == $entry = $this->model->find($id)) {

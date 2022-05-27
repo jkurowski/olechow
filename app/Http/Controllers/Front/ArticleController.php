@@ -16,7 +16,7 @@ class ArticleController extends Controller
     public function index()
     {
         $page = Page::where('uri', 'aktualnosci')->firstOrFail();
-        $articles = Article::orderBy('sort', 'asc')->get();
+        $articles = Article::where('status', 1)->orderBy('id', 'DESC')->get();
         return view('front.article.index', ['page' => $page, 'articles' => $articles]);
     }
 
@@ -39,7 +39,7 @@ class ArticleController extends Controller
 
         $og = OpenGraph::title($article->title)
             ->type('article')
-            ->image('http://developro.4dl-dev.pl/public/uploads/articles/share/'.$article->file, [
+            ->image('https://www.bliskiolechow.pl/public/uploads/articles/share/'.$article->file, [
                 'width' => 600,
                 'height' => 314
             ])

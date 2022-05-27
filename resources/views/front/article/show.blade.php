@@ -28,12 +28,12 @@
                         <img src="{{asset('uploads/articles/'.$article->file) }}" alt="{{ $article->title }}">
                     </picture>
 
-                    <div class="post-details-entry mt-5 mb-3">
+                    <div class="post-details-entry mt-3 mb-3">
                         <h1 class="post-details-title">{{ $article->title }}</a></h1>
                         <p><b>{{$article->content_entry}}</b></p>
                     </div>
                     <div class="post-details-text">
-                        <p>{!! $article->content !!}</p>
+                        <p>{!! parse_text($article->content) !!}</p>
                     </div>
                     <a href="{{route('front.news.index')}}" class="bttn">WRÓĆ DO LISTY</a>
                 </div>

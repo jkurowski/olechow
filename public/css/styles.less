@@ -703,6 +703,8 @@ section {
     }
     .gallery-catalog {
         background: #213c13;
+        display: flex;
+        justify-content: center;
         div {
             opacity: 0;
             visibility: hidden;
@@ -770,6 +772,38 @@ section {
             .bttn {
                 opacity: 1;
                 margin-top: 30px;
+            }
+        }
+    }
+}
+#photos-list {
+    margin-bottom: 30px;
+    padding:0;
+    .col-gallery-thumb {
+        margin-top:30px;
+        img, a {
+            display: block;
+            position: relative
+        }
+        a {
+            overflow: hidden
+        }
+        div {
+            position: absolute;
+            background:rgba(240,166,31,0.5);
+            width: 100%;
+            height: 100%;
+            i {
+                font-size: 52px;
+                color: white;
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                height: 52px;
+                width: 52px;
             }
         }
     }

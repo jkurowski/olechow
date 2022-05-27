@@ -10,40 +10,40 @@
 
 @section('content')
     <div id="main-news">
-        <div class="container">
-            @foreach ($articles as $n)
-                <article class="row list-post" id="list-post-{{ $n->id }}" itemscope="" itemtype="http://schema.org/NewsArticle">
-                    <div class="col-6">
-                        <div class="list-post-thumb">
-                            <a href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" itemprop="url">
-                                <picture>
-                                    <source type="image/webp" srcset="{{asset('uploads/articles/thumbs/webp/'.$n->file_webp) }}">
-                                    <source type="image/jpeg" srcset="{{asset('uploads/articles/thumbs/'.$n->file) }}">
-                                    <img src="{{asset('uploads/articles/thumbs/'.$n->file) }}" alt="{{ $n->title }}">
-                                </picture>
-                            </a>
+        @foreach ($articles as $n)
+        <div class="container mb-5">
+            <article class="row list-post" id="list-post-{{ $n->id }}" itemscope="" itemtype="http://schema.org/NewsArticle">
+                <div class="col-6">
+                    <div class="list-post-thumb">
+                        <a href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" itemprop="url">
+                            <picture>
+                                <source type="image/webp" srcset="{{asset('uploads/articles/thumbs/webp/'.$n->file_webp) }}">
+                                <source type="image/jpeg" srcset="{{asset('uploads/articles/thumbs/'.$n->file) }}">
+                                <img src="{{asset('uploads/articles/thumbs/'.$n->file) }}" alt="{{ $n->title }}">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6 d-flex align-items-center">
+                    <div class="list-post-content ps-5 pe-5">
+                        <div class="article-header">
+                            @if($n->date)<div class="list-post-date text-muted">Data publikacji: <span itemprop="datePublished" content="{{ $n->date }}">{{ $n->date }}</span></div>@endif
+                            <h2 class="title"><a href="{{route('front.news.show', $n->slug)}}" itemprop="url"><span itemprop="name headline">{{ $n->title }}</span></a></h2>
+                        </div>
+
+                        <div class="list-post-entry" itemprop="articleBody">
+                            <p class="small-text">{{ $n->content_entry }}</p>
+                        </div>
+
+                        <div class="article-footer">
+                            <a itemprop="url" href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" class="bttn">CZYTAJ WIĘCEJ</a>
+                            <meta itemprop="author" content="Bliski Olechów">
+                            <meta itemprop="mainEntityOfPage" content="">
                         </div>
                     </div>
-                    <div class="col-6 d-flex align-items-center">
-                        <div class="list-post-content ps-5 pe-5">
-                            <div class="article-header">
-                                @if($n->date)<div class="list-post-date text-muted">Data publikacji: <span itemprop="datePublished" content="{{ $n->date }}">{{ $n->date }}</span></div>@endif
-                                <h2 class="title"><a href="{{route('front.news.show', $n->slug)}}" itemprop="url"><span itemprop="name headline">{{ $n->title }}</span></a></h2>
-                            </div>
-
-                            <div class="list-post-entry" itemprop="articleBody">
-                                <p class="small-text">{{ $n->content_entry }}</p>
-                            </div>
-
-                            <div class="article-footer">
-                                <a itemprop="url" href="{{route('front.news.show', $n->slug)}}" title="{{ $n->title }}" class="bttn">CZYTAJ WIĘCEJ</a>
-                                <meta itemprop="author" content="Bliski Olechów">
-                                <meta itemprop="mainEntityOfPage" content="">
-                            </div>
-                        </div>
-                    </div>
-                </article>
-            @endforeach
+                </div>
+            </article>
         </div>
+        @endforeach
     </div>
 @endsection

@@ -558,8 +558,7 @@ span.form-control-character-count {
     color: #484848;
     margin-top: 0;
     margin-bottom: 15px;
-    font-weight: 600;
-    text-transform: uppercase;
+    font-weight: 600
 }
 #gallery .card-body {
     padding: 15px

@@ -14,7 +14,7 @@ class GalleryController extends Controller
     public function index()
     {
         $page = Page::where('id', 3)->first();
-        $galleries = Gallery::orderBy('sort', 'asc')->get();
+        $galleries = Gallery::where('status', 1)->orderBy('sort', 'asc')->get();
 
         return view('front.gallery.index', [
             'page' => $page,

@@ -27,6 +27,12 @@ class IndexController extends Controller
         return view('admin.gallery.index', ['list' => $this->repository->allSort('ASC')]);
     }
 
+    public function ajaxGetGalleries()
+    {
+        $galleries = Gallery::all('id', 'name');
+        return response()->json($galleries);
+    }
+
     public function create()
     {
         return view('admin.gallery.form', [
@@ -56,7 +62,7 @@ class IndexController extends Controller
     {
         return view('admin.gallery.form', [
             'entry' => Gallery::find($id),
-            'cardTitle' => 'Edytuj regułkę',
+            'cardTitle' => 'Edytuj galerię',
             'backButton' => route('admin.gallery.index')
         ]);
     }

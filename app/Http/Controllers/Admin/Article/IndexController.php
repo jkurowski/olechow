@@ -36,7 +36,7 @@ class IndexController extends Controller
 
     public function index()
     {
-        return view('admin.article.index', ['list' => $this->repository->allSort('ASC')]);
+        return view('admin.article.index', ['list' => $this->repository->idDesc()]);
     }
 
     public function create()
