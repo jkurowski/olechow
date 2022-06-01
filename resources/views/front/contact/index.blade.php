@@ -26,7 +26,7 @@
                         <i class="las la-envelope-open-text"></i>
                     </div>
                     <h3>Napisz do nas</h3>
-                    <p><a href="mailto:sprzedaz@bliskiolechów.pl">sprzedaz@bliskiolechów.pl</a></p>
+                    <p><a href="mailto:sprzedaz@madeydevelopment.pl">sprzedaz@madeydevelopment.pl</a></p>
                 </div>
             </div>
             <div class="col-12 mt-1 mt-sm-4">
