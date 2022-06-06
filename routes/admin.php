@@ -85,7 +85,8 @@ Route::group([
 
             Route::resources([
             'seo' => 'Dashboard\SeoController',
-            'social' => 'Dashboard\SocialController'
+            'social' => 'Dashboard\SocialController',
+            'popup' => 'Dashboard\PopupController'
             ]);
         });
     });

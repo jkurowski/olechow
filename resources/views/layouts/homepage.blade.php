@@ -519,6 +519,36 @@
 <script src="{{ asset('/js/validation.min.js') }}" charset="utf-8"></script>
 <script src="{{ asset('/js/pl.js') }}" charset="utf-8"></script>
 
+@if(settings()->get("popup_status") == 1)
+    <div class="modal" tabindex="-1" id="popModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {!! settings()->get("popup_text") !!}
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+<script type="text/javascript">
+    $(document).ready(function(){
+        @if(settings()->get("popup_status") == 1)
+            const popModal = new bootstrap.Modal(document.getElementById('popModal'), {
+                keyboard: false
+            });
+        @endif
+        @if($popup == 1)
+        popModal.show();
+            setTimeout( function(){
+                popModal.hide();
+            }, {{ settings()->get("popup_timeout") }} );
+        @endif
+    });
+</script>
+
 @stack('scripts')
 
 <script type="text/javascript">
