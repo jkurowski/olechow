@@ -33,6 +33,7 @@
                         <li>Powierzchnia:<span>{{$property->area}} m<sup>2</sup></span></li>
                         @if($property->garden_area)<li>Ogródek:<span>{{$property->garden_area}} m<sup>2</sup></span></li>@endif
                         @if($property->balcony_area)<li>Balkon:<span>{{$property->balcony_area}} m<sup>2</sup></span></li>@endif
+                        @if($property->balcony_area_2)<li>Balkon 2:<span>{{$property->balcony_area_2}} m<sup>2</sup></span></li>@endif
                         @if($property->terrace_area)<li>Taras:<span>{{$property->terrace_area}} m<sup>2</sup></span></li>@endif
                         @if($property->loggia_area)<li>Loggia:<span>{{$property->loggia_area}} m<sup>2</sup></span></li>@endif
                         @if($property->parking_space)<li>Miejsce postojowe:<span>{{$property->parking_space}}</span></li>@endif
