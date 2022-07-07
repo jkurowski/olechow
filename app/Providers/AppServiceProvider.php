@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Schema;
 use Request;
 use Illuminate\Support\ServiceProvider;
@@ -79,6 +80,10 @@ class AppServiceProvider extends ServiceProvider
                     "referer"       => Request::header('referer'),
                     "methodType"    => Request::method()
             ]);
+        });
+
+        Blade::directive('money', function ($amount) {
+            return "<?php echo number_format($amount, 0) . ' zł'; ?>";
         });
 
         Image::observe(ImageObserver::class);

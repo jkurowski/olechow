@@ -1786,6 +1786,53 @@ div[class*='col-'].slick-slide {
   text-transform: uppercase;
   margin: 0 0 30px 0;
 }
+.ribbon1 {
+  position: absolute;
+  top: -6.1px;
+  left: 10px;
+}
+.ribbon1:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 76px solid transparent;
+  border-right: 76px solid transparent;
+  border-top: 10px solid #b79a5e;
+}
+.ribbon1 span {
+  position: relative;
+  display: block;
+  text-align: center;
+  background: #b79a5e;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 8px 10px;
+  border-top-right-radius: 8px;
+  width: 152px;
+  color: white;
+  font-weight: 500;
+}
+.ribbon1 span:before,
+.ribbon1 span:after {
+  position: absolute;
+  content: "";
+}
+.ribbon1 span:before {
+  height: 6px;
+  width: 6px;
+  left: -6px;
+  top: 0;
+  background: #b79a5e;
+}
+.ribbon1 span:after {
+  height: 6px;
+  width: 8px;
+  left: -8px;
+  top: 0;
+  border-radius: 8px 8px 0 0;
+  background: #957d4c;
+}
 #roomsList {
   border-bottom: 1px solid #e5e5e5;
   padding: 0 90px;
@@ -1834,10 +1881,15 @@ div[class*='col-'].slick-slide {
 #roomsList ul b {
   float: right;
 }
-#roomsList ul li:first-child {
+#roomsList ul li {
   border-bottom: 1px solid #ddd;
   margin-bottom: 10px;
   padding-bottom: 10px;
+}
+#roomsList ul li:last-child {
+  border-bottom: 0 solid #ddd;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 #roomsList .badge {
   color: #fff;
@@ -1870,6 +1922,11 @@ div[class*='col-'].slick-slide {
 .property #property {
   background: #213c13 url("../../gfx/green-bg.png");
   padding: 60px 0;
+}
+.property #property h6 {
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
 }
 .property .property-desc ul li {
   color: #fff;
@@ -2158,6 +2215,15 @@ div[class*='col-'].slick-slide {
   }
   #roomsList .col a {
     width: 100%;
+  }
+  #roomsList .col.col-top {
+    padding: 40px 15px 10px;
+  }
+  .ribbon1 {
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 175px;
   }
   #planNav .bttn {
     padding: 10px 0;
@@ -3061,6 +3127,10 @@ footer img.footer-logo {
   #maincta h3 {
     font-size: 23px;
     margin: 20px 0;
+  }
+  .ribbon1 span {
+    font-size: 12px;
+    padding: 8px 8px 6px;
   }
 }
 /* end of 1199.98 */

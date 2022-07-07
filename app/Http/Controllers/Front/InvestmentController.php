@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 // CMS
 use App\Repositories\InvestmentRepository;
 use App\Models\Page;
+use Illuminate\Support\Facades\DB;
 
 class InvestmentController extends Controller
 {
@@ -26,6 +27,7 @@ class InvestmentController extends Controller
         $investment = $this->repository->find(1);
         $investment_room = $investment->load(array(
             'floorRooms' => function ($query) use ($request) {
+
                 if ($request->input('rooms')) {
                     $query->where('rooms', $request->input('rooms'));
                 }

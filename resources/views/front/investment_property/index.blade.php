@@ -28,6 +28,9 @@
                     <div class="room-status room-status-{{$property->status}}">
                         {{ roomStatus($property->status )}}
                     </div>
+                    @if($property->price)
+                        <h6 class="propertyPrice">@money($property->price)</h6>
+                    @endif
                     <ul class="list-unstyled">
                         <li>Pokoje:<span>{{$property->rooms}}</span></li>
                         <li>Powierzchnia:<span>{{$property->area}} m<sup>2</sup></span></li>

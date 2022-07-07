@@ -3,7 +3,10 @@
         @if($properties->count() > 0)
             @foreach($properties as $room)
                 <div class="row">
-                    <div class="col">
+                    @if($room->price)
+                        <span class="ribbon1"><span>Oferta specjalna</span></span>
+                    @endif
+                    <div class="col col-top">
                         <a href="{{route('front.investment.property.index', ['floor' => $room->floor_id, 'property' => $room->id])}}">
                             <h2>{{$room->name_list}}<br><span>{{$room->number}}</span></h2>
                         </a>
@@ -19,6 +22,9 @@
                     </div>
                     <div class="col">
                         <ul class="mb-0 list-unstyled">
+                            @if($room->price)
+                                <li>cena: <b>@money($room->price)</b></li>
+                            @endif
                             <li>pokoje: <b>{{$room->rooms}}</b></li>
                             <li>pow.: <b>{{$room->area}} m<sup>2</sup></b></li>
                         </ul>
