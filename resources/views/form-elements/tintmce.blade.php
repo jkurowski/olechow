@@ -1,4 +1,4 @@
-<script src="{{ URL::asset('js/editor/tinymce.min.js') }}" charset="utf-8"></script>
+<script src="{{ asset('/js/editor/tinymce.min.js') }}" charset="utf-8"></script>
 <script>
     tinymce.init({
         selector: ".tinymce",
@@ -17,6 +17,6 @@
         image_advtab: true,
         external_filemanager_path:"/js/editor/plugins/filemanager/",
         filemanager_title:"kCMS Filemanager" ,
-        external_plugins: { "filemanager" : "/js/editor/plugins/filemanager/plugin.min.js"}
+        external_plugins: { "filemanager" : "{{ asset('/js/editor/plugins/filemanager/plugin.min.js') }}"}
     });
 </script>
