@@ -85,7 +85,7 @@
                         <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="Osiele Bliski Olechów" width="1040" height="1336" loading="lazy">
                     </picture>
                 </div>
-                <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center">
+                <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center" data-aos="fade-up" data-aos-offset="600">
                     <div class="maininvestment-text">
                         <h2>Bliski Olechów – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
                         <p>Bliski Olechów to nowoczesne budownictwo otoczone zielenią, świetnie skomunikowane zarówno samochodem jak i transportem miejskim. Istotnym elementem jest realizowanie  naszej inwestycji z zastosowaniem sprawdzonych materiałów i technologii.</p>
@@ -97,7 +97,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-5 col-xl-6 p-0 d-none d-md-block"></div>
-                <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center">
+                <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
                     <div class="maininvest-cta text-center">
                         <h2>Kup komfortowe mieszkanie <br><span>już od 6.500 zł/m<sup>2</sup></span></h2>
                         <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
@@ -110,7 +110,7 @@
     <section id="mainwhy">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-12 text-center">
+                <div class="col-12 text-center" data-aos="zoom-in" data-aos-offset="300">
                     <h2 class="why-title">DLACZEGO WARTO?</h2>
                 </div>
             </div>
@@ -217,7 +217,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-sm-6">
-                    <h2>GALERIA</h2>
+                    <h2 data-aos="fade-right" data-aos-offset="300">GALERIA</h2>
                 </div>
                 <div class="col-12 col-sm-6">
                     <ul id="gallery_nav" class="mb-0 list-unstyled d-flex galleryCarouselNav">
@@ -311,17 +311,17 @@
                 <div class="col-12 text-center">
                     <h2>Cena mieszkania</h2>
                     <div class="row">
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300">
                             <h3>2 pok. <span class="green">od 7.100</span> zł /m<sup>2</sup></h3>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300">
                             <h3>3 pok. <span class="green">od 6.500</span> zł /m<sup>2</sup></h3>
                         </div>
-                        <div class="col-12 col-md-4">
+                        <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="600">
                             <h3>4 pok. <span class="green">od 7.2000</span> zł /m<sup>2</sup></h3>
                         </div>
                     </div>
-                    <a href="{{ route('front.investment.show') }}" class="bttn">ZOBACZ MIESZKANIA</a>
+                    <a href="{{ route('front.investment.show') }}" class="bttn" data-aos="fade-up" data-aos-offset="300" data-aos-delay="800">ZOBACZ MIESZKANIA</a>
                 </div>
             </div>
         </div>
@@ -370,7 +370,7 @@
     <section id="maininvestor">
         <div class="container">
             <div class="row">
-                <div class="col-6 d-none d-xl-block">
+                <div class="col-6 d-none d-xl-block" data-aos="fade-right" data-aos-offset="600">
                     <div class="maininvestor-img">
                         <picture class="d-none d-xl-block">
                             <source type="image/webp" media="(min-width: 1200px)" srcset="{{ asset('/uploads/inwestor.webp') }}">
@@ -380,7 +380,7 @@
                         </picture>
                     </div>
                 </div>
-                <div class="col-12 col-xl-6 d-flex align-items-center">
+                <div class="col-12 col-xl-6 d-flex align-items-center" data-aos="fade-left" data-aos-offset="400">
                     <div class="maininvestor-text">
                         <img src="{{ asset('/gfx/logo-kolor.png') }}" alt="Logo firmy Madey Development" width="250" height="72">
                         <h2>Jesteśmy partnerem, któremu możesz zaufać.</h2>
@@ -398,7 +398,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="text-center">
+                    <div class="text-center" data-aos="flip-left" data-aos-offset="400">
                         <img src="{{ asset('/gfx/logo.svg') }}" alt="Logo Bliski Olechów" width="209" height="263" class="m-auto" loading="lazy">
                         <h6>ul. Odnowiciela 13, 97-300 Łódź</h6>
                     </div>
@@ -406,13 +406,13 @@
                 <div class="col-12">
                     <div class="maincontact-row">
                         <div class="row">
-                            <div class="col-12 col-sm-6 col-border">
+                            <div class="col-12 col-sm-6 col-border" data-aos="fade-right" data-aos-offset="400">
                                 <div class="maincontact-item d-flex justify-content-center justify-content-sm-end">
                                     <i class="las la-envelope-open-text"></i>
                                     <a href="mailto:sprzedaz@madeydevelopment.pl">sprzedaz@madeydevelopment.pl</a>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-6">
+                            <div class="col-12 col-sm-6" data-aos="fade-left" data-aos-offset="400">
                                 <div class="maincontact-item">
                                     <i class="las la-phone"></i>
                                     <a href="tel:+48576117119">+48 576 117 119</a>
@@ -552,6 +552,8 @@
 @stack('scripts')
 
 <script type="text/javascript">
+    AOS.init({disable: 'mobile'});
+
     WebFontConfig = {
         google: { families: [ 'Merriweather:300,400,700,900|Montserrat:400,500,600' ] }
     };
