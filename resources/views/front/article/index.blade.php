@@ -11,7 +11,7 @@
 @section('content')
     <div id="main-news">
         @foreach ($articles as $int => $n)
-        <div class="container mb-5" @if($int > 0)  data-aos="zoom-in" @endif>
+        <div class="container mb-5" @if($int > 0)  data-aos="zoom-in" data-aos-offset="400" @endif>
             <article class="row list-post" id="list-post-{{ $n->id }}" itemscope="" itemtype="http://schema.org/NewsArticle">
                 <div class="col-6">
                     <div class="list-post-thumb">
