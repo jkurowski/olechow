@@ -99,7 +99,7 @@
                 <div class="col-5 col-xl-6 p-0 d-none d-md-block"></div>
                 <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
                     <div class="maininvest-cta text-center">
-                        <h2>Kup komfortowe mieszkanie <br><span>już od 6.500 zł/m<sup>2</sup></span></h2>
+                        <h2>Kup komfortowe mieszkanie <br><span>już od 6.900 zł/m<sup>2</sup></span></h2>
                         <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
                     </div>
                 </div>
@@ -315,10 +315,10 @@
                             <h3>2 pok. <span class="green">od 7.100</span> zł /m<sup>2</sup></h3>
                         </div>
                         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300">
-                            <h3>3 pok. <span class="green">od 6.500</span> zł /m<sup>2</sup></h3>
+                            <h3>3 pok. <span class="green">od 6.900</span> zł /m<sup>2</sup></h3>
                         </div>
                         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="600">
-                            <h3>4 pok. <span class="green">od 7.2000</span> zł /m<sup>2</sup></h3>
+                            <h3>4 pok. <span class="green">od 7.500</span> zł /m<sup>2</sup></h3>
                         </div>
                     </div>
                     <a href="{{ route('front.investment.show') }}" class="bttn" data-aos="fade-up" data-aos-offset="300" data-aos-delay="800">ZOBACZ MIESZKANIA</a>
