@@ -19,7 +19,7 @@
                             <picture>
                                 <source type="image/webp" srcset="{{asset('uploads/articles/thumbs/webp/'.$n->file_webp) }}">
                                 <source type="image/jpeg" srcset="{{asset('uploads/articles/thumbs/'.$n->file) }}">
-                                <img src="{{asset('uploads/articles/thumbs/'.$n->file) }}" alt="{{ $n->title }}">
+                                <img src="{{asset('uploads/articles/thumbs/'.$n->file) }}" alt="{{ $n->title }}" width="792" height="594">
                             </picture>
                         </a>
                     </div>
@@ -49,6 +49,8 @@
 @endsection
 @push('scripts')
     <script>
-        AOS.init({disable: 'mobile'});
+        $(document).ready(function() {
+            AOS.init({disable: 'mobile'});
+        });
     </script>
 @endpush
