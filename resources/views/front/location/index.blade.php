@@ -41,21 +41,21 @@
 
                 <div class="col-12 mt-3">
                     <div class="location-img mt-3 mt-lg-5">
-                        <div class="location-img-apla location-img-apla-right">
+                        <div class="location-img-apla location-img-apla-right" data-aos="fade-left" data-aos-offset="200">
                             <h2>ZIELEŃ I WYPOCZYNEK</h2>
                             <p>Bliski Olechów znajduje się  przy Parku Źródła Olechówki oraz innych terenach zielonych wyposażonych w m.in. tężnię solankową, nowoczesne place zabaw dla dzieci oraz infrastrukturę sportowo-rekreacyjną.</p>
                         </div>
-                        <img src="{{ asset('/gfx/park.jpg') }}" alt="">
+                        <img src="{{ asset('/gfx/park.jpg') }}" alt="" data-aos="fade-right" data-aos-offset="300">
                     </div>
                 </div>
 
                 <div class="col-12 pb-0 pb-lg-5 mb-0 mb-lg-5">
                     <div class="location-img">
-                        <div class="location-img-apla location-img-apla-left">
+                        <div class="location-img-apla location-img-apla-left" data-aos="fade-right" data-aos-offset="200">
                             <h2>NA WYCIĄGNIĘCIE RĘKI</h2>
-                            <p>Bliskość przedszkoli i dobrych szkół, przychodni publicznych i prywatnych, szeroki wybór sklepów i aptek oraz świetne miejsca do sportu,  rekreacji i odpoczynku w otoczeniu zieleni to powód, dla którego naszą najnowszą inwestycję zdecydowaliśmy się zrealizować właśnie tutaj.</p>
+                            <p>Bliskość przedszkoli i dobrych szkół, przychodni publicznych i prywatnych, szeroki wybór sklepów i aptek oraz świetne miejsca do sportu, rekreacji i odpoczynku w otoczeniu zieleni to powód, dla którego naszą najnowszą inwestycję zdecydowaliśmy się zrealizować właśnie tutaj.</p>
                         </div>
-                        <img src="{{ asset('/gfx/kids.jpg') }}" alt="">
+                        <img src="{{ asset('/gfx/kids.jpg') }}" alt="" data-aos="fade-left" data-aos-offset="300">
                     </div>
                 </div>
             </div>
@@ -66,6 +66,8 @@
     <link href="{{ asset('/css/leaflet.css') }}" rel="stylesheet">
     <script src="{{ asset('/js/leaflet.min.js') }}" charset="utf-8"></script>
     <script>
+        AOS.init({disable: 'mobile'});
+
         const tileLayer = new L.TileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             'attribution': 'Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors'
         });
