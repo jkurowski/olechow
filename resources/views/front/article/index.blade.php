@@ -10,8 +10,8 @@
 
 @section('content')
     <div id="main-news">
-        @foreach ($articles as $n)
-        <div class="container mb-5">
+        @foreach ($articles as $int => $n)
+        <div class="container mb-5" @if($int > 0)  data-aos="zoom-in" @endif>
             <article class="row list-post" id="list-post-{{ $n->id }}" itemscope="" itemtype="http://schema.org/NewsArticle">
                 <div class="col-6">
                     <div class="list-post-thumb">
@@ -47,3 +47,8 @@
         @endforeach
     </div>
 @endsection
+@push('scripts')
+    <script>
+        AOS.init({disable: 'mobile'});
+    </script>
+@endpush
