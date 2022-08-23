@@ -55,6 +55,14 @@
                                                 '4' => 'Wynajęte'
                                         ]])
                                         @include('form-elements.html-select', [
+                                            'label' => 'Oferta specjalna',
+                                            'name' => 'highlighted',
+                                            'selected' => $entry->highlighted,
+                                            'select' => [
+                                                '0' => 'Nie',
+                                                '1' => 'Tak'
+                                        ]])
+                                        @include('form-elements.html-select', [
                                             'label' => 'Lokal usługowy',
                                             'name' => 'comercial_area',
                                             'selected' => $entry->comercial_area,

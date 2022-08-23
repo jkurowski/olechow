@@ -107,7 +107,7 @@ class PropertyController extends Controller
         return redirect(route('admin.developro.investment.floor.property.index', [$investment, $floor]))->with('success', 'Powierzchnia zaktualizowana');
     }
 
-    public function destroy(int $id)
+    public function destroy(Investment $investment, Floor $floor, int $id)
     {
         $this->repository->delete($id);
         return response()->json('Deleted');

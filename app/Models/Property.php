@@ -35,6 +35,7 @@ class Property extends Model
         'parking_space',
         'garage',
         'type',
+        'highlighted',
         'html',
         'cords',
         'file',

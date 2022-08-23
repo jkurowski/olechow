@@ -46,7 +46,7 @@
                                 <td class="option-120">
                                     <div class="btn-group">
                                         <a href="{{route('admin.developro.investment.floor.property.edit', [$investment, $floor, $p])}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
-                                        <form method="POST" action="{{route('admin.developro.investment.floor.property.destroy', [$investment, $floor, $p])}}">
+                                        <form method="POST" action="{{route('admin.developro.investment.floor.property.destroy', [$investment, $floor, $p->id])}}">
                                             {{ csrf_field() }}
                                             {{ method_field('DELETE') }}
                                             <button type="submit" class="btn action-button confirm" data-toggle="tooltip" data-placement="top" title="Usuń" data-id="{{ $p->id }}"><i class="fe-trash-2"></i></button>
