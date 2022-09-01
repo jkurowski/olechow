@@ -27,8 +27,8 @@ class InvestmentController extends Controller
         $investment = $this->repository->find(1);
         $investment_room = $investment->load(array(
             'floorRooms' => function ($query) use ($request) {
-                $query->orderBy('highlighted', 'DESC');
-                $query->orderBy('number_order', 'ASC');
+                //$query->orderBy('highlighted', 'DESC');
+                $query->orderBy('status', 'ASC');
 
                 if ($request->input('rooms')) {
                     $query->where('rooms', $request->input('rooms'));
