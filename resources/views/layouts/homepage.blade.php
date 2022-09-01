@@ -309,16 +309,16 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Cena mieszkania</h2>
+                    <h2>Rodzaje mieszkań</h2>
                     <div class="row">
                         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300">
-                            <h3>2 pok. <span class="green">od 7.100</span> zł /m<sup>2</sup></h3>
+                            <h3>2 pok. <span class="green">od 40</span> m<sup>2</sup></h3>
                         </div>
                         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="300">
-                            <h3>3 pok. <span class="green">od 6.900</span> zł /m<sup>2</sup></h3>
+                            <h3>3 pok. <span class="green">od 59</span> m<sup>2</sup></h3>
                         </div>
                         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300" data-aos-delay="600">
-                            <h3>4 pok. <span class="green">od 7.500</span> zł /m<sup>2</sup></h3>
+                            <h3>4 pok. <span class="green">od 75</span> m<sup>2</sup></h3>
                         </div>
                     </div>
                     <a href="{{ route('front.investment.show') }}" class="bttn" data-aos="fade-up" data-aos-offset="300" data-aos-delay="800">ZOBACZ MIESZKANIA</a>
