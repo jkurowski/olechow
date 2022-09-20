@@ -99,7 +99,7 @@
                 <div class="col-5 col-xl-6 p-0 d-none d-md-block"></div>
                 <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
                     <div class="maininvest-cta text-center">
-                        <h2>Kup komfortowe mieszkanie <br><span>już od 6.900 zł/m<sup>2</sup></span></h2>
+                        <h2>Kup komfortowe mieszkanie <br><span>już od 25 m<sup>2</sup></span></h2>
                         <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
                     </div>
                 </div>
