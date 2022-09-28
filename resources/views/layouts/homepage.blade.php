@@ -77,15 +77,15 @@
     <section id="maininvestment">
         <div class="container-fluid green-bg">
             <div class="row">
-                <div class="col-5 col-xl-6 p-0 d-none d-md-block">
-                    <picture>
-                        <source type="image/webp" media="(min-width: 767px)" srcset="{{ asset('/uploads/mainabout.webp') }}">
-                        <source type="image/webp" media="(max-width: 767px)" srcset="{{ asset('/uploads/mainabout_300.webp') }}">
-                        <source type="image/jpeg" srcset="{{ asset('/uploads/mainabout.jpg') }}">
-                        <img src="{{ asset('/uploads/mainabout.jpg') }}" alt="Osiele Bliski Olechów" width="1040" height="1336" loading="lazy">
-                    </picture>
+                <div class="col-12 col-lg-7 p-0">
+                    <div class="ratio ratio-16x9">
+                        <video width="320" height="240" muted id="video">
+                            <source src="{{ asset('/uploads/movie.mp4') }}" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
                 </div>
-                <div class="col-12 col-md-7 col-xl-6 d-flex align-items-center" data-aos="fade-up" data-aos-offset="600">
+                <div class="col-12 col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-offset="600">
                     <div class="maininvestment-text">
                         <h2>Bliski Olechów – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
                         <p>Bliski Olechów to nowoczesne budownictwo otoczone zielenią, świetnie skomunikowane zarówno samochodem jak i transportem miejskim. Istotnym elementem jest realizowanie  naszej inwestycji z zastosowaniem sprawdzonych materiałów i technologii.</p>
@@ -96,8 +96,7 @@
         </div>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-5 col-xl-6 p-0 d-none d-md-block"></div>
-                <div class="col-12 col-md-7 col-xl-6 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
+                <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
                     <div class="maininvest-cta text-center">
                         <h2>Kup komfortowe mieszkanie <br><span>już od 25 m<sup>2</sup></span></h2>
                         <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
@@ -111,7 +110,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center" data-aos="zoom-in" data-aos-offset="300">
-                    <h2 class="why-title">DLACZEGO WARTO?</h2>
+                    <h2 class="why-title mt-0">DLACZEGO WARTO?</h2>
                 </div>
             </div>
             <div class="row">
@@ -552,6 +551,23 @@
 @stack('scripts')
 
 <script type="text/javascript">
+    let video = document.getElementById('video')
+
+    function playVideoOnScroll () {
+        const threshold = 100 //px above the video to start playing
+        const vp = window.innerHeight;
+        let offset = video.getBoundingClientRect().top
+
+        if (offset < (vp - (vp / 3)) && offset > 0) {
+            video.play();
+        } else {
+            video.pause();
+        }
+    }
+
+    window.addEventListener('scroll', playVideoOnScroll, false)
+    window.addEventListener('resize', playVideoOnScroll, false)
+
     AOS.init({disable: 'mobile'});
 
     WebFontConfig = {
