@@ -14,11 +14,19 @@
                     <div class="col-6 col-lg-10">
                         <nav>
                             <ul class="mb-0 list-unstyled header-menu">
-                                <li><a href="{{ route('front.investment.show') }}">Zobacz mieszkania</a></li>
+                                <li><a href="{{ route('front.investment.show') }}">Mieszkania</a></li>
                                 <li><a href="{{ route('front.location.index') }}">Lokalizacja</a></li>
                                 <li><a href="{{ route('front.gallery.index') }}">Galeria</a></li>
                                 <li><a href="{{ route('howtobuy.index') }}">Jak kupić</a></li>
+                                <li>
+                                    <a href="#">Dla klienta</a>
+                                    <ul class="submenu">
+                                        <li><a href="{{ route('kredyty.index') }}">Kredyt</a></li>
+                                        <li><a href="{{ route('pakiety.index') }}">Pakiety wykończeniowe</a></li>
+                                    </ul>
+                                </li>
                                 <li><a href="{{ route('front.news.index') }}">Aktualności</a></li>
+                                <li><a href="{{ route('land.index') }}">Kupimy grunty</a></li>
                                 <li><a href="{{ route('contact.index') }}">Kontakt</a></li>
                                 <li class="header-cta"><a href="tel:+48576117119"><i class="las la-phone"></i> +48 576 117 119</a></li>
                             </ul>

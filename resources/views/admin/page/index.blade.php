@@ -53,11 +53,6 @@
                                         <a href="{{$page->url}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Otwórz stronę" target="_blank"><i class="fe-link"></i></a>
                                         <a href="{{route('admin.url.edit', $page->id)}}" class="btn action-button me-1" data-toggle="tooltip" data-placement="top" title="Edytuj"><i class="fe-edit"></i></a>
                                         @endif
-                                        <form method="POST" action="{{route('admin.page.destroy', $page->id)}}">
-                                            {{ csrf_field() }}
-                                            {{ method_field('DELETE') }}
-                                            <button type="submit" class="btn action-button confirm" data-toggle="tooltip" data-placement="top" title="Usuń" data-id="{{ $page->id }}"><i class="fe-trash-2"></i></button>
-                                        </form>
                                     </div>
                                 </td>
                             </tr>

@@ -22,15 +22,40 @@ header {
     }
     .header-menu {
         display: flex;
+
+        .submenu {
+            position: absolute;
+            display: none;
+            top: 100%;
+            margin: 0;
+            background: black;
+            width: 265px;
+            padding: 10px 15px;
+            li {
+                margin: 0;
+                height: auto;
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+
         li {
             margin-right: 30px;
             height: 40px;
             display: inline-flex;
             align-items: center;
+            position: relative;
             a {
                 color: white;
                 font-size: 16px;
                 text-transform: uppercase;
+            }
+            &:hover .submenu {
+                display: block;
+                a {
+                    color: white;
+                }
             }
         }
         .header-cta {
@@ -56,6 +81,8 @@ header {
             }
         }
     }
+
+
 }
 
 #pagecontent {
@@ -82,6 +109,12 @@ header.fixed {
     }
     .header-menu li {
         height: 66px
+    }
+    .header-menu ul li {
+        height: auto;
+        a {
+            color: white;
+        }
     }
 }
 

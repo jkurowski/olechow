@@ -655,6 +655,117 @@ section {
     }
 }
 
+/* Pakiety
+================================================== */
+.programs {
+    margin: 0;
+    list-style: none;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0;
+}
+.programs li {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+    padding: 45px 50px 50px;
+}
+ul.programs li.smart {
+    background-color: #f1f3f4;
+}
+ul.programs li.trend {
+    background-color: #909398;
+}
+ul.programs li.high {
+    background-color: #1d1d1b;
+}
+ul.programs li.trend .desc,
+ul.programs li.high .desc,
+ul.programs li.trend .desc2,
+ul.programs li.high .desc2 {
+    color: #fff;
+}
+ul.programs .stars {
+    display: flex;
+    justify-content: center;
+}
+ul.programs .icon img {
+    margin: 45px auto;
+}
+ul.programs .desc {
+    padding-bottom: 30px;
+    height: 130px;
+}
+ul.programs .desc2 {
+    padding-bottom: 25px;
+}
+ul.programs .desc p {
+    font-style: oblique;
+}
+ul.programs li h3 {
+    color: #d2c0ac;
+    font-size: 50px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+ul.programs li h3 img {
+    display: inline-block;
+}
+ul.programs .letter {
+    display: inline-block;
+    margin: 0;
+}
+ul.programs.jesion-programs li {
+    text-align: center;
+}
+#page ul.programs.jesion-programs li h3,
+#page ul.programs.jesion-programs .desc p {
+    color: white;
+    line-height: normal;
+}
+ul.programs.jesion-programs li h3 {
+    line-height: 48px;
+}
+ul.programs.jesion-programs li a {
+    color: #fff;
+    border: 1px solid white;
+    padding: 7px 15px;
+    font-size: 13px;
+    background: #44601f;
+    transition: all 200ms linear;
+}
+ul.programs.jesion-programs li a:hover {
+    background: white;
+    color: #44601f;
+}
+#page ul.programs.jesion-programs li .desc p {
+    font-size: 18px;
+    line-height: 25px;
+}
+ul.programs.jesion-programs .desc {
+    padding-bottom: 30px;
+    height: 130px;
+}
+ul.programs.jesion-programs .stars {
+    margin-bottom: 20px;
+}
+ul.programs.jesion-programs li h3 strong {
+    display: block;
+    width: 100%;
+    line-height: 1;
+}
+ul.programs.jesion-programs .pakiet-basic {
+    background: #9dcf5b;
+}
+ul.programs.jesion-programs .pakiet-premium {
+    background: #8AB74D;
+}
+ul.programs.jesion-programs .pakiet-vip {
+    background: #769F3F;
+}
 
 /* Map
 ================================================== */
@@ -1481,6 +1592,33 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 }
 /* end of 1640 */
 
+@media (max-width: 1729.98px) {
+    header {
+        padding: 40px 0 0 15px
+    }
+    header .header-menu li:last-child {
+        margin-right: 15px
+    }
+    header.fixed {
+        padding: 10px 0 10px 10px;
+    }
+    header .col-lg-2 {
+        flex: 0 0 auto;
+        width: 120px;
+    }
+    header .col-lg-10 {
+        flex: 0 0 auto;
+        width: calc(100% - 120px);
+    }
+}
+
+@media (max-width: 1632px) {
+    #page ul.programs.jesion-programs li .desc p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
 @media (max-width: 1449.98px) {
     #howtobuy .container {
         padding: 0 30px;
@@ -1494,6 +1632,29 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
     }
 }
 /* end of 1479.98 */
+
+@media (max-width: 1529.98px) {
+    header .header-menu li {
+        margin-right: 24px;
+    }
+    header .header-menu li a {
+        font-size: 15px
+    }
+    header .header-menu .header-cta a {
+        padding: 0 20px 0 45px;
+        font-size: 15px
+    }
+    header .header-menu .submenu {
+        width: 250px
+    }
+}
+
+@media (max-width: 1399.98px) {
+    #page ul.programs.jesion-programs li .desc p {
+        font-size: 15px;
+        line-height: 20px;
+    }
+}
 
 @media (max-width: 1389.98px) {
     header {
@@ -1557,29 +1718,6 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
 
 @media (max-width: 1299.98px) {
     header {
-        &.fixed {
-            padding: 10px 20px;
-        }
-        .header-menu li {
-            margin-right: 19px;
-            &.header-cta {
-                margin-right: 0;
-            }
-        }
-    }
-
-}
-/* end of 1199.98 */
-
-@media (max-width: 1199.98px) {
-    body {
-        line-height: 26px;
-        font-size: 16px;
-    }
-    h3 {
-        font-size: 28px;
-    }
-    header {
         padding: 15px 10px 0;
         &.fixed {
             padding: 10px 10px;
@@ -1600,6 +1738,37 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
             padding: 0 20px 0 45px
         }
     }
+    header {
+        &.fixed {
+            padding: 10px 20px;
+        }
+        .header-menu li {
+            margin-right: 19px;
+            &.header-cta {
+                margin-right: 0;
+            }
+        }
+    }
+    header .header-menu .header-cta a {
+        padding: 0 13px 0 38px;
+        font-size: 13px;
+    }
+    header .header-menu .header-cta a i {
+        left: 13px;
+        font-size: 18px;
+    }
+}
+/* end of 1199.98 */
+
+@media (max-width: 1199.98px) {
+    body {
+        line-height: 26px;
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+
     .contact-box {
         padding: 40px 0
     }
@@ -1727,34 +1896,16 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
         font-size: 12px;
         padding: 8px 8px 6px
     }
+    .programs li {
+        padding: 25px 30px 35px;
+    }
+    ul.programs li h3 {
+        font-size: 40px
+    }
 }
 /* end of 1199.98 */
 
-@media (max-width: 991.98px) {
-    #page-header {
-        height: auto;
-        padding: 40px 0;
-        .breadcrumb {
-            margin-bottom: 0;
-        }
-        h1 {
-            font-size: 50px;
-        }
-    }
-    .contact-box {
-        padding: 20px 0;
-        margin-bottom: 15px;
-        h4 {
-            font-size: 26px;
-        }
-    }
-    #contact-form {
-        margin-bottom: 30px
-    }
-    .googlemap iframe {
-        border: 0;
-        height: 220px;
-    }
+@media (max-width: 1139.98px) {
     header {
         position: static;
         padding: 10px;
@@ -1793,12 +1944,18 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
         display: block;
         width: 100%;
         text-align: center;
-        margin: 40px 0;
+        margin: 20px 0;
         a {
             color: #213c13;
             font-weight: 500;
-            font-size: 24px;
+            font-size: 18px
         }
+        &:hover a {
+            color: #213c13
+        }
+    }
+    header .header-menu li:hover .submenu a {
+        color: #213c13
     }
     header .header-menu li.header-cta {
         margin-top: 30px;
@@ -1810,6 +1967,46 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
     header.fixed .header-menu li {
         height: auto;
     }
+    header .header-menu .submenu {
+        width: 100%;
+        position: static;
+        display: block;
+        background: #eee;
+        padding: 11px 0 21px;
+        li {
+            margin-top: 12px;
+            &:last-child {
+                margin-top: 12px;
+            }
+        }
+    }
+}
+@media (max-width: 991.98px) {
+    #page-header {
+        height: auto;
+        padding: 40px 0;
+        .breadcrumb {
+            margin-bottom: 0;
+        }
+        h1 {
+            font-size: 50px;
+        }
+    }
+    .contact-box {
+        padding: 20px 0;
+        margin-bottom: 15px;
+        h4 {
+            font-size: 26px;
+        }
+    }
+    #contact-form {
+        margin-bottom: 30px
+    }
+    .googlemap iframe {
+        border: 0;
+        height: 220px;
+    }
+
     #howtobuy h2.section-title {
         font-size: 41px;
         margin-bottom: 30px
@@ -1937,6 +2134,17 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
     }
     #maincta h3 {
         font-size: 18px;
+    }
+    .programs li {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        margin-bottom: 15px;
+    }
+    ul.programs .desc,
+    ul.programs.jesion-programs .desc {
+        padding-bottom: 20px;
+        height: auto;
     }
 }
 /* end of 991.98 */
@@ -2088,6 +2296,15 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
             line-height: normal;
             font-size: 14px;
         }
+    }
+
+    ul.programs li h3 {
+        font-size: 29px;
+    }
+    ul.programs .icon img {
+        margin: 15px auto;
+        height: 60px;
+        width: auto;
     }
 }
 /* end of 767.98 */
