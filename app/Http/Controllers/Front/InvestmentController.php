@@ -62,4 +62,23 @@ class InvestmentController extends Controller
             'page' => $page
         ]);
     }
+
+    public function json(Request $request)
+    {
+
+        $investment = $this->repository->find(1);
+        $investment_room = $investment->load(array(
+            'floorRooms' => function ($query) use ($request) {
+                $query->orderBy('status', 'ASC');
+                if ($request->input('rooms')) {
+                    $query->whereIn('rooms', explode(',', $request->input('rooms')));
+                }
+                if ($request->input('status')) {
+                    $query->where('status', $request->input('status'));
+                }
+            }
+        ));
+
+        return $investment_room->floorRooms;
+    }
 }

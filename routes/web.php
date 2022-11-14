@@ -57,6 +57,9 @@ Route::middleware(['restrictIp'])->group(function () {
         Route::get('/',
             'InvestmentController@show')->name('show');
 
+        Route::get('/json',
+            'InvestmentController@json')->name('json');
+
     // Inwestycja budynkowa
 
         Route::get('/pietro/{floor}',
