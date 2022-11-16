@@ -103,6 +103,15 @@
                     </div>
                 </div>
             </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
+                    <div class="maininvest-cta text-center pt-3">
+                        <h2>Istnieje możliwość zakupu 2 miejsc postojowych</h2>
+                        <h2><b>Szczegóły w biurze sprzedaży</b></h2>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
