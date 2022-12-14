@@ -93,6 +93,10 @@
                                             <span class="invalid-feedback" role="alert"><strong>{{ $message }}</strong></span>
                                             @enderror
                                         </div>
+                                        <div class="col-12 form-input col-input-important">
+                                            <label for="form_surname">Nazwisko <span class="text-danger">*</span></label>
+                                            <input name="form_surname" id="form_surname" class="form-control" type="text" value="{{ old('form_surname') }}">
+                                        </div>
                                         <div class="col-12 col-sm-6 form-input">
                                             <label for="form_email">E-mail <span class="text-danger">*</span></label>
                                             <input name="form_email" id="form_email" class="validate[required] form-control @error('form_email') is-invalid @enderror" type="text" value="{{ old('form_email') }}">

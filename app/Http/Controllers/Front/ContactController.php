@@ -33,11 +33,11 @@ class ContactController extends Controller
 
     function property(ContactFormRequest $request, $id)
     {
-        Property::find($id)->notify(new PropertyNotification($request));
-        Mail::to(settings()->get("page_email"))->send(new MailSend($request));
-
-        (new \App\Models\RodoClient)->saveOrCreate($request);
-
+        if(!$request->get('form_surname')) {
+            Property::find($id)->notify(new PropertyNotification($request));
+            Mail::to(settings()->get("page_email"))->send(new MailSend($request));
+            (new \App\Models\RodoClient)->saveOrCreate($request);
+        }
         return redirect()->back()->with(
             'success',
             'Twoja wiadomość została wysłana. W najbliższym czasie skontaktujemy się z Państwem celem omówienia szczegółów!'
@@ -46,20 +46,11 @@ class ContactController extends Controller
 
     function send(ContactFormRequest $request, Recipient $recipient)
     {
-        $recipient->notify(new ContactNotification($request));
-
-        Mail::to(settings()->get("page_email"))->send(new MailSend($request));
-
-        (new \App\Models\RodoClient)->saveOrCreate($request);
-
-//        Tracker::trackEvent([
-//            'event' => 'contact.form:contact',
-//            'object' => json_encode($request->only([
-//                'form_name',
-//                'form_email',
-//                'form_message'], true))
-//        ]);
-
+        if(!$request->get('form_surname')) {
+            $recipient->notify(new ContactNotification($request));
+            Mail::to(settings()->get("page_email"))->send(new MailSend($request));
+            (new \App\Models\RodoClient)->saveOrCreate($request);
+        }
         return redirect()->back()->with(
             'success',
             'Twoja wiadomość została wysłana. W najbliższym czasie skontaktujemy się z Państwem celem omówienia szczegółów!'
