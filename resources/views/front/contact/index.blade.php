@@ -11,13 +11,6 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <div class="text-center mb-5">
-                    <h3 class="text-danger">24.12 i 31.12 - BIURO SPRZEDAŻY ZAMKNIĘTE</h3>
-                    <h3 class="text-danger">22.12 - 30.12 - 10:00 - 18:00</h3>
-                </div>
-            </div>
-
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="contact-box">
                     <div class="contact-icon">
