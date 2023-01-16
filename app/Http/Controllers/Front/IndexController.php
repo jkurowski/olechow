@@ -9,6 +9,7 @@ use Illuminate\Http\Request;
 use App\Models\Slider;
 use App\Models\RodoRules;
 use Illuminate\Support\Facades\Cookie;
+use App\Models\Property;
 
 class IndexController extends Controller
 {
@@ -16,6 +17,7 @@ class IndexController extends Controller
     {
         $sliders = Slider::all()->sortBy("sort");
         $rules = RodoRules::orderBy('sort')->whereStatus(1)->get();
+        $properties = Property::where('homepage', 1)->get();
         $popup = 0;
 
         if(settings()->get("popup_status") == "1") {
@@ -35,7 +37,8 @@ class IndexController extends Controller
         return view('front.homepage.index', compact(
             'rules',
             'sliders',
-            'popup'
+            'popup',
+            'properties'
         ));
     }
 

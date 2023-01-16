@@ -99,13 +99,71 @@
                 <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
                     <div class="maininvest-cta text-center">
                         <h2>Kup komfortowe mieszkanie <br><span>już od 25 m<sup>2</sup></span></h2>
-                        <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
                     </div>
                 </div>
             </div>
 
+            @if($properties->count() > 0)
+            <div id="propertiesCarousel">
+                <div class="container-fluid">
+                    <div id="roomsList" class="row d-flex justify-content-center p-0 border-0">
+                        @foreach($properties as $room)
+                            <div class="col-3">
+                                <div class="mainroom">
+                                    <div class="row">
+                                        @if($room->price)
+                                            <span class="ribbon1"><span>Oferta specjalna</span></span>
+                                        @endif
+                                        <div class="col-12">
+                                            <a href="{{route('front.investment.property.index', ['floor' => $room->floor_id, 'property' => $room->id])}}">
+                                                <h2>{{$room->name_list}}<br><span>{{$room->number}}</span></h2>
+                                            </a>
+                                        </div>
+                                        <div class="col-12">
+                                            @if($room->file)
+                                                <picture>
+                                                    <source type="image/webp" srcset="/investment/property/list/webp/{{$room->file_webp}}">
+                                                    <source type="image/jpeg" srcset="/investment/property/list/{{$room->file}}">
+                                                    <img src="/investment/property/list/{{$room->file}}" alt="{{$room->name}}">
+                                                </picture>
+                                            @endif
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row mt-2 mt-sm-4">
+                                                @if($room->price)
+                                                    <div class="col-12 ">
+                                                        <div class="mainroom-price">
+                                                            cena: <b>@money($room->price)</b>
+                                                        </div>
+                                                    </div>
+                                                @endif
+                                                <div class="col-12 col-xl-6">pokoje: <b>{{$room->rooms}}</b></div>
+                                                <div class="col-12 col-xl-6">pow.: <b>{{$room->area}} m<sup>2</sup></b></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 justify-content-center">
+                                            <span class="badge room-list-status-{{ $room->status }}">{{ roomStatus($room->status) }}</span>
+                                        </div>
+                                        <div class="col-12 justify-content-end col-list-btn">
+                                            <a href="{{route('front.investment.property.index', ['floor' => $room->floor_id, 'property' => $room->id])}}" class="bttn">ZOBACZ</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+            @endif
+
             <div class="row">
-                <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="400">
+                <div class="col-12 d-flex justify-content-center pb-5" data-aos="fade-up" data-aos-offset="100">
+                    <a href="{{ route('front.investment.show') }}" class="bttn">DOSTĘPNE MIESZKANIA</a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center" data-aos="fade-up" data-aos-offset="300">
                     <div class="maininvest-cta text-center pt-3">
                         <h2>Istnieje możliwość zakupu 2 miejsc postojowych</h2>
                         <h2><b>Szczegóły w biurze sprzedaży</b></h2>
@@ -567,7 +625,6 @@
     let video = document.getElementById('video')
 
     function playVideoOnScroll () {
-        const threshold = 100 //px above the video to start playing
         const vp = window.innerHeight;
         let offset = video.getBoundingClientRect().top
 
@@ -635,6 +692,31 @@
             $(this).parent().addClass('active');
         });
         $("#gallery_1 ul").slick();
+
+        $("#roomsList").slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            responsive: [
+                {
+                    breakpoint: 1700,
+                    settings: {
+                        slidesToShow: 3
+                    }
+                },
+                {
+                    breakpoint: 1199,
+                    settings: {
+                        slidesToShow: 2
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1
+                    }
+                },
+            ]
+        });
 
         $(".location-carousel").slick();
         $(".why-carousel-left, .why-carousel-right").slick({

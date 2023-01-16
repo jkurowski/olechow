@@ -63,6 +63,15 @@
                                                 '1' => 'Tak'
                                         ]])
                                         @include('form-elements.html-select', [
+                                            'label' => 'Strona główna',
+                                            'name' => 'homepage',
+                                            'selected' => $entry->homepage,
+                                            'select' => [
+                                                '0' => 'Nie',
+                                                '1' => 'Tak'
+                                        ]])
+
+                                        @include('form-elements.html-select', [
                                             'label' => 'Lokal usługowy',
                                             'name' => 'comercial_area',
                                             'selected' => $entry->comercial_area,

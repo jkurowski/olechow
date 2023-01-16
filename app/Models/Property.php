@@ -36,6 +36,7 @@ class Property extends Model
         'garage',
         'type',
         'highlighted',
+        'homepage',
         'html',
         'cords',
         'file',

@@ -58,6 +58,11 @@ body {
     color: #444444;
     font-size: 17px
 }
+
+.homepage {
+    overflow-x: hidden;
+}
+
 a, a:hover {text-decoration:none}
 a:hover {color: inherit}
 a:focus, button:focus {outline: none}
@@ -218,13 +223,6 @@ section {
     .green-bg {
         background: #213c13 url('../gfx/green-bg.png');
     }
-    img {
-        margin-bottom: -380px;
-        margin-top: 100px;
-        border-top:15px solid white;
-        border-right:15px solid white;
-        border-bottom:15px solid white;
-    }
     .maininvestment-text {
         padding:0 140px;
         h2 {
@@ -259,6 +257,98 @@ section {
         .bttn {
             padding: 22px 40px;
             color: #222;
+        }
+    }
+
+    #propertiesCarousel {
+        position: relative;
+        padding: 0 100px;
+        .mainroom {
+            background: #fff;
+            box-shadow: 0 6px 8px 0 rgba(0,0,0,.07);
+            text-align: center;
+            padding: 55px 30px 30px;
+            position: relative;
+        }
+        .slick-list {
+            padding:10px 0 30px;
+        }
+        #roomsList {
+            display: none;
+            &.slick-initialized {
+                display: block;
+            }
+            a {
+                h2 {
+                    color: var(--main-color-green);
+                    margin-bottom: 20px;
+                }
+            }
+            img {
+                width: 100%;
+            }
+            .row {
+                background: #fff;
+                border-top: 0;
+                -webkit-box-shadow: 0 0 0 0 transparent;
+                -moz-box-shadow: 0 0 0 0 transparent;
+                box-shadow: 0 0 0 0 transparent;
+                position: static;
+                &:hover {
+                    top: 0
+                }
+            }
+            .badge {
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+
+            .ribbon1 {
+                position: absolute;
+                top: -6px;
+                left: 5px;
+                &:after {
+                    left: 10px;
+                }
+            }
+
+            .mainroom-price {
+                font-size: 28px;
+                margin-bottom: 16px;
+            }
+        }
+
+        .slick-arrow {
+            height: 70px;
+            width: 70px;
+            display: block;
+            border-radius: 50%;
+            z-index: 100;
+            -webkit-transition: all 200ms linear;
+            -moz-transition: all 200ms linear;
+            -o-transition: all 200ms linear;
+            transition: all 200ms linear;
+            border: 1px solid #b79a5e;
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: -80px;
+            margin: auto;
+            i {
+                color: #b79a5e;
+                font-size: 30px;
+            }
+            &.slick-next {
+                right: -80px;
+                left: auto;
+            }
+            &:hover {
+                background: #b79a5e;
+                color: #fff;
+                i {
+                    color:white
+                }
+            }
         }
     }
 }
@@ -1841,13 +1931,6 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
         padding-left: 0;
     }
     #maininvestment {
-        img {
-            margin-bottom: -360px;
-            margin-top: 50px;
-            border-top: 10px solid #fff;
-            border-right: 10px solid #fff;
-            border-bottom: 10px solid #fff;
-        }
         .maininvestment-text {
             h2 {
                 font-size: 26px;
@@ -2114,6 +2197,20 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
         .maininvest-cta {
             padding: 30px 0;
         }
+
+        #propertiesCarousel {
+            .mainroom {
+                padding: 45px 20px 20px;
+            }
+            #roomsList {
+                .mainroom-price {
+                    font-size: 23px;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+
+
     }
     #maininvestment .maininvestment-text .bttn,
     #maininvestment .maininvest-cta .bttn
@@ -2265,6 +2362,26 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
         }
         .maininvest-cta {
             padding: 30px 0;
+        }
+
+        #roomsList .row {
+            flex: 0 0 auto;
+            width: 100%;
+            margin: 0;
+        }
+        #propertiesCarousel {
+            padding: 0 40px;
+            .slick-arrow {
+                height: 40px;
+                width: 40px;
+                left: -30px;
+                i {
+                    font-size: 16px;
+                }
+            }
+            .slick-arrow.slick-next {
+                right: -30px;
+            }
         }
     }
     #mainwhy .why-carousel-right .why-carousel-item {
@@ -2456,6 +2573,35 @@ html.swipebox-html.swipebox-touch{overflow:hidden!important}#swipebox-overlay im
     #maincta h3 {
         margin: 10px 0 20px;
     }
+
+
+    #maininvestment {
+        #propertiesCarousel {
+            padding: 0 35px;
+            .mainroom {
+                padding: 36px 20px 20px;
+            }
+            #roomsList {
+                .mainroom-price {
+                    font-size: 19px;
+                    margin-bottom: 6px
+                }
+                a {
+                    h2 {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .slick-arrow {
+                left: -40px;
+                &.slick-next {
+                    right: -40px;
+                }
+            }
+        }
+    }
+
+
 }
 /* end of 575.98 */
 

@@ -50,6 +50,7 @@ class PropertyFormRequest extends FormRequest
             'number' => 'required|string|max:255',
             'number_order' => 'integer',
             'highlighted' => '',
+            'homepage' => '',
             'rooms' => 'required|integer',
             'area' => '',
             'garden_area' => '',
