@@ -121,11 +121,13 @@
                                         </div>
                                         <div class="col-12">
                                             @if($room->file)
+                                                <a href="{{route('front.investment.property.index', ['floor' => $room->floor_id, 'property' => $room->id])}}">
                                                 <picture>
                                                     <source type="image/webp" srcset="/investment/property/list/webp/{{$room->file_webp}}">
                                                     <source type="image/jpeg" srcset="/investment/property/list/{{$room->file}}">
                                                     <img src="/investment/property/list/{{$room->file}}" alt="{{$room->name}}">
                                                 </picture>
+                                                </a>
                                             @endif
                                         </div>
                                         <div class="col-12">
@@ -693,6 +695,7 @@
         });
         $("#gallery_1 ul").slick();
 
+        @if($properties->count() > 4)
         $("#roomsList").slick({
             slidesToShow: 4,
             slidesToScroll: 1,
@@ -717,6 +720,7 @@
                 },
             ]
         });
+        @endif
 
         $(".location-carousel").slick();
         $(".why-carousel-left, .why-carousel-right").slick({
