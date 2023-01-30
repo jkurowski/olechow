@@ -222,7 +222,7 @@
 
                             <div class="why-carousel-apla">
                                 <h2>BEZPIECZEŃSTWO</h2>
-                                <p>Osiedle jest monitorowane, każde mieszkanie wyposażone w system SmartHome - instalacje alarmową, drzwi wejściowe do lokali o podwyższonej odporności na włamania.</p>
+                                <p>Osiedle jest monitorowane, drzwi wejściowe do lokali o podwyższonej odporności na włamania.</p>
                             </div>
                         </div>
                     </div>
