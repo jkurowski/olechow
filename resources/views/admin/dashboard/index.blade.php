@@ -18,6 +18,7 @@
                     <a class="nav-link {{ Request::routeIs('admin.logs.*') ? 'active' : '' }}" href="{{route('admin.logs.index')}}"><span class="fe-hard-drive"></span> Logi PA</a>
                     <a class="nav-link {{ Request::routeIs('admin.tracker.errors') ? 'active' : '' }}" href="{{route('admin.tracker.errors')}}"><span class="fe-alert-circle"></span> Błędy</a>
                     <a class="nav-link {{ Request::routeIs('admin.dashboard.popup.index') ? 'active' : '' }}" href="{{route('admin.dashboard.popup.index')}}"><span class="fe-airplay"></span> Baner na start</a>
+                    <a class="nav-link {{ Request::routeIs('admin.dashboard.popup.show') ? 'active' : '' }}" href="{{route('admin.dashboard.popup.show', ['popup' => 'exit'])}}"><span class="fe-airplay"></span> Baner na wyjście</a>
                 </nav>
             </div>
 

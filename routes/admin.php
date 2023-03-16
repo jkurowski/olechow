@@ -84,9 +84,9 @@ Route::group([
         Route::group(['prefix'=>'/dashboard', 'as' => 'dashboard.'], function () {
 
             Route::resources([
-            'seo' => 'Dashboard\SeoController',
-            'social' => 'Dashboard\SocialController',
-            'popup' => 'Dashboard\PopupController'
+                'seo' => 'Dashboard\SeoController',
+                'social' => 'Dashboard\SocialController',
+                'popup' => 'Dashboard\PopupController'
             ]);
         });
     });

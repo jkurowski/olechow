@@ -3,8 +3,10 @@
 namespace App\Http\Controllers\Admin\Dashboard;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\PopupFormRequest;
 use Spatie\Valuestore\Valuestore;
+
+use App\Http\Requests\PopupExitFormRequest;
+use App\Http\Requests\PopupFormRequest;
 
 class PopupController extends Controller
 {
@@ -19,5 +21,18 @@ class PopupController extends Controller
         $settings->put($request->except(['_token', 'submit']));
 
         return redirect(route('admin.dashboard.popup.index'))->with('success', 'Ustawienia zostały zapisane');
+    }
+
+    public function update (PopupExitFormRequest $request)
+    {
+        $settings = Valuestore::make(storage_path('app/settings.json'));
+        $settings->put($request->except(['_token', 'submit']));
+
+        return redirect(route('admin.dashboard.popup.show', ['popup' => 'exit']))->with('success', 'Ustawienia zostały zapisane');
+    }
+
+    public function show()
+    {
+        return view('admin.dashboard.popup.exit');
     }
 }

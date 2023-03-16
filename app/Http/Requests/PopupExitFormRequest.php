@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class PopupFormRequest extends FormRequest
+class PopupExitFormRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -24,12 +24,8 @@ class PopupFormRequest extends FormRequest
     public function rules()
     {
         return [
-            'popup_status' => 'boolean',
-            'popup_mode' => 'boolean',
-            'popup_timeout' => 'required|integer',
-            'popup_text' => '',
             'popup_exit_text' => '',
-            'popup_exit_status' => '',
+            'popup_exit_status' => 'boolean',
         ];
     }
 }

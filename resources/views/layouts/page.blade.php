@@ -59,6 +59,41 @@
 
 @stack('scripts')
 
+@if(settings()->get("popup_exit_status") == 1)
+    <div class="modal" tabindex="-1" id="popModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    {!! settings()->get("popup_exit_text") !!}
+                </div>
+            </div>
+        </div>
+    </div>
+@endif
+<script type="text/javascript">
+    $(document).ready(function(){
+        @if(settings()->get("popup_exit_status") == 1)
+            $(document).mousemove(function(e) {
+                if(e.pageY <= 5) {
+                    const popModal = new bootstrap.Modal(document.getElementById('popModal'), {
+                        keyboard: false
+                    });
+                    const trueFalse = ($('body').hasClass('modal-open'));
+                    if(trueFalse === false){
+                        popModal.show();
+                        setTimeout( function(){
+                            popModal.hide();
+                        }, 6000 );
+                    }
+                }
+            });
+        @endif
+    });
+</script>
+
 <script type="text/javascript">
     WebFontConfig = {
         google: { families: [ 'Merriweather:300,400,700,900|Montserrat:400,500,600' ] }
