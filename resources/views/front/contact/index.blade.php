@@ -11,9 +11,6 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-12">
-                <h4 style="color:red;text-align:center;margin-bottom:40px">Godziny otwarcia biura w dniach od 13.03.23 do 15.03.23 - 10:00 - 18:00</h4>
-            </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="contact-box">
                     <div class="contact-icon">
