@@ -455,6 +455,7 @@
                         <p>Madey Development jest częścią Grupy Madej która od blisko 20 lat realizuje obiekty kubaturowe i inżynieryjne. Wiemy jak budować dobrze, sprawnie i na lata – jesteśmy dumni z naszych realizacji, które przetrwały próbę czasu, a nasi klienci z radością je użytkują.</p>
                         <p>Do każdego projektu podchodzimy z rozwagą i dobrym rozumieniem potrzeb naszych klientów; wiemy jak budować, by na kreowanych przez nas osiedlach żyło się komfortowo. Wieloletnie doświadczenie pomaga w tworzeniu inwestycji najwyższej jakości: o ponadczasowej architekturze, ze sprawdzonych jakości materiałów i z największą starannością wykonania.</p>
                         <p>W Madey Development mamy poczucie odpowiedzialności za to, co robimy i wierzymy, że w tak ważnej sprawie jak budowa domu a tym samym tworzenie powierzchni do życia,  nie można chodzić na skróty. Naszą misją jest tworzenie przestrzeni do komfortowego życia i robimy to z ogromną pasją i zaangażowaniem Dlatego nasze realizacje są zawsze przemyślane i doskonale zrealizowane.</p>
+                        <img src="https://www.madeydevelopment.pl/files/upload/pzfd-logo.png" alt="Logo PZFD" style="width: 190px;margin-top: 20px;">
                         <a href="https://www.madeydevelopment.pl/inwestor/" class="bttn" target="_blank">O INWESTORZE</a>
                     </div>
                 </div>
