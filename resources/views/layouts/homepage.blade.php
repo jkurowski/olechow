@@ -34,7 +34,7 @@
     <div id="slider">
         <div class="slider-carousel">
             <div class="slider-apla">
-                <h1>Bliski Olechów</h1>
+                <h1>Bliski Olechów <br>Nowe Mieszkania Widzew</h1>
                 <div id="homesearch">
                     <div class="form-container">
                         <form method="get" action="{{ route('front.investment.show') }}#filtr" class="row no-gutters">
