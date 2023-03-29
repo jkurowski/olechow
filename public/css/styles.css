@@ -549,7 +549,7 @@ header.fixed .header-menu ul li a {
 #slider .slider-apla h1 {
   color: white;
   font-weight: 400;
-  font-size: 98px;
+  font-size: 70px;
   text-align: center;
   margin-bottom: 50px;
 }
@@ -632,7 +632,7 @@ header.fixed .header-menu ul li a {
 /* end of 1199.98 */
 @media (max-width: 991.98px) {
   #slider .slider-apla h1 {
-    font-size: 68px;
+    font-size: 55px;
     margin-bottom: 30px;
   }
   #slider .slider-apla {
@@ -702,7 +702,7 @@ header.fixed .header-menu ul li a {
     height: 220px;
   }
   #slider .slider-apla h1 {
-    font-size: 38px;
+    font-size: 33px;
   }
 }
 /* Homepage

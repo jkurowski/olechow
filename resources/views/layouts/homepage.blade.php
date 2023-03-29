@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-12 col-lg-5 d-flex align-items-center" data-aos="fade-up" data-aos-offset="600">
                     <div class="maininvestment-text">
-                        <h2>Bliski Olechów – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
+                        <h2>Nowe Mieszkania Widzew – odwiedź nas i przekonaj się, że komfortowe życie jest na wyciągnięcie ręki</h2>
                         <p>Bliski Olechów to nowoczesne budownictwo otoczone zielenią, świetnie skomunikowane zarówno samochodem jak i transportem miejskim. Istotnym elementem jest realizowanie  naszej inwestycji z zastosowaniem sprawdzonych materiałów i technologii.</p>
                         <a href="#mainwhy" class="bttn scroll-link" data-offset="20">DLACZEGO WARTO</a>
                     </div>
@@ -179,7 +179,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 text-center" data-aos="zoom-in" data-aos-offset="300">
-                    <h2 class="why-title mt-0">DLACZEGO WARTO?</h2>
+                    <h2 class="why-title mt-0">DLACZEGO WARTO KUPIĆ NOWE MIESZKANIE?</h2>
                 </div>
             </div>
             <div class="row">
@@ -377,7 +377,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <h2>Rodzaje mieszkań</h2>
+                    <h2>Rodzaje nowych mieszkań</h2>
                     <div class="row">
                         <div class="col-12 col-md-4" data-aos="fade-up" data-aos-offset="300">
                             <h3>2 pok. <span class="green">od 40</span> m<sup>2</sup></h3>
@@ -427,7 +427,7 @@
                 </div>
                 <div class="order-1 order-md-2 col-12 col-md-7">
                     <div class="location-apla">
-                        <h2>LOKALIZACJA</h2>
+                        <h2>LOKALIZACJA NOWYCH MIESZKAŃ NA OLECHOWIE</h2>
                         <p><b>Bliski Olechów jest naprawdę bliski</b>! Wszechobecna zieleń, wygodny dojazd do centrum oraz bliskość wszelkich przydatnych punktów handlowo-usługowych, edukacyjnych i ochrony zdrowia to zalety Widzewa. Nasza inwestycja Bliski Olechów jest świetnie zlokalizowana przy ulicy Odnowiciela, w bliskości drogi wylotowej na A1 oraz kilku przystanków komunikacji zarówno tramwajowej jak i autobusowej.</p>
                     </div>
                 </div>
