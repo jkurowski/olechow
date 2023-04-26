@@ -11,10 +11,8 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="row mb-4">
-                <div class="col-12">
-                    <h4 style="color: red;text-align:center;margin-bottom:0">W dniach 02.05, 04.05 biuro sprzedaży będzie otwarte w godz. 10:00 - 18:00</h4>
-                </div>
+            <div class="col-12 mb-4">
+                <h4 style="color: red;text-align:center;margin-bottom:0">W dniach 02.05, 04.05 biuro sprzedaży będzie otwarte w godz. 10:00 - 18:00</h4>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="contact-box">
