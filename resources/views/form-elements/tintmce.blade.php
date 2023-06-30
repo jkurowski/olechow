@@ -15,7 +15,7 @@
         toolbar1: "formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify | numlist bullist outdent indent | removeformat | gallery | responsivefilemanager | code",
         relative_urls: false,
         image_advtab: true,
-        external_filemanager_path:"/js/editor/plugins/filemanager/",
+        external_filemanager_path:"/public/js/editor/plugins/filemanager/",
         filemanager_title:"kCMS Filemanager" ,
         external_plugins: { "filemanager" : "{{ asset('/js/editor/plugins/filemanager/plugin.min.js') }}"}
     });
