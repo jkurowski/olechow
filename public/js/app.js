@@ -3546,6 +3546,8 @@ $(document).ready(function () {
         }
         event.preventDefault();
     });
+// Youtube
+    $('iframe[src*="youtube"]').wrap("<div class='video-container'></div>");
 
 // Lightbox
     $( '.swipebox' ).swipebox({useSVG : false});
