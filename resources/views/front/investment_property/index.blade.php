@@ -56,13 +56,13 @@
                     @endif
                 </div>
 
-                <div class="property-desc d-flex justify-content-center">
+                <div class="property-desc d-flex justify-content-center w-100">
                 @if($property->file_pdf)
                     <a href="{{ asset('/investment/property/pdf/'.$property->file_pdf) }}" target="_blank" class="bttn">POBIERZ PLAN .PDF</a>
                 @endif
                 </div>
                 @if($property->text)
-                    <div class="mt-5">
+                    <div class="mt-5 col-12">
                         {!! $property->text !!}
                     </div>
                 @endif
