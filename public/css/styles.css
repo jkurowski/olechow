@@ -383,6 +383,8 @@ button:focus,
 /* Youtube
 ================================================== */
 .video-container {
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.38);
+  border: 6px solid #b79a5e;
   position: relative;
   padding-bottom: 56.25%;
   padding-top: 30px;
