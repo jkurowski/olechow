@@ -60,6 +60,11 @@
                 @if($property->file_pdf)
                     <a href="{{ asset('/investment/property/pdf/'.$property->file_pdf) }}" target="_blank" class="bttn">POBIERZ PLAN .PDF</a>
                 @endif
+                @if($property->text)
+                    <div class="mt-5">
+                        {{ $property->text }}
+                    </div>
+                @endif
                 </div>
             </div>
             <div class="col-12 col-xl-7 ps-3 ps-xl-5">
