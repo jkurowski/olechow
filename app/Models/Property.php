@@ -37,6 +37,7 @@ class Property extends Model
         'type',
         'highlighted',
         'homepage',
+        'text',
         'html',
         'cords',
         'file',

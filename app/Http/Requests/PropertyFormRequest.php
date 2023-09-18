@@ -61,6 +61,7 @@ class PropertyFormRequest extends FormRequest
             'parking_space' => '',
             'garage' => '',
             'price' => '',
+            'text' => '',
             'cords' => '',
             'html' => '',
             'meta_title' => '',

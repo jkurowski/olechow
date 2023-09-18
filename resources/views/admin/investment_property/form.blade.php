@@ -109,6 +109,9 @@
 
                                         @include('form-elements.html-input-file', ['label' => 'Plan mieszkania', 'sublabel' => '(wymiary: '.config('images.property_plan.width').'px / '.config('images.property_plan.height').'px)', 'name' => 'file'])
                                         @include('form-elements.html-input-file', ['label' => 'Plan .pdf', 'sublabel' => 'Plan do pobrania', 'name' => 'file_pdf'])
+
+
+                                        @include('form-elements.textarea-fullwidth', ['label' => 'Opis', 'name' => 'text', 'value' => $entry->text, 'rows' => 11, 'class' => 'tinymce'])
                                     </div>
                                 </div>
                             </div>
@@ -116,6 +119,7 @@
                         @include('form-elements.submit', ['name' => 'submit', 'value' => 'Zapisz'])
                     </div>
                 </form>
+                @include('form-elements.tintmce')
                 @endsection
                 @push('scripts')
                     <script src="/js/plan/underscore.js" charset="utf-8"></script>
