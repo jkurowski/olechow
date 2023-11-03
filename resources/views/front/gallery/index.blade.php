@@ -9,6 +9,13 @@
 @stop
 
 @section('content')
+    <div class="container">
+        <div class="row">
+            <div class="col-12 m-5">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/enRRynGgkk8?si=yIAxmm5-tNogYhRy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
 <div id="gallery">
     <div class="gallery-carousel">
         @foreach($galleries as $gallery)
