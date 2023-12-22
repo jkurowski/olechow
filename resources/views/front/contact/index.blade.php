@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mb-5">
-                <h4 style="color: red;text-align:center;margin-bottom:0;display: none">W dniach 22.09 i 23.09 biuro sprzedaży będzie zamknięte</h4>
+                <h4 style="color: red;text-align:center;margin-bottom:0">27.12 i 28.12: 10.00-18.00<br />29.12: 9.00-18.00<br />23.12 i 30.12: biuro sprzedaży będzie zamknięte</h4>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="contact-box">
