@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mb-5">
-                <h4 style="color: red;text-align:center;margin-bottom:0">Od 24.01.2024 do 05.02.2024 <br />biuro będzie otwarte w godz. 9:00 - 17:00 <br />W soboty biuro będzie zamknięte.</h4>
+                <h4 style="color: red;text-align:center;margin-bottom:0">Dnia 02.05 biuro sprzedaży będzie zamknięte</h4>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="contact-box">
