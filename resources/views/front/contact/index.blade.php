@@ -12,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-12 mb-5">
-                <h4 style="color: red;text-align:center;margin-bottom:0">Dnia 02.05 biuro sprzedaży będzie zamknięte</h4>
+                <h4 style="color: red;text-align:center;margin-bottom:0;display:none">Dnia 02.05 biuro sprzedaży będzie zamknięte</h4>
             </div>
             <div class="col-12 col-sm-6 col-lg-4">
                 <div class="contact-box">
