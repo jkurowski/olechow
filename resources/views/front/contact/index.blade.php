@@ -10,7 +10,7 @@
 
 @section('content')
     <div class="container">
-        <div class="row">
+        <div class="row pb-5 mb-5">
             <div class="col-12 mb-5">
                 <h4 style="color: red;text-align:center;margin-bottom:0;display:none">Dnia 02.05 biuro sprzedaży będzie zamknięte</h4>
             </div>
@@ -39,15 +39,6 @@
                     </div>
                     <h3>Zadzwoń do nas</h3>
                     <p><a href="tel:+48576117119">+48 576 117 119</a></p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row d-flex justify-content-center pt-4 pt-xl-5 mt-4 mt-xl-5">
-            <div class="col-12 col-xl-8">
-                <div class="text-center">
-                    <h3>Masz pytania?</h3>
-                    <p>Nasza kadra to doświadczeni i wykwalifikowani menadżerowie, projektanci, sprzedawcy i inżynierowie, którzy są w stanie sprostać każdemu wyzwaniu, jakie niesie ze sobą proces inwestycyjny.</p>
                 </div>
             </div>
         </div>
